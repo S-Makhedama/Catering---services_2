@@ -59,6 +59,88 @@ nav {
 
 
 
+/* *************************************Catering***************************************************/
+body {
+    color: #222523;
+    margin: 0;
+    padding: 10px 0 20px;
+    background-color:aliceblue;
+    background-size: cover;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+
+
+
+
+/*--------------------------header--------------*/
+
+
+.header{
+    color: rgb(14, 12, 13);
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    margin: 0%;
+    font-style: oblique;
+}
+
+
+/*--------------------------------------african-cusions--------------*/
+
+.african-cusions{
+  padding: 10px 0 20px;
+  display: inline-block;
+}
+
+.african-cusions.h1{
+ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+ font-style: oblique;
+ margin: 0%;
+ font-weight: 900;
+}
+
+
+/*--------------------------------------------------mordern cusions------------*/
+.mordern-cusions{
+  padding: 10px 0 20px;
+  display: inline-block;
+  color:antiquewhite;
+  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+ .mordern-cusions.h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  text-align: center;
+  font-weight: 900;
+  color: antiquewhite;
+  font-size: larger;
+  margin-top: 10%;
+ }
+
+
+ figure {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+.images-food {
+  width: 200px; 
+  height: auto;
+  border-radius: 10px;
+}
+
+figcaption {
+  display: block;
+  margin-top: 5px;
+}
+
+
 
 /* *************************************Our Services***************************************************/
 .service {
