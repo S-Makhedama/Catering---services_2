@@ -133,6 +133,7 @@ figcaption {
   border-radius: 10px;
 }
 
+<<<<<<< HEAD
 .catering{
   background: url(food/starters.jpg);
   background-blend-mode: multiply;
@@ -142,6 +143,107 @@ figcaption {
   background-size: cover;
   background-color: #ccc;
 }
+=======
+/* *************************************Our Services***************************************************/
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+.service-card{
+    display: inline-block;
+    background-color: palevioletred;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 20px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    flex-basis: calc(33.33% - 20px); 
+}
+.middle-image {
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: .2rem solid rgb(46, 3, 3);
+    border-radius: 50%; 
+
+}
+.service-card p{
+    color: black;
+    margin: 0;
+}
+
+.Services{
+    display: inline-flex;
+    align-items: center;
+}/*
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    transition: opacity 0.5s;
+ }
+ .btn-decor:hover .overlay {
+    opacity: 1;
+}
+.overlay ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.overlay ul li {
+    padding: 10px 20px;
+}
+*/
+.btn-decor{
+    display:grid;
+    margin-left: 8.5rem;
+}
+.btn-decor img{
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: .2rem solid rgb(46, 3, 3);
+    border-radius: 50%;
+    backface-visibility: hidden;
+}
+.btn-catering{
+    display:grid;
+    margin-left: 3rem;
+}
+.btn-catering img{
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: .2rem solid rgb(46, 3, 3);
+    border-radius: 50%;
+}
+.btn-rentals{
+    display:grid;
+    margin-left: 3rem;
+}
+.btn-rentals img{
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: .2rem solid rgb(46, 3, 3);
+    border-radius: 50%;
+}
+
+
+>>>>>>> a0f0957168f340fa488dbebfbb7f86bd90a39495
 
 /* *************************************Slide Show***************************************************/
 .container{ 
