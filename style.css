@@ -133,7 +133,7 @@ figcaption {
   border-radius: 10px;
 }
 
-<<<<<<< HEAD
+
 .catering{
   background: url(food/starters.jpg);
   background-blend-mode: multiply;
@@ -143,7 +143,6 @@ figcaption {
   background-size: cover;
   background-color: #ccc;
 }
-=======
 /* *************************************Our Services***************************************************/
 .service {
     display: flex;
@@ -242,8 +241,6 @@ figcaption {
     border-radius: 50%;
 }
 
-
->>>>>>> a0f0957168f340fa488dbebfbb7f86bd90a39495
 
 /* *************************************Slide Show***************************************************/
 .container{ 
