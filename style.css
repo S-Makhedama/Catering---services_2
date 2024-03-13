@@ -13,13 +13,15 @@ body {
     display: flex;
     justify-content: space-between; /* Align items to the right and left */
     align-items: center; /* Center items vertically */
-    padding: 3rem; /* Add padding for better appearance */
-    background-color: darkgray;
+    padding: 1rem; /* Add padding for better appearance */
+    background-color: white;
 }
 
 /* Apply styles to the logo */
 .logo img {
-    max-height: 40px; /* Set maximum height for the logo image */
+    height: 150px; /* Set maximum height for the logo image */
+    width: 200px;
+    padding-left: 80px;
 }
 
 /* Apply styles to the navigation links */
@@ -40,6 +42,7 @@ nav a {
     color: #333; /* Set link color */
     font-weight: bold;
     font-size: large;
+    padding-right: 40px;
 }
 
 /* Push the navigation items to the right */
