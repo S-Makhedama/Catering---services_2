@@ -76,6 +76,187 @@ nav {
 
 
 
+/* *************************************Catering***************************************************/
+
+.header{
+    color: rgb(14, 12, 13);
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    margin: 0%;
+    font-style: oblique;
+}
+
+
+/*--------------------------------------african-cusions--------------*/
+
+.african-cusions{
+  padding: 0px;
+  display: inline-block;
+}
+
+.african-cusions.h1{
+ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+ font-style: oblique;
+ margin: 0%;
+ font-weight: 900;
+}
+
+
+/*--------------------------------------------------mordern cusions------------*/
+.mordern-cusions{
+  padding: 0px;
+  display: inline-block;
+  color:antiquewhite;
+  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+ .mordern-cusions.h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  text-align: center;
+  font-weight: 900;
+  color: antiquewhite;
+  font-size: larger;
+  margin-top: 10%;
+ }
+
+
+ figure {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+
+figcaption {
+  display: block;
+  margin-top: 5px;
+}
+
+.african-cuisines {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images-food {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+.catering{
+  background: url(food/starters.jpg);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #ccc;
+}
+/* *************************************Our Services***************************************************/
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+.service-card{
+    display: inline-block;
+    background-color: palevioletred;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 20px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    flex-basis: calc(33.33% - 20px); 
+}
+.middle-image {
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: .2rem solid rgb(46, 3, 3);
+    border-radius: 50%; 
+
+}
+.service-card p{
+    color: black;
+    margin: 0;
+}
+
+.Services{
+    display: inline-flex;
+    align-items: center;
+}/*
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    transition: opacity 0.5s;
+ }
+ .btn-decor:hover .overlay {
+    opacity: 1;
+}
+.overlay ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.overlay ul li {
+    padding: 10px 20px;
+}
+*/
+.btn-decor{
+    display:grid;
+    margin-left: 8.5rem;
+}
+.btn-decor img{
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: .2rem solid rgb(46, 3, 3);
+    border-radius: 50%;
+    backface-visibility: hidden;
+}
+.btn-catering{
+    display:grid;
+    margin-left: 3rem;
+}
+.btn-catering img{
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: .2rem solid rgb(46, 3, 3);
+    border-radius: 50%;
+}
+.btn-rentals{
+    display:grid;
+    margin-left: 3rem;
+}
+.btn-rentals img{
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: .2rem solid rgb(46, 3, 3);
+    border-radius: 50%;
+}
 
 
 /* *************************************Slide Show***************************************************/

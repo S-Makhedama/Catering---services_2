@@ -29,54 +29,90 @@
 
 <!----------------------------------------------------------------header------------------------------------------------------------------------>
 
-    <div class="header">
-        <center>
-            <header>
-                <h1>Rentals</h1>           
-            </header>
-        </center>
+     <header>OurCharting equipment</header>
+     <main class="container">
+         <div class="image">
+              <img class="image__img"  src="images/freezer.jpg.jfif"   alt="fridge">
+              <div class="image__overlay  image__overlay--blur">
+              <div class="image__title">Cool Fridge for rent</div>
+              <p class="image__price">R1500</p>
+            </div>
+          </div>
+
+          <div class="image">
+                <img class="image__img"  src="images/3pole tent.jfif"   alt="Tent">
+                <div class="image__overlay  image__overlay--blur">
+                <div class="image__title">Three Pole tent</div>
+                <p class="image__price">R900</p>
+
+              </div>
+            </div>
       
-    </div>
-<!---------------------------------------------------------------Main------------------------------------------------------------------------>
-    <div class="main">
-        <center>
-            <main>
-                <h3>Fridge</h3>
-                <img class="freezer-rent" src="Images/freezer.jpg.jfif" alt="mobile freezer" width="300"  height="200" >
-                <img class="image-price">R1500
-                <h3>Tent</h3>
-                <img class="rental-tent" src="Images/3pole tent.jfif" alt="ThreePole tent" width="300"  height="200">
-                <img class="image-price">R1000
-                <h3>Tables and Chairs</h3>
-                <img class="chairs-hire" src="Images/rental chairs.jfif" alt="chairs" width="300" height="200">
-                <img class="image-price">R600
-                <h3>Decoration cloths</h3>
-                <img class="r-deco" src="Images/IMG_1673.JPG" alt="rental decoration" width="300"  height="200">
-                <img class="image-price">R700
-                <h3>Sound system</h3>
-                <img class="sound-lights" src="Images/sound.jpg" alt="sound system" width="300"  height="200">
-                <img class="image-price">R1100
-                <h3>Kitchen Equipment</h3>
-                <img class="kitchen-equipment" src="Images/kitchen equipment.jfif" alt="Kitchen equipment"  width="300" height="200">
-                <img class="image-price">R800 
-            </main>
-        </center>
+          <div class="image">
+               <img class="image__img"  src="images/plates and pots.jpg"   alt="equipment">
+               <div class="image__overlay  image__overlay--blur">
+               <div class="image__title">Kitchen equipment for hire</div>
+              <ul>
+                   <li>Wine glasses</li>
+                   <li>Frying pen</li>
+
+              </ul>
+             <p class="image__price">R1100</p>
+
+            </div>
+         </div>
+        </main>
+
+        <script>
+          // Add your JavaScript code here
+          const fridge = document.getElementById('fridge');
+          const tent = document.getElementById('tent');
+          const kitchenEquipment = document.getElementById('kitchenEquipment');
         
-    </div>
+          function displayDetails(title, price) {
+            alert(`Product: ${title}\nPrice: ${price}`);
+          }
+        
+          fridge.addEventListener('click', function () {
+            displayDetails('Cool Fridge for rent', 'R1500');
+          });
+        
+          tent.addEventListener('click', function () {
+            displayDetails('Three Pole tent', 'R900');
+          });
+        
+          kitchenEquipment.addEventListener('click', function () {
+            displayDetails('Kitchen equipment for hire', 'R1100');
+          });
+        </script>
 
-<!----------------------------------------------------------------Contact------------------------------------------------------------------------>
+        <main class="hero">
+          <div class="image">
+            <img class="image__img"  src="images/tables and chairs.jpg"   alt="tables">
+            <div class="image__overlay">
+            <div class="image__title">Chairs and Tables for hire</div>
+            <p class="image__price">R1700</p>
+          </div>
+        </div>
 
 
-<!----------------------------------------------------------------Footer------------------------------------------------------------------------->
-<br>
-<br>
-<br>
-<div>
-    <footer class="footer">
-        <p>&copy; 2024 LuxeLife Catering & Decor - All rights reserved.</p>
-        <p>Designed by Young_Tech_Ninjas</p>
-    </footer>
-</div>
+         <div class="image">
+            <img class="image__img"  src="images/sound.jpg"   alt="tables">
+            <div class="image__overlay">
+            <div class="image__title">Sound Systen</div>
+           <p class="image__price">R1700</p>
+          </div>
+        </div>
+
+        <div class="video">
+            <video class="video" src="images/v3.mp4" width="400" Controls></video>
+            <div class="video__overlay">
+            <div class="video__title">Decorated tables and Chairs</div>
+           </div>
+        </div>
+        </main>
+           
+     
 
 </body>
 </html>
