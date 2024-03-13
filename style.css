@@ -83,6 +83,72 @@ nav {
 
 
 
+/*------------------------------------ABOUT PAGE-------------------------------------------------------*/
+.sectionbar{
+    background-image: url(image);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Phases{
+    display: flex;
+    width: 100px;
+    height: 50px;
+    font-size: 17px;
+    text-align: center;
+    
+}
+
+.Catering img{
+    width: 360px;
+    height: 450px;
+    font-size: 12;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+/*--------------------------------------------Main paragraph-------------------------------------------------*/
+.Text p{
+    font-size: 18px;
+    font-style: arial;
+    text-align: left;
+    padding: 6px;
+    color: #000000;
+    margin-right: 500px;
+}
+
+/*---------------------------------Main image propertise------------------------------------------*/
+
+.Second_heading{
+    font-size: 10px;
+    font-style: normal;
+    margin: 0;
+}
+
+.luxury_food{
+    width: 460px;
+    height: 500px;
+    float: right;
+    border: 0px solid #581e37;
+    margin-right: 20px;
+    border-radius: 10px;
+    margin-top: -500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* *************************************Catering***************************************************/
 
 .headers{
