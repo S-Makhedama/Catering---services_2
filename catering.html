@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="catering">
 <!--------------------Nav bar---------------------------------------------->
 <div class="nav-bar">    
     <div class="logo">
@@ -20,18 +21,18 @@
             </nav>       
 </div>
 <!---------------------header---------------------------------------------->
-<div class="catering">
 <div class="headers">
     <header>
-        <h1>CATERING</h1>
+       <center> <h1>CATERING</h1></center>
     </header>
 </div>
-<button  onclick="showGallery('african-cusions')">Show african-cusions</button>
-<button onclick="showGallery('modern-cusions')">Show Modern-Cusions</button>
+<button class="btn"  onclick="showGallery('african-cusions')">Show african-cusions</button>
+<button class="btn" onclick="showGallery('modern-cusions')">Show Modern-Cusions</button>
+<button class="btn" onclick="showGallery('BAR')">Show BAR</button>
 
 <div class="african-cusions" id="africanGallery">
 <main  class="galary">
-    <h2>Traditional-Cusions</h2>
+  <center><h2>Traditional-Cusions</h2></center>
     <br>
         <figure >
         <img class="images-food" src="images/image10.JPG">
@@ -60,17 +61,17 @@
 </main>
 </div>
 
-<div>
+<div> 
     <div class="modern-cusions" id="modernGallery">
-    <main class="galary">
-        <h2>Modern-Cusions</h2>
+        <main class="galary">
+           <center><h2>Modern-Cusions</h2></center>
         <br>
-        <div>
-            <figure>
+           <div>
+                 <figure>
               <img class="images-food" src="food/steak and peas.png">
               <figcaption>steak and pears</figcaption>
-            </figure>
-            <figure>
+                </figure>
+                <figure>
               <img class="images-food" src="food/lasagnia.png">
               <Figcaption>hot lasagnia</Figcaption>
             </figure>
@@ -84,27 +85,55 @@
             </figure>
             <figure>
                <img class="images-food" src="food/baffei content.JPG">
-               <figcaption>baffei</figcaption>
+            <figcaption>baffei</figcaption>
             </figure>
             <figure>
-              <img class="images-food" src="food/different kinds of food to choose from on self-service catering.JPG">
-              <figcaption>self-service catering food</figcaption>
+                <img class="images-food" src="food/different kinds of food to choose from on self-service catering.JPG">
+                <figcaption>self-service catering food</figcaption>
             </figure>
-</div> 
-       </div> 
-    </div>
-</main>
+            </div>
+            </div>
+            </div>
+            </main>
+
+           <div> 
+               <div class="drinks" id="drinksGallery">
+                  <main class="galary">
+                     <center><h2>BAR</h2></center>
+               <br>
+                  <div>
+            <figure>
+              <img class="images-food" src="Drinks/brandy.jfif">
+              <figcaption>WISKY BRANDY</figcaption>
+            </figure>
+            <figure>
+              <img class="images-food" src="Drinks/browns.jfif">
+              <Figcaption>HOT COCOLATE</Figcaption>
+            </figure>
+            <figure>
+              <img class="images-food" src="Drinks/cocktail.jfif">
+              <figcaption>COCKTAILS</figcaption>
+            </figure>
+            <figure>
+            <img class="images-food" src="Drinks/cokes.jfif">
+            <figcaption>DRINKS</figcaption>
+            </figure>
+            <figure>
+               <img class="images-food" src="Drinks/smoothy.jfif">
+            <figcaption>SMOOTHY</figcaption>
+            </figure>
+            <figure>
+                <img class="images-food" src="Drinks/wines.jfif">
+                <figcaption>WINE</figcaption>
+            </figure>
+            </div>
+            </div>
+            </div>
+            </main>
+
 </div>
 </div>
-</div>
-
-
-
 <!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
-    
-<br>
-<br>
-<br>
 <div>
     
     <footer class="footer">
@@ -117,13 +146,20 @@
         function showGallery(galleryId) {
             const africanGallery = document.getElementById('africanGallery');
             const modernGallery = document.getElementById('modernGallery');
+            const drinksGallery = document.getElementById('drinksGallery')
 
             if (galleryId === 'african-cusions') {
                 africanGallery.style.display = 'block';
                 modernGallery.style.display = 'none';
+                drinksGallery.style.display = 'none';
             } else if (galleryId === 'modern-cusions') {
                 africanGallery.style.display = 'none';
                 modernGallery.style.display = 'block';
+                drinksGallery.style.display = 'none';
+            } else if (galleryId === 'BAR') {
+                africanGallery.style.display = 'none';
+                modernGallery.style.display = 'none';
+                drinksGallery.style.display = 'block';
             }
         }
 
