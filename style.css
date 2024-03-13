@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between; /* Align items to the right and left */
     align-items: center; /* Center items vertically */
-    padding: 10px; /* Add padding for better appearance */
+    padding: 3rem; /* Add padding for better appearance */
     background-color: darkgray;
 }
 
@@ -48,9 +48,26 @@ nav {
 }
 
 
-/* *************************************Home Page***Image Slinder************************************************/
+/***************************************Home Page***Image Slinder************************************************/
 
+.swiper-container {
+    width: 100%;
+    height: calc(100vh - 150px); /* Adjust the height as needed */
+    margin-top: 10px;
+}
 
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 100%; /* Make slides take up 100% of the container height */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the entire slide */
+}
 
 
 
@@ -275,9 +292,18 @@ figcaption {
 
 /*----------------------------------------------------------Contact Page----------------------------------------------------------------------------------*/
 .header{
+    background-image: url('Image/image-1.jpg'); 
+    background-size: cover;
+    font-size: 2em;
+    padding: 6rem;
+    color: white;
     text-align: center;
 }
 
+.header p{
+    color: white;
+    font-size: larger;
+}
 /* Style for the form container */
 .form-container {
     max-width: 400px;
@@ -319,6 +345,49 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+/*********************************************image cards***************************************************************/
+
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px; 
+    cursor: pointer;
+}
+
+.card {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.card-content p {
+    color: #666;
+}
+
+
+
+
+
 
 /*********************************************Get in touch with us***************************************************************/
 
