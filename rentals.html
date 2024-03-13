@@ -9,6 +9,13 @@
 </head>
 <body>
 
+  <style>
+    .zoom-img {
+    width: 200px;
+    transition: transform 0.2s;
+    }
+  </style>
+
 <!----------------------------------------------------------------Nav Bar------------------------------------------------------------------------>
 <div class="nav-bar">    
     <div class="logo">
@@ -64,29 +71,6 @@
          </div>
         </main>
 
-        <script>
-          // Add your JavaScript code here
-          const fridge = document.getElementById('fridge');
-          const tent = document.getElementById('tent');
-          const kitchenEquipment = document.getElementById('kitchenEquipment');
-        
-          function displayDetails(title, price) {
-            alert(`Product: ${title}\nPrice: ${price}`);
-          }
-        
-          fridge.addEventListener('click', function () {
-            displayDetails('Cool Fridge for rent', 'R1500');
-          });
-        
-          tent.addEventListener('click', function () {
-            displayDetails('Three Pole tent', 'R900');
-          });
-        
-          kitchenEquipment.addEventListener('click', function () {
-            displayDetails('Kitchen equipment for hire', 'R1100');
-          });
-        </script>
-
         <main class="hero">
           <div class="image">
             <img class="image__img"  src="images/tables and chairs.jpg"   alt="tables">
@@ -112,16 +96,41 @@
            </div>
         </div>
         </main>
+
+
+        <script>
+          const img = document.getElementById('zoomImg');
+
+          //event listerns
+          img.addEventsListener('mouseenter', zoomIn);
+          img.addEventsListener('mouseleave', zoomOut);
+
+          //function to zoom in on mouse enter
+          function zoomIn() {
+            img.style.transform = 'scale(1.5)';
+          }
+          //function to zoom out on mouse leave
+          function zoomOut() {
+            img.style.transform = 'scale(1)';
+          }
+        </script>
+        
+      
+
+        <!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
+    
+    <br>
+    <br>
+    <br>
+    <div>
+        
+        <footer class="footer">
+            <p>&copy; 2024 LuxeLife Catering & Decor - All rights reserved.</p>
+            <p>Designed by Young_Tech_Ninjas</p>
+        </footer>
            
+    </div>
      
 
 </body>
 
-
-
-
-        
-    
-        
-    
-</body>
