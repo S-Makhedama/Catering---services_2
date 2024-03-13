@@ -14,7 +14,7 @@ body {
     justify-content: space-between; /* Align items to the right and left */
     align-items: center; /* Center items vertically */
     padding: 1rem; /* Add padding for better appearance */
-    background-color: white;
+    background-color: darkcyan
 }
 
 /* Apply styles to the logo */
