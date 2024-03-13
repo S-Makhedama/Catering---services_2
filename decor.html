@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decor</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+          cursor: pointer;
+        }
+      </style>
+    
 </head>
-<body>
+<body onclick="goBack()">
     <div class="Decoration">
 <!----------------------------------------------------------------Nav Bar------------------------------------------------------------------------>
 <div class="nav-bar">    
@@ -51,5 +57,10 @@
         <p>Designed by Young_Tech_Ninjas</p>
     </footer>
 </div>
+<script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
 </body>
 </html>

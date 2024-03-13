@@ -5,24 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rentals</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+  .zoom-img {
+  width: 200px;
+  transition: transform 0.2s;
+  }
+  body {
+    background: url();
+    cursor:pointer;
+  }
+</style>
     
 </head>
-<body>
-
-  <style>
-    .zoom-img {
-    width: 200px;
-    transition: transform 0.2s;
-    }
-  </style>
-
-  <style>
-    body {
-      background: url()
-
-    }
-  </style>
-
+<body onclick="goBack()">
 <!----------------------------------------------------------------Nav Bar------------------------------------------------------------------------>
 <div class="nav-bar">    
     <div class="logo">
@@ -107,8 +102,8 @@
           const img = document.getElementById('zoomImg');
 
           //event listerns
-          img.addEventsListener('mouseenter', zoomIn);
-          img.addEventsListener('mouseleave', zoomOut);
+          img.addEventsListener('cursorin', zoomIn);
+          img.addEventsListener('cursorout', zoomOut);
 
           //function to zoom in on mouse enter
           function zoomIn() {
@@ -118,6 +113,12 @@
           function zoomOut() {
             img.style.transform = 'scale(1)';
           }
+
+          
+    function goBack() {
+      window.history.back();
+    }
+  
         </script>
         
       
