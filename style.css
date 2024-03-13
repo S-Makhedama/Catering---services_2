@@ -14,7 +14,7 @@ body {
     justify-content: space-between; /* Align items to the right and left */
     align-items: center; /* Center items vertically */
     padding: 1rem; /* Add padding for better appearance */
-    background-color: darkcyan;
+    background-color: rgb(190, 121, 113);
 }
 
 /* Apply styles to the logo */
@@ -183,14 +183,30 @@ figcaption {
     height: auto;
 }
 
-.african-cusions, .modern-cusions {
+.african-cusions, .modern-cusions, .drinks{
     display: none;
+}
+
+.btn{
+    color: rgb(19, 22, 21);
+    margin: 0 10px;
+        padding: 10px 20px;
+        border: none;
+        background-color:antiquewhite;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+}
+.btn:hover {
+    background-color: #FFE4C4;
 }
 
 /******************************************Rentals***********************************************/
 .image{
     position: relative;
-    width: 4000px;
+    width: 200%;
     background: var(pink)
 
 }
@@ -231,7 +247,7 @@ header {
 }
 
 .image__img {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: 100%;
     border-radius: 20%;
@@ -267,122 +283,8 @@ header {
 
 .image__overlay--blur {
     backdrop-filter: blur(5px);
-    margin-right: 50px;
-    
-}
-
-.image__overlay:hover {
-    opacity: 1;
-    justify-content: space-evenly;
-}
-
-.image__overlay > * {
-    transform: translateY(20px);
-    transition: transform 0.25s;
-    margin-right: 0;
-}
-
-.image__overlay:hover > * {
-    transform: translateY(0);
-
-}
-
-.image__title{
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-}
-
-.image__price{
-    font-size: 1.25em;
-    margin-top: 0.25em;
-}
-
-
-/******************************************Rentals***********************************************/
-.image{
-    position: relative;
-    width: 4000px;
-    justify-content: space-between;
-
-
-}
-
-header {
-    text-align: center;
-    font-size: 2rem;
-    color: white;
-    text-decoration: none;
-    font-style: italic;
-    justify-content: space-between;
-}
-.container {
-    display: flex;
-    text-align: center;
-    padding-left: 100px;
-}
-.container img {
-    width: 410px;
-    height:310px;
-    justify-content: space-between;
-    text-align: center;  
-}
-
-
-.hero {
-    display: flex;
-    text-align: center;
-    padding-left: 100px;
-    padding-top: 100px;
-}
-
-.hero img {
-    width: 410px;
-    height:310px;
-    justify-content: space-between;
-    text-align: center;
-     
-}
-
-.image__img {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    border-radius: 20%;
-    border-color: beige;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.video {
-    width: 400px;
-    height: 310px;
-    border-radius: 20%;
-}
-
-.image__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    font-family: Quicksand, sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
-  
-}
-
-.image__overlay--blur {
-    backdrop-filter: blur(5px);
-    margin-right: 50px;
+    margin-right: 5px;
+    display: block;
     
 }
 
@@ -413,6 +315,8 @@ header {
     margin-top: 0.25em;
     color: white;
 }
+
+
 
 
 /* *************************************Our Services***************************************************/
@@ -691,14 +595,42 @@ button:hover {
   h2, h3 {
     color: #333;
   }
+/****************************************************Decor********************************************************************************/
+.zero h1{
+    color: black; 
+    text-align: center;
+}
 
 
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    border-radius: 20px;
+}
+.main img {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding-right: 20px;
+    margin-left: 50px;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+.Decoration{
+    background-image: url(Image/51EqFqmiTaL.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* *********************************************************Footer*********************************************************************************/
 
 .footer {
     text-align: center; /* Center align text */
     padding: 20px; /* Add padding for better appearance */
-    background-color: darkcyan; /* Set background color */
+    background-color: rgb(172, 102, 95); /* Set background color */
     color: white; /* Set text color */
 }
 
