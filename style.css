@@ -14,7 +14,7 @@ body {
     justify-content: space-between; /* Align items to the right and left */
     align-items: center; /* Center items vertically */
     padding: 1rem; /* Add padding for better appearance */
-    background-color: darkcyan;
+    background-color: rgb(190, 121, 113);
 }
 
 /* Apply styles to the logo */
@@ -186,7 +186,7 @@ figcaption {
 /******************************************Rentals***********************************************/
 .image{
     position: relative;
-    width: 4000px;
+    width: 200%;
     background: var(pink)
 
 }
@@ -694,7 +694,7 @@ button:hover {
 .footer {
     text-align: center; /* Center align text */
     padding: 20px; /* Add padding for better appearance */
-    background-color: darkcyan; /* Set background color */
+    background-color: rgb(172, 102, 95); /* Set background color */
     color: white; /* Set text color */
 }
 
