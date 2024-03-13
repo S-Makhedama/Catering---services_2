@@ -689,11 +689,11 @@ button:hover {
   }
 /****************************************************Decor********************************************************************************/
 .header1 {
-    color: black; /* Set your desired text color */
+    color: black; 
     text-align: center;
 }
 
-/* Main content styling */
+
 .main {
     display: flex;
     flex-wrap: wrap;
