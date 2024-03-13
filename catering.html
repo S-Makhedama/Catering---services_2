@@ -3,174 +3,183 @@
 <head>
     <title>Catering</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+          cursor: pointer;
+        }
+      </style>
+    
+>>>>>>> fbbb314e780fea8726b7de1d6bcab79eee77687b
 </head>
-<body>
+<body >
+<div class="catering">
 <!--------------------Nav bar---------------------------------------------->
 <div class="nav-bar">    
     <div class="logo">
-        <img src="images/Luxe Logo.png" alt="Logo">
+        <img src="Image/logo.png" alt="Logo">
     </div>
             <nav>
                 <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="Services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>            
+                <li><a href="contact.html">Contact</a></li>
+                <i class="bi bi-brightness-high-fill" id="toggleDark"></i>            
                 </ul>
             </nav>       
 </div>
-    <br>
-    <br>
-    <br>
-
-
 <!---------------------header---------------------------------------------->
-<div class="header">
+<div class="headers">
     <header>
-        <h1>CATERING</h1>
+       <center> <h1>CATERING</h1></center>
     </header>
-
 </div>
+<button class="btn"  onclick="showGallery('african-cusions')">Show african-cusions</button>
+<button class="btn" onclick="showGallery('modern-cusions')">Show Modern-Cusions</button>
+<button class="btn" onclick="showGallery('BAR')">Show BAR</button>
 
-<div class="african-cusions">
-<main>
+<div class="african-cusions" id="africanGallery">
+<main  class="galary">
+  <center><h2>Traditional-Cusions</h2></center>
     <br>
-        <figure>
-        <img class="images-food" src="images/image10.JPG">
-        <figcaption>steam bread and meat</figcaption>
-        </figure>
-        <figure>
-        <img class="images-food" src="images/image12.JPG">
-        <figcaption>beef and rice</figcaption>
-        </figure>
-        <figure>
-        <img class="images-food" src="images/image15.JPG">
-        <figcaption>meat and vegies with beetroode</figcaption>
-        </figure>
-        <figure>
-        <img class="images-food" src="images/image16.JPG">
-        <figcaption>checken and mixed pasta sause</figcaption>
-        </figure>
-        <figure>
-        <img class="images-food" src="images/image5.JPG">
-        <figcaption>rice and checken </figcaption>
-        </figure>
-        <figure>
-        <img class="images-food" src="images/image8.JPG">
-        <figcaption>creamy samp and beef stew</figcaption>
-        </figure>
-    
-    <div>
-             <figure>
-            <img class="images-food" src="images/image4.JPG">
-            <figcaption>creamy pasta spinash and cheecken</figcaption>
+       <center>
+        <figure >
+            <img class="images-food" src="images/image10.JPG">
+            <figcaption>steam bread and meat</figcaption>
+            </figure>
+            <figure >
+            <img class="images-food" src="images/image12.JPG">
+            <figcaption>beef and rice</figcaption>
             </figure>
             <figure>
-            <img class="images-food" src="images/image11.JPG">
-            <figcaption>totila and vegies with meat</figcaption>
+            <img class="images-food" src="images/image15.JPG">
+            <figcaption>meat and vegies with beetroode</figcaption>
             </figure>
             <figure>
-            <img class="images-food" src="images/image13.JPG">
-            <figcaption>motton stew with greek salad</figcaption>
+            <img class="images-food" src="images/image16.JPG">
+            <figcaption>checken and mixed pasta sause</figcaption>
             </figure>
             <figure>
-            <img class="images-food" src="images/image9.JPG">
-            <figcaption>lamb and mash potato in gravy</figcaption>
+            <img class="images-food" src="images/image5.JPG">
+            <figcaption>rice and checken </figcaption>
             </figure>
             <figure>
             <img class="images-food" src="images/image8.JPG">
-            <figcaption>samp beef and carrots gravy</figcaption>
+            <figcaption>creamy samp and beef stew</figcaption>
             </figure>
-            <figure>
-            <img class="images-food" src="images/image7.JPG">
-            <figcaption>eggs and green vegies</figcaption>
-            </figure>
-        
-    </div>
-  
-    
-   
-      
+       </center>
 </main>
-
 </div>
 
-<div>
-<div class="modern-cusions">
-    <main>
-        <h2>Modern-Cusions</h2>
+<div> 
+    <div class="modern-cusions" id="modernGallery">
+        <main class="galary">
+           <center><h2>Modern-Cusions</h2></center>
         <br>
-        <div>
-            <figure>
-              <img class="images-food" src="food/steak and peas.png">
-              <figcaption>steak and pears</figcaption>
-            </figure>
-            <figure>
-              <img class="images-food" src="food/lasagnia.png">
-              <Figcaption>hot lasagnia</Figcaption>
-            </figure>
-            <figure>
-              <img class="images-food" src="food/starters.jpg">
-              <figcaption>starters</figcaption>
-            </figure>
-            <figure>
-            <img class="images-food" src="food/food displayed on table.JPG">
-            <figcaption>food displayed on table for event</figcaption>
-            </figure>
-            <figure>
-               <img class="images-food" src="food/baffei content.JPG">
-               <figcaption>baffei</figcaption>
-            </figure>
-            <figure>
-              <img class="images-food" src="food/different kinds of food to choose from on self-service catering.JPG">
-              <figcaption>self-service catering food</figcaption>
-            </figure>
-        
-</div> 
-                   <br>
-            <div mordern-cusions>
-                
-                    <figure>
-                   <img class="images-food" src="food/vegies and rice.JPG">
-                   <figcaption>rice and vegies</figcaption>
-                   </figure>
-                   <figure>
-                   <img class="images-food" src="food/pitjiekois.png">
-                   <figcaption>potjikois</figcaption>
-                   </figure>
-                   <figure>
-                   <img class="images-food" src="food/green soup.png">
-                   <figcaption>vegitable soup</figcaption>
-                   </figure>
-                   <figure>
-                   <img class="images-food" src="food/vegies and rice.JPG">
-                   <figcaption>meat and pap</figcaption>
-                   </figure>
-                   <figure>
-                   <img class="images-food" src="food/oisters with white source topping.png">
-                   <figcaption>oisters</figcaption>
-                   </figure>
-                   <figure>
-                   <img class="images-food" src="food/vegie cake.png">
-                   <figcaption>cake</figcaption>
+           <div>
+              <center>
+                <figure>
+                    <img class="images-food" src="food/steak and peas.png">
+                    <figcaption>steak and pears</figcaption>
+                      </figure>
+                      <figure>
+                    <img class="images-food" src="food/lasagnia.png">
+                    <Figcaption>hot lasagnia</Figcaption>
+                  </figure>
+                  <figure>
+                    <img class="images-food" src="food/vegie cake.png">
+                    <figcaption>starters</figcaption>
+                  </figure>
+                  <figure>
+                  <img class="images-food" src="food/food displayed on table.JPG">
+                  <figcaption>food displayed on table for event</figcaption>
+                  </figure>
+                  <figure>
+                     <img class="images-food" src="food/baffei content.JPG">
+                  <figcaption>baffei</figcaption>
+                  </figure>
+                  <figure>
+                      <img class="images-food" src="food/different kinds of food to choose from on self-service catering.JPG">
+                      <figcaption>self-service catering food</figcaption>
+                  </figure>
+              </center>
             </div>
-    </div>
-</main>
-</div>
-</div>
-   
+            </div>
+            </div>
+            </main>
 
-<!----------------------------------------------------------Footer------------------------------------------------------------------------->
-<br>
-<br>
-<br>
+           <div> 
+               <div class="drinks" id="drinksGallery">
+                  <main class="galary">
+                     <center><h2>BAR</h2></center>
+               <br>
+                  <div>
+           <center>
+            <figure>
+              <img class="images-food" src="Drinks/brandy.jfif">
+              <figcaption>WISKY BRANDY</figcaption>
+            </figure>
+            <figure>
+              <img class="images-food" src="Drinks/browns.jfif">
+              <Figcaption>HOT COCOLATE</Figcaption>
+            </figure>
+            <figure>
+              <img class="images-food" src="Drinks/cocktail.jfif">
+              <figcaption>COCKTAILS</figcaption>
+            </figure>
+            <figure>
+            <img class="images-food" src="Drinks/cokes.jfif">
+            <figcaption>DRINKS</figcaption>
+            </figure>
+            <figure>
+               <img class="images-food" src="Drinks/smoothy.jfif">
+            <figcaption>SMOOTHY</figcaption>
+            </figure>
+            <figure>
+                <img class="images-food" src="Drinks/wines.jfif">
+                <figcaption>WINE</figcaption>
+            </figure>
+            </center>
+            </div>
+            </div>
+            </div>
+            </main>
+
+</div>
+</div>
+<!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
 <div>
     
     <footer class="footer">
-        <p>&copy; 2024 LuxeLife Catering & Decor - All rights reserved.</p>
+        <p>&copy; 2024 Harmony Catering & Events - All rights reserved.</p>
         <p>Designed by Young_Tech_Ninjas</p>
     </footer>
-   
+       
+</div>
+    <script>
+        function showGallery(galleryId) {
+            const africanGallery = document.getElementById('africanGallery');
+            const modernGallery = document.getElementById('modernGallery');
+            const drinksGallery = document.getElementById('drinksGallery')
+
+            if (galleryId === 'african-cusions') {
+                africanGallery.style.display = 'block';
+                modernGallery.style.display = 'none';
+                drinksGallery.style.display = 'none';
+            } else if (galleryId === 'modern-cusions') {
+                africanGallery.style.display = 'none';
+                modernGallery.style.display = 'block';
+                drinksGallery.style.display = 'none';
+            } else if (galleryId === 'BAR') {
+                africanGallery.style.display = 'none';
+                modernGallery.style.display = 'none';
+                drinksGallery.style.display = 'block';
+            }
+        }
+    
+
+    </script>
+
 </div>
 </body>
 </html>
