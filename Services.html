@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=", initial-scale="1.0">
     <title>Services</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+          cursor: pointer;
+        }
+      </style>
     
 </head>
-<body>
-
-
-
+<body onclick="goBack()">
 <!----------------------------------------------------------------Nav Bar------------------------------------------------------------------------>
 <div class="nav-bar">    
     <div class="logo">
@@ -27,11 +29,7 @@
             </nav>       
 </div>
 <br>
-<br>
-<br>
-
 <!-----------------------------------Our Services------------------------------------------------------------------->
-
 <header>
     <h1 style="text-align: center;">OUR SERVICES</h1>
 </header>
@@ -97,10 +95,6 @@
 </main>
    
 <!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
-    
-<br>
-<br>
-<br>
 <div>
     
     <footer class="footer">
@@ -109,6 +103,11 @@
     </footer>
        
 </div>
+<script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
 </body>
 
 </html>
