@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=", initial-scale="1.0">
     <title>Services</title>
     <link rel="stylesheet" href="style.css">
-    
+    <style>
+        body{
+            cursor: pointer;
+        }
+    </style>
 </head>
-<body>
+<body onclick="goBack()">
 
 
 
@@ -64,37 +68,60 @@
          </div>
     </section>   
         <br> 
-    <div class="Services">
-        <div class="btn-decor">
+    <div class="container">
+        <div class="image-container">
                 <img src="images/decoration.jpg" alt="Decor" >
-                <a href="decor.html">Decor</a>
-                <div class="overlay">
-              <!---- <ul>
-                    <li>Baby showers</li>
+                <br>                                          
+                <ul class="list" id="list">
+                    <li><b>Baby showers</li>
+                    <li>Matric dance</li>
+                    <li>Birthday parties</li>
+                    <li>Anniversaries</li>
+                    <li>Year-end functions</li>
+                    <li>Picnics</li>
+                    <li>Weddings</b><li>
+                <ul>
+            </div>
+        
+                
+        <div class="image-container">
+                <img src="images/catering.jpg" alt="Catering">
+                <br>   
+                <ul class="list" id="list">
+                    <li><b>Baby showers</li>
                     <li>Matric dance</li>
                     <li>Birthday parties</li>
                     <li>Anniversaries</li>
                     <li>Year-end functions</li>
                     <li>Funerals</li>
-                    <li>Weddings<li>
-                /ul>-->
+                    <li>Weddings</b><li>
+                <ul>
+        </div>
+        
+            <div class="image-container">
+              <img src="images/rentals.jpg" alt="Your Image" id="image">
+              <br>
+              <ul class="list" id="list">
+                <li><b>Mobile Fridges</li>
+                <li>Chairs</li>
+                <li>Sound&Lights</li>
+                <li>Tents</li>
+                <li>Table& chair cloths</li>
+                <li>Kitchen equipment</b></li>
+              </ul>
             </div>
-        </div>
-        
-        
-        <div class="btn-catering">
-                <img src="images/catering.jpg" alt="Catering">
-                <a href="catering.html">Catering</a>
-        </div>
-        
-        <div class="btn-rentals">
-                <img src="images/rentals.jpg" alt="Rentals">
-                <a href="rentals.html">Rentals</a>
-        </div>
-        
-             
+          
+                              
     </div>
+        
 </main>
+<script>
+   
+function goBack(){
+    window.history.back();
+}
+</script>
+
    
 <!----------------------------------------------------------------Footer------------------------------------------------------------------------>
     
@@ -107,6 +134,7 @@
         <p>Designed by Young_Tech_Ninjas</p>
     </footer>
 </div>
+
 </body>
 
 </html>

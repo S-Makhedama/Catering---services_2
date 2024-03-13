@@ -172,75 +172,50 @@ figcaption {
     margin: 0;
 }
 
-.Services{
-    display: inline-flex;
-    align-items: center;
-}/*
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
-    opacity: 0; 
-    transition: opacity 0.5s;
- }
- .btn-decor:hover .overlay {
-    opacity: 1;
+.container {
+    position: relative;
+    width: 100%;
 }
-.overlay ul {
-    list-style: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+  
+.image-container img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    transition: filter 0.5s ease;
+    border-radius: 50%;
+    margin-right: 20px;
+        
+  }
+  
+.list {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
-}
-
-.overlay ul li {
-    padding: 10px 20px;
-}
-*/
-.btn-decor{
-    display:grid;
-    margin-left: 8.5rem;
-}
-.btn-decor img{
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    border: .2rem solid rgb(46, 3, 3);
-    border-radius: 50%;
-    backface-visibility: hidden;
-}
-.btn-catering{
-    display:grid;
-    margin-left: 3rem;
-}
-.btn-catering img{
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    border: .2rem solid rgb(46, 3, 3);
-    border-radius: 50%;
-}
-.btn-rentals{
-    display:grid;
-    margin-left: 3rem;
-}
-.btn-rentals img{
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    border: .2rem solid rgb(46, 3, 3);
-    border-radius: 50%;
-}
-
-
+    background-color: rgba(182, 104, 104, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+  
+.list li {
+    list-style: none;
+    padding: 5px 0;
+  }
+  
+  .image-container:hover img {
+    filter: blur(4px);
+  }
+  
+  .image-container:hover .list {
+    display: block;
+  }
 
 /* *************************************Slide Show***************************************************/
 .container{ 
