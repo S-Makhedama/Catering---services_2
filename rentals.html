@@ -9,6 +9,13 @@
 </head>
 <body>
 
+     <stylee>
+            .zoom-img {
+              width: 200px;
+              transition: transform 0.2s;
+            }
+     </stylee>
+
 <!----------------------------------------------------------------Nav Bar------------------------------------------------------------------------>
 <div class="nav-bar">    
     <div class="logo">
@@ -64,26 +71,22 @@
         </main>
 
         <script>
-          // Add your JavaScript code here
-          const fridge = document.getElementById('fridge');
-          const tent = document.getElementById('tent');
-          const kitchenEquipment = document.getElementById('kitchenEquipment');
-        
-          function displayDetails(title, price) {
-            alert(`Product: ${title}\nPrice: ${price}`);
-          }
-        
-          fridge.addEventListener('click', function () {
-            displayDetails('Cool Fridge for rent', 'R1500');
-          });
-        
-          tent.addEventListener('click', function () {
-            displayDetails('Three Pole tent', 'R900');
-          });
-        
-          kitchenEquipment.addEventListener('click', function () {
-            displayDetails('Kitchen equipment for hire', 'R1100');
-          });
+          const img = document.getElementById('zoomImg');
+
+              //event listerns
+              img.addEventsListener('mouseenter', zoomIn);
+              img.addEventsListener('mouseleave', zoomOut);
+
+              //function to zoom in on mouse enter
+              function zoomIn() {
+               img.style.transform = 'scale(1.5)';
+              }
+            //function to zoom out on mouse leave
+            function zoomOut() {
+             img.style.transform = 'scale(1)';
+              }
+    
+
         </script>
 
         <main class="hero">
@@ -118,10 +121,3 @@
 </html>
 
 
-
-
-        
-    
-        
-    
-</body>

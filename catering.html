@@ -19,22 +19,19 @@
                 </ul>
             </nav>       
 </div>
-    <br>
-    <br>
-    <br>
-
-
 <!---------------------header---------------------------------------------->
 <div class="catering">
-<div class="header">
+<div class="headers">
     <header>
         <h1>CATERING</h1>
     </header>
-
 </div>
+<button  onclick="showGallery('african-cusions')">Show african-cusions</button>
+<button onclick="showGallery('modern-cusions')">Show Modern-Cusions</button>
 
-<div class="african-cusions">
-<main>
+<div class="african-cusions" id="africanGallery">
+<main  class="galary">
+    <h2>Traditional-Cusions</h2>
     <br>
         <figure >
         <img class="images-food" src="images/image10.JPG">
@@ -60,18 +57,12 @@
         <img class="images-food" src="images/image8.JPG">
         <figcaption>creamy samp and beef stew</figcaption>
         </figure>
-    
-  
-    
-   
-      
 </main>
-
 </div>
 
 <div>
-<div class="modern-cusions">
-    <main>
+    <div class="modern-cusions" id="modernGallery">
+    <main class="galary">
         <h2>Modern-Cusions</h2>
         <br>
         <div>
@@ -84,7 +75,7 @@
               <Figcaption>hot lasagnia</Figcaption>
             </figure>
             <figure>
-              <img class="images-food" src="food/starters.jpg">
+              <img class="images-food" src="food/vegie cake.png">
               <figcaption>starters</figcaption>
             </figure>
             <figure>
@@ -99,9 +90,8 @@
               <img class="images-food" src="food/different kinds of food to choose from on self-service catering.JPG">
               <figcaption>self-service catering food</figcaption>
             </figure>
-        
 </div> 
-         
+       </div> 
     </div>
 </main>
 </div>
@@ -109,20 +99,27 @@
 </div>
 
 
-
-
-
 <!----------------------------------------------------------Footer------------------------------------------------------------------------->
-<br>
-<br>
-<br>
 <div>
-    
     <footer class="footer">
         <p>&copy; 2024 LuxeLife Catering & Decor - All rights reserved.</p>
         <p>Designed by Young_Tech_Ninjas</p>
     </footer>
-   
+
+    <script>
+        function showGallery(galleryId) {
+            const africanGallery = document.getElementById('africanGallery');
+            const modernGallery = document.getElementById('modernGallery');
+
+            if (galleryId === 'african-cusions') {
+                africanGallery.style.display = 'block';
+                modernGallery.style.display = 'none';
+            } else if (galleryId === 'modern-cusions') {
+                africanGallery.style.display = 'none';
+                modernGallery.style.display = 'block';
+            }
+        }
+    </script>
 
 </div>
 </body>
