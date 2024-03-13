@@ -6,23 +6,35 @@
     <meta name="viewport" content="width=", initial-scale="1.0">
     <title>Services</title>
     <link rel="stylesheet" href="style.css">
+<<<<<<< HEAD
+=======
+    <style>
+        body{
+            cursor: pointer;
+        }
+    </style>
+<<<<<<< HEAD
+>>>>>>> dd2097021c8d9c5bbbd084f713cbe1467d08ee83
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     
 </head>
-<body>
+<body onclick="goBack()">
 
 
 
 <!----------------------------------------------------------------Nav Bar------------------------------------------------------------------------>
 <div class="nav-bar">    
     <div class="logo">
-        <img src="Image/logo.png" alt="Logo">
+        <img src="#" alt="Logo">
     </div>
             <nav>
                 <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="Services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>            
+                <li><a href="contact.html">Contact</a></li>
+                <i class="bi bi-brightness-high-fill" id="toggleDark"></i>           
                 </ul>
             </nav>       
 </div>
@@ -31,7 +43,6 @@
 <br>
 
 <!-----------------------------------Our Services------------------------------------------------------------------->
-
 <header>
     <h1 style="text-align: center;">OUR SERVICES</h1>
 </header>
@@ -64,43 +75,62 @@
          </div>
     </section>   
         <br> 
-    <div class="Services">
-        <div class="btn-decor">
+    <div class="container">
+        <div class="image-container">
                 <img src="images/decoration.jpg" alt="Decor" >
-                <a href="decor.html">Decor</a>
-                <div class="overlay">
-              <!---- <ul>
-                    <li>Baby showers</li>
+                <br>                                          
+                <ul class="list" id="list">
+                    <li><b>Baby showers</li>
+                    <li>Matric dance</li>
+                    <li>Birthday parties</li>
+                    <li>Anniversaries</li>
+                    <li>Year-end functions</li>
+                    <li>Picnics</li>
+                    <li>Weddings</b><li>
+                <ul>
+            </div>
+        
+                
+        <div class="image-container">
+                <img src="images/catering.jpg" alt="Catering">
+                <br>   
+                <ul class="list" id="list">
+                    <li><b>Baby showers</li>
                     <li>Matric dance</li>
                     <li>Birthday parties</li>
                     <li>Anniversaries</li>
                     <li>Year-end functions</li>
                     <li>Funerals</li>
-                    <li>Weddings<li>
-                /ul>-->
+                    <li>Weddings</b><li>
+                <ul>
+        </div>
+        
+            <div class="image-container">
+              <img src="images/rentals.jpg" alt="Your Image" id="image">
+              <br>
+              <ul class="list" id="list">
+                <li><b>Mobile Fridges</li>
+                <li>Chairs</li>
+                <li>Sound&Lights</li>
+                <li>Tents</li>
+                <li>Table& chair cloths</li>
+                <li>Kitchen equipment</b></li>
+              </ul>
             </div>
-        </div>
-        
-        
-        <div class="btn-catering">
-                <img src="images/catering.jpg" alt="Catering">
-                <a href="catering.html">Catering</a>
-        </div>
-        
-        <div class="btn-rentals">
-                <img src="images/rentals.jpg" alt="Rentals">
-                <a href="rentals.html">Rentals</a>
-        </div>
-        
-             
+          
+                              
     </div>
+        
 </main>
+<script>
+   
+function goBack(){
+    window.history.back();
+}
+</script>
+
    
 <!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
-    
-<br>
-<br>
-<br>
 <div>
     
     <footer class="footer">
@@ -109,6 +139,12 @@
     </footer>
        
 </div>
+
+<script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
 </body>
 
 </html>

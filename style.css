@@ -45,6 +45,10 @@ nav a {
     padding-right: 40px;
 }
 
+/* dark or bright mode */
+
+
+
 /* Push the navigation items to the right */
 nav {
     margin-left: auto;
@@ -411,28 +415,27 @@ header {
     margin: 0;
 }
 
-.Services{
-    display: inline-flex;
-    align-items: center;
-}/*
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
-    opacity: 0; 
-    transition: opacity 0.5s;
- }
- .btn-decor:hover .overlay {
-    opacity: 1;
+.container {
+    position: relative;
+    width: 100%;
 }
-.overlay ul {
-    list-style: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+  
+.image-container img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    transition: filter 0.5s ease;
+    border-radius: 50%;
+    margin-right: 20px;
+        
+  }
+  
+.list {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -478,6 +481,7 @@ header {
     border: .2rem solid rgb(46, 3, 3);
     border-radius: 50%;
 }
+
 
 
 /* *************************************Slide Show***************************************************/
@@ -658,7 +662,7 @@ button:hover {
     color: #333;
   }
 /****************************************************Decor********************************************************************************/
-.header1 {
+.zero h1 {
     color: black; 
     text-align: center;
 }
