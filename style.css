@@ -149,16 +149,18 @@ figcaption {
 .image{
     position: relative;
     width: 4000px;
-    background: var(pink)
+    justify-content: space-between;
+
 
 }
 
 header {
     text-align: center;
     font-size: 2rem;
-    color: white;
+    color: black;
     text-decoration: none;
     font-style: italic;
+    justify-content: space-between;
 }
 .container {
     display: flex;
@@ -166,7 +168,7 @@ header {
     padding-left: 100px;
 }
 .container img {
-    width: 400px;
+    width: 410px;
     height:310px;
     justify-content: space-between;
     text-align: center;  
@@ -181,7 +183,7 @@ header {
 }
 
 .hero img {
-    width: 400px;
+    width: 410px;
     height:310px;
     justify-content: space-between;
     text-align: center;
@@ -208,8 +210,9 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 100%;
     height: 100%;
+    border-radius: 20%;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     font-family: Quicksand, sans-serif;
@@ -220,7 +223,7 @@ header {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.25s;
-    border-radius: 20%;
+  
 }
 
 .image__overlay--blur {
@@ -254,6 +257,7 @@ header {
 .image__price{
     font-size: 1.25em;
     margin-top: 0.25em;
+    color: white;
 }
 
 
