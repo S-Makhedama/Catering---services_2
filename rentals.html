@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rentals</title>
     <link rel="stylesheet" href="style.css">
+<<<<<<< HEAD
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+=======
     <style>
   .zoom-img {
   width: 200px;
@@ -17,6 +21,7 @@
     cursor:pointer;
   }
 </style>
+>>>>>>> fbbb314e780fea8726b7de1d6bcab79eee77687b
     
 </head>
 <body onclick="goBack()">
@@ -30,7 +35,8 @@
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="Services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>            
+                <li><a href="contact.html">Contact</a></li> 
+                <i class="bi bi-brightness-high-fill" id="toggleDark"></i>           
                 </ul>
             </nav>       
 </div>
@@ -42,7 +48,7 @@
      
      <main class="container">
          <div class="image">
-              <img class="image__img"  src="images/freezer.jpg.jfif"   alt="fridge">
+              <img class="image__img" id="zoomImg" class="zoom-img" src="images/freezer.jpg.jfif"   alt="fridge">
               <div class="image__overlay  image__overlay--blur">
               <div class="image__title">Cool Fridge for rent</div>
               <p class="image__price">R1500</p>
@@ -50,7 +56,7 @@
           </div>
 
           <div class="image">
-                <img class="image__img"  src="images/3pole tent.jfif"   alt="Tent">
+                <img class="image__img" id="zoomImg" class="zoom-img" src="images/3pole tent.jfif"   alt="Tent">
                 <div class="image__overlay  image__overlay--blur">
                 <div class="image__title">Three Pole tent</div>
                 <p class="image__price">R900</p>
@@ -59,7 +65,7 @@
             </div>
       
           <div class="image">
-               <img class="image__img"  src="images/plates and pots.jpg"   alt="equipment">
+               <img class="image__img" id="zoomImg" class="zoom-img" src="images/plates and pots.jpg"   alt="equipment">
                <div class="image__overlay  image__overlay--blur">
                <div class="image__title">Kitchen equipment for hire</div>
               <ul>
@@ -75,7 +81,7 @@
 
         <main class="hero">
           <div class="image">
-            <img class="image__img"  src="images/tables and chairs.jpg"   alt="tables">
+            <img class="image__img" id="zoomImg" class="zoom-img" src="images/tables and chairs.jpg"   alt="tables">
             <div class="image__overlay">
             <div class="image__title">Chairs and Tables for hire</div>
             <p class="image__price">R1700</p>
@@ -84,7 +90,7 @@
 
 
          <div class="image">
-            <img class="image__img"  src="images/sound.jpg"   alt="tables">
+            <img class="image__img" id="zoomImg" class="zoom-img" src="images/sound.jpg"   alt="tables">
             <div class="image__overlay">
             <div class="image__title">Sound Systen</div>
            <p class="image__price">R1700</p>
