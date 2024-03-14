@@ -15,14 +15,14 @@ body {
     justify-content: space-between; /* Align items to the right and left */
     align-items: center; /* Center items vertically */
     padding: 1rem; /* Add padding for better appearance */
-    background-color: rgb(190, 121, 113);
+    background-color: rgb(202, 159, 154);
 }
 
 /* Apply styles to the logo */
 .logo img {
-    height: 150px; /* Set maximum height for the logo image */
-    width: 200px;
-    padding-left: 80px;
+    height: 100px; /* Set maximum height for the logo image */
+    width: 160px;
+    padding-left: 20px;
 }
 
 /* Apply styles to the navigation links */
@@ -43,7 +43,7 @@ nav a {
     color: white; /* Set link color */
     font-weight: bold;
     font-size: large;
-    padding-right: 40px;
+    padding-right: 20px;
 }
 
 /* dark or bright mode */
@@ -97,16 +97,17 @@ nav {
     height: 50px;
     font-size: 17px;
     text-align: center;
-    
+    padding-left: 20px;
 }
 
 .Catering img{
-    width: 360px;
-    height: 450px;
+    width: 470px;
+    height: 480px;
     font-size: 12;
     text-align: center;
     border-radius: 10px;
     justify-content: space-between;
+    padding: 18px;
 }
 
 /*--------------------------------------------Main paragraph-------------------------------------------------*/
@@ -114,29 +115,34 @@ nav {
     font-size: 18px;
     font-style: arial;
     text-align: left;
-    padding: 6px;
     color: #000000;
     margin-right: 500px;
+    padding-right: 60px;
+    padding-left: 30px;
+}
+
+.Catering p{
+    font-weight: bold;
+    text-align: start;
+    color: #000000;
 }
 
 /*---------------------------------Main image propertise------------------------------------------*/
 
-.Second_heading{
-    font-size: 10px;
-    font-style: normal;
-    margin: 0;
-}
-
 .luxury_food{
-    width: 460px;
+    width: 400px;
     height: 500px;
     float: right;
-    border: 0px solid #581e37;
     margin-right: 20px;
     border-radius: 10px;
-    margin-top: -500px;
+    margin-top: -470px;
+    padding-right: 40px;
 }
 
+.Main_heading h1{
+    padding-left: 30px;
+
+}
 
 
 
@@ -398,7 +404,7 @@ header {
   }
 .service-card{
     display: inline-block;
-    background-color: palevioletred;
+    background-color: rgb(231, 209, 206);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 0 20px;
@@ -725,7 +731,7 @@ button:hover {
 .footer {
     text-align: center; /* Center align text */
     padding: 20px; /* Add padding for better appearance */
-    background-color: rgb(172, 102, 95); /* Set background color */
+    background-color: rgb(202, 159, 154); /* Set background color */
     color: white; /* Set text color */
 }
 
