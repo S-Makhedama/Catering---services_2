@@ -278,7 +278,7 @@ figcaption {
         cursor: pointer;
 }
 .btn:hover {
-    background-color: #FFE4C4;
+    background-color:#ccc;
 }
 
 /******************************************Rentals***********************************************/
@@ -736,12 +736,15 @@ button:hover {
     background-size: cover;
 }
 /* *********************************************************Footer*********************************************************************************/
-
+#foot{
+    cursor: pointer;
+}
 .footer {
     text-align: center; /* Center align text */
     padding: 20px; /* Add padding for better appearance */
     background-color: rgb(172, 102, 95); /* Set background color */
     color: white; /* Set text color */
+    cursor: pointer;
 }
 
 /* Apply styles to the paragraph elements within the footer */
@@ -751,7 +754,10 @@ button:hover {
     color: white;
 }
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> b4c416ea8bc52abdbaac53f0bf62342224b5f09d
