@@ -80,9 +80,20 @@ nav {
 
 
 
-/* *************************************Header***************************************************/
+/* *************************************Header for home Page***************************************************/
+.header{
+    background-image: url('Image/image-1.jpg'); 
+    background-size: cover;
+    font-size: 2em;
+    padding: 6rem;
+    color: black;
+    text-align: center;
+}
 
-
+.header p{
+    color: white;
+    font-size: larger;
+}
 
 /*------------------------------------ABOUT PAGE-------------------------------------------------------*/
 .sectionbar{
@@ -267,7 +278,7 @@ figcaption {
         cursor: pointer;
 }
 .btn:hover {
-    background-color: #FFE4C4;
+    background-color:#ccc;
 }
 
 /******************************************Rentals***********************************************/
@@ -505,17 +516,21 @@ header {
 
 
 /*----------------------------------------------------------Contact Page----------------------------------------------------------------------------------*/
-.header{
-    background-image: url('Image/image-1.jpg'); 
+.header-text{
+    /*background-image: url('Image/image-1.jpg'); 
     background-size: cover;
     font-size: 2em;
-    padding: 6rem;
-    color: white;
+    padding: 6rem;*/
+    color: black;
     text-align: center;
 }
 
-.header p{
-    color: white;
+.header-text h1{
+    color:#000000;
+}
+
+.header-text p{
+    color: black;
     font-size: larger;
 }
 /* Style for the form container */
@@ -721,12 +736,15 @@ button:hover {
     background-size: cover;
 }
 /* *********************************************************Footer*********************************************************************************/
-
+#foot{
+    cursor: pointer;
+}
 .footer {
     text-align: center; /* Center align text */
     padding: 20px; /* Add padding for better appearance */
     background-color: rgb(172, 102, 95); /* Set background color */
     color: white; /* Set text color */
+    cursor: pointer;
 }
 
 /* Apply styles to the paragraph elements within the footer */
@@ -735,4 +753,8 @@ button:hover {
     font-size: 14px; /* Set font size */
     color: white;
 }
+
+
+
+
 
