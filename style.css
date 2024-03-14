@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -386,6 +387,10 @@ header {
 
 
 /* *************************************Our Services***************************************************/
+.heading h1{
+    color: black;
+    text-align: center;
+}
 .service {
     display: flex;
     flex-wrap: wrap;
@@ -422,18 +427,19 @@ header {
   
   .image-container {
     position: relative;
-    display: inline-block;
+    display:inline-block;
     text-align: center;
   }
   
   .image-container img {
     max-width: 100%;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     display: block;
     margin-right: 20px;
     transition: filter 0.5s ease;
+    border: 2px solid rgb(46, 3, 3);
   }
   
   .list {
@@ -595,6 +601,46 @@ button:hover {
 
 
 
+/**************************************Form Container***************************************************************/
+.form-container {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+
 
 
 /*********************************************Get in touch with us***************************************************************/
@@ -689,6 +735,4 @@ button:hover {
     font-size: 14px; /* Set font size */
     color: white;
 }
-
-
 
