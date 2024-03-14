@@ -81,8 +81,19 @@ nav {
 
 
 /* *************************************Header***************************************************/
+.header{
+    background-image: url('Image/image-1.jpg'); 
+    background-size: cover;
+    font-size: 2em;
+    padding: 6rem;
+    color: black;
+    text-align: center;
+}
 
-
+.header p{
+    color: white;
+    font-size: larger;
+}
 
 /*------------------------------------ABOUT PAGE-------------------------------------------------------*/
 .sectionbar{
@@ -500,17 +511,21 @@ header {
 
 
 /*----------------------------------------------------------Contact Page----------------------------------------------------------------------------------*/
-.header{
-    background-image: url('Image/image-1.jpg'); 
+.header-text{
+    /*background-image: url('Image/image-1.jpg'); 
     background-size: cover;
     font-size: 2em;
-    padding: 6rem;
-    color: white;
+    padding: 6rem;*/
+    color: black;
     text-align: center;
 }
 
-.header p{
-    color: white;
+.header-text h1{
+    color:#000000;
+}
+
+.header-text p{
+    color: black;
     font-size: larger;
 }
 /* Style for the form container */
@@ -733,5 +748,5 @@ button:hover {
 
 
 
-=======
->>>>>>> 0c3c207e4ae532562d3fbc253527c568dd8f106a
+
+
