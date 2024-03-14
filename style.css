@@ -386,6 +386,10 @@ header {
 
 
 /* *************************************Our Services***************************************************/
+.heading h1{
+    color: black;
+    text-align: center;
+}
 .service {
     display: flex;
     flex-wrap: wrap;
@@ -422,18 +426,19 @@ header {
   
   .image-container {
     position: relative;
-    display: inline-block;
+    display:inline-block;
     text-align: center;
   }
   
   .image-container img {
     max-width: 100%;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     display: block;
     margin-right: 20px;
     transition: filter 0.5s ease;
+    border: 2px solid rgb(46, 3, 3);
   }
   
   .list {
