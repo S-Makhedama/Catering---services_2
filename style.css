@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #ffffff;
 }
 
 
@@ -15,13 +16,13 @@ body {
     justify-content: space-between; /* Align items to the right and left */
     align-items: center; /* Center items vertically */
     padding: 1rem; /* Add padding for better appearance */
-    background-color: rgb(202, 159, 154);
+    background-color: rgb(202, 159, 154); /* Set background color */
 }
 
 /* Apply styles to the logo */
 .logo img {
-    height: 100px; /* Set maximum height for the logo image */
-    width: 160px;
+    height: 90px; /* Set maximum height for the logo image */
+    width: 130px;
     padding-left: 20px;
 }
 
@@ -112,7 +113,7 @@ nav {
 }
 
 .Catering img{
-    width: 470px;
+    width: 465px;
     height: 480px;
     font-size: 12;
     text-align: center;
