@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -398,6 +398,10 @@ header {
 
 
 /* *************************************Our Services***************************************************/
+.heading h1{
+    color: black;
+    text-align: center;
+}
 .service {
     display: flex;
     flex-wrap: wrap;
@@ -434,18 +438,19 @@ header {
   
   .image-container {
     position: relative;
-    display: inline-block;
+    display:inline-block;
     text-align: center;
   }
   
   .image-container img {
     max-width: 100%;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     display: block;
     margin-right: 20px;
     transition: filter 0.5s ease;
+    border: 2px solid rgb(46, 3, 3);
   }
   
   .list {
@@ -746,7 +751,10 @@ button:hover {
     color: white;
 }
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 3383f89f98d3e5ba407a991f15758e601edf8e1b
