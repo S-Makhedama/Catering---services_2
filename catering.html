@@ -9,7 +9,6 @@
         }
       </style>
     
->>>>>>> fbbb314e780fea8726b7de1d6bcab79eee77687b
 </head>
 <body >
 <div class="catering">
@@ -34,9 +33,16 @@
        <center> <h1>CATERING</h1></center>
     </header>
 </div>
-<button class="btn"  onclick="showGallery('african-cusions')">Show african-cusions</button>
-<button class="btn" onclick="showGallery('modern-cusions')">Show Modern-Cusions</button>
-<button class="btn" onclick="showGallery('BAR')">Show BAR</button>
+<div class="button-contain">
+<button class="btn"  onclick="showGallery('african-cusions')">
+  <img src="images/image9.JPG" class="bcv">
+   african-cusions</button>
+<button class="btn" onclick="showGallery('modern-cusions')">
+  <img src="food/green soup.png" class="bcv"> Modern-Cusions</button>
+<button class="btn" onclick="showGallery('BAR')">
+  <img src="Drinks/bar image.jfif" class="bcv">
+  Show BAR</button>
+</div>
 
 <div class="african-cusions" id="africanGallery">
 <main  class="galary">
@@ -150,7 +156,7 @@
 <!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
 <div>
     
-    <footer class="footer">
+    <footer class="footer"onclick="goBack()">
         <p>&copy; 2024 Harmony Catering & Events - All rights reserved.</p>
         <p>Designed by Young_Tech_Ninjas</p>
     </footer>
@@ -177,6 +183,9 @@
             }
         }
     
+        function goBack() {
+      window.history.back();
+    }
 
     </script>
 
