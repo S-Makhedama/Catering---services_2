@@ -135,10 +135,23 @@
 </main>
 <script>
    
-
 function goBack(){
     window.history.back();
 }
+document.getElementById("decorLink").addEventListener("click", function(event){
+        event.preventDefault();
+        window.location.href = "decor.html";
+    });
+    
+    document.getElementById("cateringLink").addEventListener("click", function(event){
+        event.preventDefault();
+        window.location.href = "catering.html";
+    });
+    
+    document.getElementById("rentalsLink").addEventListener("click", function(event){
+        event.preventDefault();
+        window.location.href = "rentals.html";
+    });
 </script>
 <br>
 <br>
