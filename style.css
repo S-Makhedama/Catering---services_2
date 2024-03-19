@@ -56,6 +56,29 @@ nav {
     margin-left: auto;
 }
 
+/****************************change Tab color ***********************************/
+
+.tab {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .active {
+    background-color: #007bff; /* Change this to your desired color */
+    color: #fff;
+  }
+  
+
+
+
+
 
 /***************************************Home Page***Image Slinder************************************************/
 
