@@ -6,6 +6,8 @@ body {
     box-sizing: border-box;
     background-color: #ffffff;
 }
+    
+
 
 
 /* *************************************Navigation Bar***************************************************/
@@ -153,18 +155,6 @@ nav {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* *************************************Catering***************************************************/
 
 .headers{
@@ -191,24 +181,27 @@ nav {
  font-weight: 900;
 }
 
+.gallery.h2{
+    color: white;
+}
 
 /*--------------------------------------------------mordern cusions------------*/
 .mordern-cusions{
   padding: 0px;
   display: inline-block;
-  color:antiquewhite;
+  color:white;
   text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 
- .mordern-cusions.h2{
+ .h2{
   font-family: Arial, Helvetica, sans-serif;
   font-style: oblique;
   text-align: center;
   font-weight: 900;
-  color: antiquewhite;
+  color: white;
   font-size: larger;
   margin-top: 10%;
  }
@@ -242,12 +235,13 @@ figcaption {
 
 
 .catering{
-  background: url(food/starters.jpg);
+  background: url(food/starters.jpg),
+  radial-gradient(#c5bfbf , #5a5858);
   background-blend-mode: multiply;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
 
 }
 .gallery.gallery {
@@ -274,16 +268,17 @@ figcaption {
     margin: 0 10px;
         padding: 10px 20px;
         border: none;
-        background-color:antiquewhite;
+        background-color:rgb(202, 159, 154);
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
         cursor: pointer;
         border-radius: 10px;
+        align-items: flex;
 }
 .btn:hover {
-    background-color:#ccc;
+    background-color:hsl(0, 39%, 95%);
 }
 
 .button-contain{
@@ -295,6 +290,7 @@ figcaption {
 .bcv{
     width: 400px;
 }
+
 /******************************************Rentals***********************************************/
 .image{
     position: relative;
