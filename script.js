@@ -69,3 +69,25 @@ function changeColor(tab) {
     tab.classList.add('active');
   }
   
+
+  /*---------------------------------------decor-----------------------------------------------------*/
+
+    function goBack() {
+      window.history.back();
+    }
+
+    // Function to zoom in on an image
+function zoomIn(event) {
+    event.target.style.transform = "scale(1.5)"; // Zoom factor 1.5
+  }
+  
+  // Function to zoom out on an image
+  function zoomOut(event) {
+    event.target.style.transform = "scale(1)"; // Reset to original size
+  }
+  
+  // Add event listeners to all images for zoom functionality
+  document.querySelectorAll('.main img').forEach(function(img) {
+    img.addEventListener('mouseenter', zoomIn);
+    img.addEventListener('mouseleave', zoomOut);
+  });
