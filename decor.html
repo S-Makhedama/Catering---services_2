@@ -47,8 +47,18 @@
 <!----------------------------------------------------------------Main------------------------------------------------------------------------>
 <div class="main">
     <main>
-     <img src="Images/b4ba3c74118180a7e7cf17887f0478da.jpg" alt="" width="400"  height="300">
-        <img  src="Images/Ballroom-Wedding-2.jpg" alt="ThreePole tent" width="400"  height="300">
+     <img id="imageToShare" src="images/FullSizeRender (1).jpeg" alt="" width="400"  height="300">
+     
+     <!-- Share buttons -->
+        <div id="shareButtons">
+            <button id="facebookShare">Share on Facebook</button>
+            <button id="twitterShare">Share on Instagram</button>
+        </div>
+        <img id="imageToShare" src="Images/Ballroom-Wedding-2.jpg" alt="ThreePole tent" width="400"  height="300">
+        <div id="shareButtons">
+            <button id="facebookShare">Share on Facebook</button>
+            <button id="twitterShare">Share on Instagram</button>
+        </div>
         <img  src="Images/f3322997b65c9efbbba0c66f7938390a.jpg" alt="" width="400" height="300">
         <img  src="Images/th.jfif" alt="" width="400"  height="300">
         <img  src="Image/maxresdefault.jpg" alt="" width="400"  height="300">
@@ -56,6 +66,36 @@
     </main>
 </div>
 </div>
+
+<script>
+// Function to share image on Facebook
+function shareOnFacebook() {
+  // URL of the image to share
+  var imageUrl = encodeURIComponent(document.getElementById("imageToShare").src);
+  // URL of the current page
+  var pageUrl = encodeURIComponent(window.location.href);
+  // Facebook sharing URL with image and page URL
+  var facebookShareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + pageUrl + '&picture=' + imageUrl;
+  // Open Facebook sharing dialog
+  window.open(facebookShareUrl, '_blank');
+}
+
+// Function to share image on Twitter
+function shareOnTwitter() {
+  // URL of the current page
+  var pageUrl = encodeURIComponent(window.location.href);
+  // Twitter sharing URL with page URL
+  var twitterShareUrl = 'https://twitter.com/intent/tweet?url=' + pageUrl;
+  // Open Twitter sharing dialog
+  window.open(twitterShareUrl, '_blank');
+}
+
+// Event listeners for share buttons
+document.getElementById("facebookShare").addEventListener("click", shareOnFacebook);
+document.getElementById("twitterShare").addEventListener("click", shareOnTwitter);
+</script>
+
+
 <!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
 <div>
     

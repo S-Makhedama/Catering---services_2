@@ -58,6 +58,29 @@ nav {
     margin-left: auto;
 }
 
+/****************************change Tab color ***********************************/
+
+.tab {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .active {
+    background-color: #007bff; /* Change this to your desired color */
+    color: #fff;
+  }
+  
+
+
+
+
 
 /***************************************Home Page***Image Slinder************************************************/
 
@@ -727,7 +750,7 @@ button:hover {
   }
 /****************************************************Decor********************************************************************************/
 .zero h1 {
-    color: black; 
+    color: white; 
     text-align: center;
 }
 
@@ -750,9 +773,19 @@ button:hover {
     padding-top: 20px;
     border-radius: 20px;
 }
-.Decoration{
-    background-image: url(Image/51EqFqmiTaL.jpg);
+
+.Decoration {
+    color: white;
+    text-align: center;
+    padding: 15em 0;
+   /* background-color: #222;*/
+    background-image: 
+    url(images/FullSizeRender+19.jpg),
+    radial-gradient(#5f5c5c,#3b3a3a);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
 }
 /* *********************************************************Footer*********************************************************************************/
