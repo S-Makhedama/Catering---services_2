@@ -776,6 +776,7 @@ button:hover {
     margin-left: 50px;
     padding-top: 20px;
     border-radius: 20px;
+    align-items: baseline;
 }
 
 .Decoration {
@@ -792,6 +793,38 @@ button:hover {
     background-position: center center;
     background-size: cover;
 }
+#shareButtons{
+    align-items: center;
+    justify-content: flex-start;
+}
+
+ /* Style for the overlay */
+ .overlay {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Style for the overlay content */
+  .overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px; /* Adjust as needed */
+  }
+
+  /* Style for the image */
+  .overlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
 /* *********************************************************Footer*********************************************************************************/
 #foot{
     cursor: pointer;
