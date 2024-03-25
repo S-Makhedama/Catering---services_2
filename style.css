@@ -16,7 +16,7 @@ body {
     justify-content: space-between; /* Align items to the right and left */
     align-items: center; /* Center items vertically */
     padding: 1rem; /* Add padding for better appearance */
-    background-color: rgb(202, 159, 154); /* Set background color */
+    background-color: rgb(214, 182, 179); /* Set background color */
 }
 
 /* Apply styles to the logo */
@@ -36,7 +36,7 @@ nav ul {
 
 nav li {
     margin-left: 40px; /* Add spacing between items */
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 nav a {
@@ -55,6 +55,29 @@ nav a {
 nav {
     margin-left: auto;
 }
+
+/****************************change Tab color ***********************************/
+
+.tab {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .active {
+    background-color: #007bff; /* Change this to your desired color */
+    color: #fff;
+  }
+  
+
+
+
 
 
 /***************************************Home Page***Image Slinder************************************************/
@@ -79,8 +102,6 @@ nav {
 }
 
 
-
-
 /* *************************************Header for home Page***************************************************/
 .header{
     background-image: url('Image/image-1.jpg'); 
@@ -96,12 +117,9 @@ nav {
     font-size: larger;
 }
 
-/*------------------------------------ABOUT PAGE-------------------------------------------------------*/
-.sectionbar{
-    background-image: url(image);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
+/*------------------------------------ABOUT PAGE-------------------------------------------------------------*/
+
 
 .Phases{
     display: flex;
@@ -113,7 +131,7 @@ nav {
 }
 
 .Catering img{
-    width: 460px;
+    width: 480px;
     height: 480px;
     font-size: 12;
     text-align: center;
@@ -129,21 +147,22 @@ nav {
     text-align: left;
     color: #000000;
     margin-right: 500px;
-    padding-right: 60px;
+    padding-right: 80px;
     padding-left: 30px;
 }
 
 .Catering p{
-    font-weight: bold;
     text-align: start;
     color: #000000;
+    font-size: 18px;
+    font-style: arial;
 }
 
 /*---------------------------------Main image propertise------------------------------------------*/
 
 .luxury_food{
     width: 400px;
-    height: 500px;
+    height: 550px;
     float: right;
     margin-right: 20px;
     border-radius: 10px;
@@ -152,7 +171,8 @@ nav {
 }
 
 .Main_heading h1{
-    padding-left: 30px;
+    padding-left: 150px;
+    padding-top: 30px;
 
 }
 
