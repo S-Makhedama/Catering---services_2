@@ -40,8 +40,6 @@
       <div><img src="food/green soup.png" class="bcv">
         <button class="btn" onclick="showGallery('modern-cusions')">Modern Cushions</button></div>
 
-       <div><img src="Drinks/bar image.jfif" class="bcv">
-        <button class="btn" onclick="showGallery('BAR')">Show BAR</button></div>
     </div>
 
 <div class="african-cusions" id="africanGallery">
@@ -113,86 +111,8 @@
             </div>
             </div>
             </main>
-
-           <div> 
-               <div class="drinks" id="drinksGallery">
-                  <main class="galary">
-                     <center><h2>BAR</h2></center>
-               <br>
-                  <div>
-           <center>
-            <figure>
-              <img class="images-food" src="Drinks/brandy.jfif">
-              <figcaption>WISKY BRANDY</figcaption>
-            </figure>
-            <figure>
-              <img class="images-food" src="Drinks/browns.jfif">
-              <Figcaption>HOT COCOLATE</Figcaption>
-            </figure>
-            <figure>
-              <img class="images-food" src="Drinks/cocktail.jfif">
-              <figcaption>COCKTAILS</figcaption>
-            </figure>
-            <figure>
-            <img class="images-food" src="Drinks/cokes.jfif">
-            <figcaption>DRINKS</figcaption>
-            </figure>
-            <figure>
-               <img class="images-food" src="Drinks/smoothy.jfif">
-            <figcaption>SMOOTHY</figcaption>
-            </figure>
-            <figure>
-                <img class="images-food" src="Drinks/wines.jfif">
-                <figcaption>WINE</figcaption>
-            </figure>
-            </center>
-            </div>
-            </div>
-            </div>
-            </main>
-
 </div>
-</div>
-    <script>
-        function showGallery(galleryId) {
-            const africanGallery = document.getElementById('africanGallery');
-            const modernGallery = document.getElementById('modernGallery');
-            const drinksGallery = document.getElementById('drinksGallery')
-
-            if (galleryId === 'african-cusions') {
-                africanGallery.style.display = 'block';
-                modernGallery.style.display = 'none';
-                drinksGallery.style.display = 'none';
-            } else if (galleryId === 'modern-cusions') {
-                africanGallery.style.display = 'none';
-                modernGallery.style.display = 'block';
-                drinksGallery.style.display = 'none';
-            } else if (galleryId === 'BAR') {
-                africanGallery.style.display = 'none';
-                modernGallery.style.display = 'none';
-                drinksGallery.style.display = 'block';
-            }
-        }
-    
-        function goBack() {
-      window.history.back();
-    }
-
-
-    window.onload = function() {
-    // Get all images on the page
-    var images = document.getElementsByTagName('img');
-    
-    // Loop through each image
-    for (var i = 0; i < images.length; i++) {
-        // Add onclick event
-        images[i].onclick = function() {
-            // Display alert with image source
-            alert(this.src);
-        };
-    }
-};
-    </script>
+    <script src="script.js"></script>
 <!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
 <div>
     

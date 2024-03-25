@@ -70,6 +70,7 @@ function changeColor(tab) {
   }
   
 
+
   /*---------------------------------------decor-----------------------------------------------------*/
 
     function goBack() {
@@ -93,3 +94,39 @@ function zoomIn(event) {
   });
 
    onclick="goBack()"
+
+  /*---------------------------------------------catering---------------------------------------------------*/
+  function showGallery(galleryId) {
+    const africanGallery = document.getElementById('africanGallery');
+    const modernGallery = document.getElementById('modernGallery');
+    const drinksGallery = document.getElementById('drinksGallery')
+
+    if (galleryId === 'african-cusions') {
+        africanGallery.style.display = 'block';
+        modernGallery.style.display = 'none';
+        drinksGallery.style.display = 'none';
+    } else if (galleryId === 'modern-cusions') {
+        africanGallery.style.display = 'none';
+        modernGallery.style.display = 'block';
+        drinksGallery.style.display = 'none';
+    } 
+}
+
+function goBack() {
+window.history.back();
+}
+
+
+window.onload = function() {
+// Get all images on the page
+var images = document.getElementsByTagName('img');
+
+// Loop through each image
+for (var i = 0; i < images.length; i++) {
+// Add onclick event
+images[i].onclick = function() {
+    // Display alert with image source
+    alert(this.src);
+};
+}
+};
