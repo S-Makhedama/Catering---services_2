@@ -59,13 +59,13 @@ function isValidEmail(email) {
 
 /*----------------------------------Change Tab color------------------------------------------------------------*/
 function changeColor(tab) {
-    // Remove 'active' class from all tabs
+    
     var tabs = document.querySelectorAll('.tab');
     tabs.forEach(function(item) {
       item.classList.remove('active');
     });
   
-    // Add 'active' class to the clicked tab
+    
     tab.classList.add('active');
   }
   
