@@ -40,8 +40,6 @@
       <div><img src="food/green soup.png" class="bcv">
         <button class="btn" onclick="showGallery('modern-cusions')">Modern Cushions</button></div>
 
-       <div><img src="Drinks/bar image.jfif" class="bcv">
-        <button class="btn" onclick="showGallery('BAR')">Show BAR</button></div>
     </div>
 
 <div class="african-cusions" id="africanGallery">
@@ -113,8 +111,6 @@
             </div>
             </div>
             </main>
-
-          
 </div>
     <script>
         function showGallery(galleryId) {
@@ -130,11 +126,7 @@
                 africanGallery.style.display = 'none';
                 modernGallery.style.display = 'block';
                 drinksGallery.style.display = 'none';
-            } else if (galleryId === 'BAR') {
-                africanGallery.style.display = 'none';
-                modernGallery.style.display = 'none';
-                drinksGallery.style.display = 'block';
-            }
+            } 
         }
     
         function goBack() {
