@@ -7,7 +7,7 @@
         body {
           cursor: pointer;
         }
-      </style>
+        </style>
     
 </head>
 <body >
@@ -32,16 +32,14 @@
     <header>
        <center> <h1>CATERING</h1></center>
     </header>
-</div>
-<div class="button-contain">
-<button class="btn"  onclick="showGallery('african-cusions')">
-  <img src="images/image9.JPG" class="bcv">african-cusions</button>
-<button class="btn" onclick="showGallery('modern-cusions')">
-  <img src="food/green soup.png" class="bcv">Modern-Cusions</button>
-<button class="btn" onclick="showGallery('BAR')">
-  <img src="Drinks/bar image.jfif" class="bcv">
-  Show BAR</button>
-</div>
+    <div class="button-contain">
+        <img src="images/image9.JPG" class="bcv">
+        <button class="btn" onclick="showGallery('african-cusions')">African Cushions</button>
+        <img src="food/green soup.png" class="bcv">
+        <button class="btn" onclick="showGallery('modern-cusions')">Modern Cushions</button>
+        <img src="Drinks/bar image.jfif" class="bcv">
+        <button class="btn" onclick="showGallery('BAR')">Show BAR</button>
+    </div>
 
 <div class="african-cusions" id="africanGallery">
 <main  class="galary">
@@ -177,6 +175,20 @@
       window.history.back();
     }
 
+
+    window.onload = function() {
+    // Get all images on the page
+    var images = document.getElementsByTagName('img');
+    
+    // Loop through each image
+    for (var i = 0; i < images.length; i++) {
+        // Add onclick event
+        images[i].onclick = function() {
+            // Display alert with image source
+            alert(this.src);
+        };
+    }
+};
     </script>
 
     <!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
