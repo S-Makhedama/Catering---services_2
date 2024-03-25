@@ -91,3 +91,5 @@ function zoomIn(event) {
     img.addEventListener('mouseenter', zoomIn);
     img.addEventListener('mouseleave', zoomOut);
   });
+
+   onclick="goBack()"
