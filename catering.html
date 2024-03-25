@@ -7,41 +7,42 @@
         body {
           cursor: pointer;
         }
-      </style>
+        </style>
     
 </head>
 <body >
 <div class="catering">
 <!--------------------Nav bar---------------------------------------------->
 <div class="nav-bar">    
-    <div class="logo">
-        <img src="Image/logo.png" alt="Logo">
-    </div>
-            <nav>
-                <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <i class="bi bi-brightness-high-fill" id="toggleDark"></i>            
-                </ul>
-            </nav>       
+  <div class="logo">
+      <img src="Image/logo.png" alt="Logo">
+  </div>
+          <nav>
+              <ul>            
+              <li><a href="index.html" class="tab" onclick="changeColor(this)">Home</a></li>
+              <li><a href="about.html" class="tab" onclick="changeColor(this)">About</a></li>
+              <li><a href="services.html" class="tab" onclick="changeColor(this)">Services</a></li>
+              <li><a href="contact.html" class="tab" onclick="changeColor(this)">Contact</a></li>
+              <li><a href="book.html" class="tab" onclick="changeColor(this)">Book Now</a></li>
+              <li><i class="bi bi-brightness-high-fill" id="toggleDark"></i></li>            
+              </ul>
+          </nav>       
 </div>
 <!---------------------header---------------------------------------------->
 <div class="headers">
     <header>
        <center> <h1>CATERING</h1></center>
     </header>
-</div>
-<div class="button-contain">
-<button class="btn"  onclick="showGallery('african-cusions')">
-  <img src="images/image9.JPG" class="bcv">african-cusions</button>
-<button class="btn" onclick="showGallery('modern-cusions')">
-  <img src="food/green soup.png" class="bcv">Modern-Cusions</button>
-<button class="btn" onclick="showGallery('BAR')">
-  <img src="Drinks/bar image.jfif" class="bcv">
-  Show BAR</button>
-</div>
+    <div class="button-contain">
+      <div><img src="images/image9.JPG" class="bcv">
+        <button class="btn" onclick="showGallery('african-cusions')">African Cushions</button></div>
+        
+      <div><img src="food/green soup.png" class="bcv">
+        <button class="btn" onclick="showGallery('modern-cusions')">Modern Cushions</button></div>
+
+       <div><img src="Drinks/bar image.jfif" class="bcv">
+        <button class="btn" onclick="showGallery('BAR')">Show BAR</button></div>
+    </div>
 
 <div class="african-cusions" id="africanGallery">
 <main  class="galary">
@@ -69,7 +70,7 @@
             <figcaption>rice and checken </figcaption>
             </figure>
             <figure>
-            <img class="images-food" src="images/image8.JPG">
+            <img class="images-food" src="images/image6.JPG">
             <figcaption>creamy samp and beef stew</figcaption>
             </figure>
        </center>
@@ -177,9 +178,22 @@
       window.history.back();
     }
 
-    </script>
 
-    <!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
+    window.onload = function() {
+    // Get all images on the page
+    var images = document.getElementsByTagName('img');
+    
+    // Loop through each image
+    for (var i = 0; i < images.length; i++) {
+        // Add onclick event
+        images[i].onclick = function() {
+            // Display alert with image source
+            alert(this.src);
+        };
+    }
+};
+    </script>
+<!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
 <div>
     
   <footer class="footer"onclick="goBack()">
