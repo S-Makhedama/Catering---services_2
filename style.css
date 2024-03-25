@@ -149,6 +149,8 @@ nav {
     color: #000000;
     margin-left: 500px;
     margin-right: 500px;
+    text-align: center;
+    text-justify: kashida; 
 }
 
 .Catering p{
@@ -165,7 +167,8 @@ nav {
     height: 500px;
     float: right;
     margin-right: 20px;
-    margin-top: -330px;
+    margin-top: -450px;
+    
 }
 
 .secondplate{
@@ -176,17 +179,19 @@ nav {
     margin-top: -100px;
 }
 
+/*--------------------------------------heading 1 and 2---------------------------------------------------*/
 .Main_heading h1{
     padding-top: 5px;
     font-size: 22px;
     margin-left: 550px;
-
+    color: dimgray;
 }
 
 .Main_heading h2{
     padding-top: 5px;
     font-size: 20px;
     margin-left: 590px;
+    color: dimgray;
 
 }
 
