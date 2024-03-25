@@ -121,11 +121,9 @@ nav {
 .Text p{
     font-size: 18px;
     font-style: arial;
-    text-align: left;
     color: #000000;
+    margin-left: 500px;
     margin-right: 500px;
-    padding-right: 80px;
-    padding-left: 30px;
 }
 
 .Catering p{
@@ -138,21 +136,42 @@ nav {
 /*---------------------------------Main image propertise------------------------------------------*/
 
 .luxury_food{
-    width: 400px;
-    height: 550px;
+    width: 450px;
+    height: 500px;
     float: right;
     margin-right: 20px;
-    border-radius: 10px;
-    margin-top: -470px;
-    padding-right: 40px;
+    margin-top: -330px;
+}
+
+.secondplate{
+    width: 440px;
+    height: 500px;
+    float: left;
+    margin-left: 20px;
+    margin-top: -100px;
 }
 
 .Main_heading h1{
-    padding-left: 150px;
-    padding-top: 30px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-left: 550px;
 
 }
 
+.Main_heading h2{
+    padding-top: 5px;
+    font-size: 20px;
+    margin-left: 590px;
+
+}
+
+
+
+.Text{
+    text-align: center;
+
+
+}
 
 
 
