@@ -283,12 +283,12 @@ figcaption {
 
 .catering{
   background: url(food/starters.jpg),
-  radial-gradient(#c5bfbf , #5a5858);
+  radial-gradient(#666565 , #464545);
   background-blend-mode: multiply;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
 
 }
 .gallery.gallery {
@@ -312,17 +312,16 @@ figcaption {
 
 .btn{
     color: rgb(19, 22, 21);
-    margin: 0 10px;
+    margin-top: 10px;
         padding: 10px 20px;
         border: none;
-        background-color:rgb(202, 159, 154);
+        background-color:#e2d6d4;
         text-align: center;
         text-decoration: none;
-        display: inline-block;
+        display: flex;
         font-size: 16px;
         cursor: pointer;
         border-radius: 10px;
-        align-items: flex;
 }
 .btn:hover {
     background-color:hsl(0, 39%, 95%);
@@ -330,12 +329,16 @@ figcaption {
 
 .button-contain{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
 .bcv{
-    width: 400px;
+        width: 450px;
+        height: auto; 
+        margin: 10px;
+        border-radius: 20px;
 }
 
 /******************************************Rentals***********************************************/
