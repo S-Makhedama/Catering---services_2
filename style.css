@@ -286,7 +286,6 @@ nav {
   margin: 10px;
 }
 
-
 figcaption {
   display: block;
   margin-top: 5px;
@@ -309,7 +308,6 @@ figcaption {
   flex-direction: row;
 }
 
-
 .catering{
   background: url(food/starters.jpg),
   radial-gradient(#666565 , #464545);
@@ -318,7 +316,6 @@ figcaption {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-
 
 }
 
@@ -471,25 +468,6 @@ header {
     transition: transform 0.25s;
     margin-right: 0;
 }
-
-.image__overlay:hover > * {
-    transform: translateY(0);
-
-}
-
-.image__title{
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-}
-
-.image__price{
-    font-size: 1.25em;
-    margin-top: 0.25em;
-    color: white;
-}
-
-
 
 
 /* *************************************Our Services***************************************************/
