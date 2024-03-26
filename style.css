@@ -18,7 +18,7 @@ body {
     justify-content: space-between; /* Align items to the right and left */
     align-items: center; /* Center items vertically */
     padding: 1rem; /* Add padding for better appearance */
-    background-color: rgb(214, 182, 179); /* Set background color */
+    background-color: rgb(211, 210, 210); /* Set background color */
 }
 
 /* Apply styles to the logo */
@@ -34,15 +34,16 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    
 }
 
 nav li {
-    margin-left: 40px; /* Add spacing between items */
-    padding-left: 20px;
+    margin-left: 5px; /* Add spacing between items */
+    padding-left: 5px;
 }
 
 nav a {
-    text-decoration: none;
+
     color: white; /* Set link color */
     font-weight: bold;
     font-size: large;
@@ -73,20 +74,16 @@ nav {
   }
   
   .active {
-    background-color: #007bff; /* Change this to your desired color */
+    background-color: white; /* Change this to your desired color */
     color: #fff;
   }
   
 
-
-
-
-
 /***************************************Home Page***Image Slinder************************************************/
-
+/*
 .swiper-container {
     width: 100%;
-    height: calc(100vh - 150px); /* Adjust the height as needed */
+    height: calc(100vh - 150px); 
     margin-top: 10px;
 }
 
@@ -94,15 +91,15 @@ nav {
     text-align: center;
     font-size: 18px;
     background: #fff;
-    height: 100%; /* Make slides take up 100% of the container height */
+    height: 100%; 
 }
 
 .swiper-slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure images cover the entire slide */
+    object-fit: cover; 
 }
-
+*/
 
 /* *************************************Header for home Page***************************************************/
 .header{
@@ -119,6 +116,20 @@ nav {
     font-size: larger;
 }
 
+#Contact_btn {
+    padding: 15px 25px;
+    font-size: 20px;
+    background-color:  white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect */
+  #Contact_btn:hover {
+    background-color: white;
+  }
 
 /*------------------------------------ABOUT PAGE-------------------------------------------------------------*/
 
@@ -167,7 +178,7 @@ nav {
     height: 500px;
     float: right;
     margin-right: 20px;
-    margin-top: -450px;
+    margin-top: -440px;
     
 }
 
@@ -196,18 +207,42 @@ nav {
 }
 
 
+/**************************************************Booking Page***************************************************/
+.bookingContainer {
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  #bookingForm {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="time"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: rgb(214, 182, 179);
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: rgb(214, 182, 179);
+  }
 
 
-
-
-
-
-
-
-
-
-
-/* *************************************Catering***************************************************/
+/* ************************************************Catering***************************************************/
 
 .headers{
     color: rgb(14, 12, 13);
@@ -481,46 +516,43 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-.service-card{
-    display: inline-block;
-    background-color: rgb(231, 209, 206);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 0 20px;
-    width: 300px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    flex-basis: calc(33.33% - 20px); 
-}
+
+/*
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }*/
+
 .middle-image {
     align-items: center;
     width: 300px;
     height: 300px;
     border: .2rem solid rgb(46, 3, 3);
     border-radius: 50%; 
-
-}
-.service-card p{
-    color: rgb(0, 0, 0);
-    margin: 0;
-    text-align: start;
-    padding: 10px;
+    animation: spin 3s linear infinite;
 }
 
 .container {
     position: relative;
     width: 100%;
-  }
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+}
   
-  .image-container {
+.image-container {
     position: relative;
     display:inline-block;
     text-align: center;
     padding-top: 50px;
     padding-left: 35px;
-  }
+}
   
-  .image-container img {
+.image-container img {
     max-width: 100%;
     width: 400px;
     height: 390px;
@@ -528,15 +560,15 @@ header {
     display: block;
     margin-right: 20px;
     transition: filter 0.5s ease;
-  }
-  
+}
+ 
 .image-container a{
     color: #0c0109;
     font-weight: bold;
     font-size: 20px;
 }
-
-  .list {
+/* list style starts here */
+.list {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -548,19 +580,47 @@ header {
     display: none;
   }
   
-  .list li {
+.list li {
     list-style: none;
     padding: 5px 0;
-  }
-  
-  .image-container:hover img {
+}
+  /* Image hovering style starts here*/
+.image-container:hover img {
     filter: blur(8px);
-  }
+}
   
-  .image-container:hover .list {
+.image-container:hover .list {
     display: block;
+}
+.containee {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Add space between items */
   }
-  
+
+  /* Style for the paragraph */
+  .containee p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Style for the link */
+  .containee a {
+    color: blue; /* Set link color */
+    text-decoration: none; /* Remove underline */
+  }
+
+  /* Style for the image */
+.containee img {
+    max-width: 100%;
+    width: 400px;
+    height: 390px;
+    border-radius: 30%;
+    display: block;
+    margin-right: 20px;
+    transition: filter 0.5s ease;
+  }
 /* *************************************Slide Show***************************************************/
 .container{ 
     max-width: 100vw;
@@ -827,15 +887,17 @@ button:hover {
     text-align: center; /* Center align text */
     padding: 20px; /* Add padding for better appearance */
     background-color: rgb(202, 159, 154); /* Set background color */
-    color: white; /* Set text color */
+    background-color: rgb(211, 210, 210); /* Set background color */
     cursor: pointer;
+
 }
 
 /* Apply styles to the paragraph elements within the footer */
 .footer p {
     margin: 8px 0; /* Add spacing between paragraphs */
     font-size: 14px; /* Set font size */
-    color: white;
+    color: rgb(32, 30, 30);
+    font-weight: bold;
 }
 
 
