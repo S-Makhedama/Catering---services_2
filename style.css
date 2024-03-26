@@ -355,6 +355,9 @@ figcaption {
     background-attachment: fixed;
     background-blend-mode: multiply;
 }
+.imo{
+    color: white;
+}
 /******************************************Rentals***********************************************/
 .image{
     position: relative;
@@ -562,12 +565,6 @@ header {
     display: block;
   }
   
-
-
-
-
-
-
 /* *************************************Slide Show***************************************************/
 .container{ 
     max-width: 100vw;
