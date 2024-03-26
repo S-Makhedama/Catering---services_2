@@ -140,14 +140,12 @@ function zoomIn(event) {
     const africanGallery = document.getElementById('africanGallery');
     const modernGallery = document.getElementById('modernGallery');
 
-    if (galleryId === 'african-cusions') {
+    if (galleryId === 'african-cuisines') {
         africanGallery.style.display = 'block';
         modernGallery.style.display = 'none';
-        drinksGallery.style.display = 'none';
-    } else if (galleryId === 'modern-cusions') {
+    } else if (galleryId === 'modern-cuisines') {
         africanGallery.style.display = 'none';
         modernGallery.style.display = 'block';
-        drinksGallery.style.display = 'none';
     } 
 }
 
