@@ -19,14 +19,14 @@ body {
 
 /* Apply styles to the logo */
 .logo img {
-    height: 90px; /* Set maximum height for the logo image */
+    height: 90px; 
     width: 130px;
     padding-left: 20px;
 }
 
 /* Apply styles to the navigation links */
 nav ul {
-    list-style: none; /* Remove default list styles */
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
@@ -34,7 +34,7 @@ nav ul {
 }
 
 nav li {
-    margin-left: 5px; /* Add spacing between items */
+    margin-left: 5px; 
     padding-left: 5px;
 }
 
