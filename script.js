@@ -93,8 +93,10 @@ function zoomIn(event) {
     img.addEventListener('mouseleave', zoomOut);
   });
 
-   onclick="goBack()"
 
+   function goBack() {
+    window.history.back();
+    }
    
 
   /*---------------------------------------------catering---------------------------------------------------*/
@@ -102,10 +104,10 @@ function zoomIn(event) {
     const africanGallery = document.getElementById('africanGallery');
     const modernGallery = document.getElementById('modernGallery');
 
-    if (galleryId === 'african-cusions') {
+    if (galleryId === 'african-cuisiness') {
         africanGallery.style.display = 'block';
         modernGallery.style.display = 'none';
-    } else if (galleryId === 'modern-cusions') {
+    } else if (galleryId === 'modern-cuisines') {
         africanGallery.style.display = 'none';
         modernGallery.style.display = 'block';
     
