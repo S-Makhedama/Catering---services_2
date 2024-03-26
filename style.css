@@ -354,6 +354,7 @@ figcaption {
     background-size: cover;
     background-attachment: fixed;
     background-blend-mode: multiply;
+    padding: 5px;
 }
 .imo{
     color: white;
