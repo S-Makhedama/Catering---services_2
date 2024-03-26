@@ -373,59 +373,6 @@ figcaption {
 }
 
 
-/******************************************Rentals***********************************************/
-.image{
-    position: relative;
-    width: 200%;
-    background: var(pi
-.container {
-    display: flex;
-    text-align: center;
-    padding-left: 100px;
-}
-.container img {
-    width: 400px;
-    height:310px;
-    justify-content: space-between;
-    text-align: center;  
-}
-
-
-.hero {
-    display: flex;
-    text-align: center;
-    padding-left: 100px;
-    padding-top: 100px;
-}
-
-.hero img {
-    width: 400px;
-    height:310px;
-    justify-content: space-between;
-    text-align: center;
-     
-}
-
-.image__img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 20%;
-    border-color: beige;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.video {
-    width: 400px;
-    height: 310px;
-    border-radius: 20%;
-}
-
-.image__overlay {
-    position: absolute;
-    top: 0;
-    l
 
 /* *************************************Our Services***************************************************/
 .heading h1{
