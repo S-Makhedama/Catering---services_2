@@ -1,3 +1,6 @@
+
+/**********************************Dark or Bright Mode***************************************************/
+
 const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
 
@@ -14,7 +17,42 @@ toggle.addEventListener('click', function(){
     }
 });
 
-/******************************Contact us page validation form****************************************/
+/****************************************************Booking page**********************************************************************/
+document.getElementById('bookingForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    
+    // Get form values
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var date = document.getElementById('date').value;
+    var time = document.getElementById('time').value;
+    
+    // Display confirmation message
+    var message = document.getElementById('message');
+    message.innerHTML = '<p>Appointment booked for:</p>' +
+                        '<p>Name: ' + name + '</p>' +
+                        '<p>Email: ' + email + '</p>' +
+                        '<p>Date: ' + date + '</p>' +
+                        '<p>Time: ' + time + '</p>';
+    
+    // Clear form fields
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('date').value = '';
+    document.getElementById('time').value = '';
+  });
+  
+
+
+/****************************************************Home page**********************************************************************/
+
+// Add event listener to the button
+   document.getElementById('Contact_btn').addEventListener('click', function() {
+    // Navigate to the next page when the button is clicked
+    window.location.href = 'contact.html';
+  });
+
+/****************************************************Contact us page validation form************************************************/
 
 function validateForm() {
     var name = document.getElementById("name").value;
@@ -57,7 +95,7 @@ function isValidEmail(email) {
     return emailRegex.test(email);
 }
 
-/*----------------------------------Change Tab color------------------------------------------------------------*/
+/*----------------------------------Change Tab color for nav bar------------------------------------------------------------*/
 function changeColor(tab) {
     
     var tabs = document.querySelectorAll('.tab');
@@ -99,7 +137,6 @@ function zoomIn(event) {
   function showGallery(galleryId) {
     const africanGallery = document.getElementById('africanGallery');
     const modernGallery = document.getElementById('modernGallery');
-    const drinksGallery = document.getElementById('drinksGallery')
 
     if (galleryId === 'african-cusions') {
         africanGallery.style.display = 'block';
@@ -111,6 +148,7 @@ function zoomIn(event) {
         drinksGallery.style.display = 'none';
     } 
 }
+
 
 function goBack() {
 window.history.back();

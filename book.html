@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js" ></script>
+
+</head>
+<body>
+
+<!--------------------------------------------------------Header/Navigation bar--------------------------------------------------------------->
+<div class="nav-bar">    
+    <div class="logo">
+        <img src="Image/logo.png" alt="Logo">
+    </div>
+            <nav>
+                <ul>            
+                <li><a href="index.html" class="tab" onclick="changeColor(this)">Home</a></li>
+                <li><a href="about.html" class="tab" onclick="changeColor(this)">About</a></li>
+                <li><a href="services.html" class="tab" onclick="changeColor(this)">Services</a></li>
+                <li><a href="contact.html" class="tab" onclick="changeColor(this)">Contact</a></li>
+                <li><a href="book.html" class="tab" onclick="changeColor(this)">Book Now</a></li>
+                <li><i class="bi bi-brightness-high-fill" id="toggleDark"></i></li>            
+                </ul>
+            </nav>       
+</div>
+
+<!--------------------------------------------------------Booking form--------------------------------------------------------------->
+    <div class="container">
+        <center>
+            <h1>Book an Appointment</h1>
+        </center>
+        <br><br>
+        <form id="bookingForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required><br><br>
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required><br><br>
+          <input type="submit" value="Book Appointment">
+        </form>
+        <div id="message"></div>
+      </div>
+
+<!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
+    
+<br>
+<br>
+<br>
+<div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Harmony Catering & Decor - All rights reserved.</p>
+        <p>Designed by Young_Tech_Ninjas</p>
+    </footer> 
+</div>
+
+</body>
+</html>
