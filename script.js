@@ -101,16 +101,14 @@ function zoomIn(event) {
   function showGallery(galleryId) {
     const africanGallery = document.getElementById('africanGallery');
     const modernGallery = document.getElementById('modernGallery');
-    const drinksGallery = document.getElementById('drinksGallery')
 
     if (galleryId === 'african-cusions') {
         africanGallery.style.display = 'block';
         modernGallery.style.display = 'none';
-        drinksGallery.style.display = 'none';
     } else if (galleryId === 'modern-cusions') {
         africanGallery.style.display = 'none';
         modernGallery.style.display = 'block';
-        drinksGallery.style.display = 'none';
+    
     } 
 }
 
