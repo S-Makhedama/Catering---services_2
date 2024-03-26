@@ -32,95 +32,74 @@
 <div class="heading">
     <header>
     <center>
-    <h2>OUR SERVICES</h2>
+    <h2>SERVICES WE OFFER</h2>
     </center>
     </header>
 </div>
 
 <main>
     <br>
-    <section id="service" class="service">
-    <div class="service-card">
-        <p> We have been arranging events of up to 200 guests for over 2 years now. Our range of catering services include staffing,tents,
-            fully-stocked bars,party decor, sound and lightning. We recognize that our clients have different tastes and needs, influenced by the time of day<br> and whether they feel like healthy menu items,
-            traditional food, comfort food or the most affordable options.<br>
-            <br>
-            Our options provide clients with balance thats right for them.
-            The ingredients we buy meet sustainable and responsible sourcing standards. We have the best management assigned to different categories. For decor, we bring you the theme you asked for and make 
-            the best out of it. Our decor equipment is available for rental if you prefer to do it by yourself.
-        </p>
+    <div class="containee">
+        <img src="images/four-chefs-working-serving-trays_13339-292898.avif" alt="Example Image">
+        
+        <p>We offer a range of different types of service staff, from barmen and waiters to front of house and scullery staff.
+        <br>Our event coordinators will advise on the number of staff members required based on your function needs
+        <br> and are aware of the optimum ratio of waiters and barmen to the number of guests at a function to ensure the smooth running of your event.<a href="#">link</a>.</p>
     </div>
-    <img src="images/cocktail.jpeg" alt="Image" class="middle-image">
-<!---------------------------------------These are our services that we offer and their descriptions----------------------------------------------->
-      
-        <div class="service-card"><p><b>Service staff</b>: We collaborate with a leading staff company that guarantees punctual, well groomed and professional stuff.
-           <br><b>Tents</b>: We can offer various options like Nomadic, free standing or attached to your building.
-            <br>All options are possible as well as in your preference of colour plus with options of adding heating and specialised lightning.
-            <br><b>Bars</b>: We consult you regarding your preference of drinks that you want, our bars are stocked accordingly. Our cocktail bars are spectular and firm favourite.
-            <br>They are ran by a professional persoonel with skills to serve any amount of guests.
-            <br><b>Decor</b> Classy, contemporary party decor as well as various themed options are available to bring your event/ceremony to life.</li>
-            <br><b>Sound and lightning</b>:Ambient and subtle or big perfomance- the choice is yours and we are there to guide you.</p>
-         </div>
-    </section>   
-        <br> 
-    <div class="container">
-        <div class="image-container">
-            <img src="images/decoration.jpg" alt="Decor" >
-            <br>
-            <br>
-            <br>  
-            <a href="decor.html">Decor</a>   
 
+    <div class="container" >
+     <div class="image-container">
+       <img id="bar-image" src="images/pexels-chan-walrus-941864.jpg" alt="Image">
+          <br>
+          <br>
+          <br>
+         <a href="bar.htm">Bar</a>
+            <ul class="list" id="list">
+             <li><b>Cocktails</li>
+             <li>Whisky</li>
+             <li>Juices</li>
+             <li>Champagne</li>
+             <li>Drinks</b><li>
+       <ul>
+    </div>
+      
+       
+        <div class="image-container">
+            <img src="images/decoration.jpg" alt="Decoration " >
+              <br>
+              <br>
+              <br>  
+            <a href="decor.html">Decor</a>   
                 <ul class="list" id="list">
-                    <li><b>Baby showers</li>
-                    <li>Matric dance</li>
-                    <li>Birthday parties</li>
-                    <li>Anniversaries</li>
-                    <li>Year-end functions</li>
-                    <li>Picnics</li>
-                    <li>Weddings</b><li>
+                    <li><b>Venue Decoration</li>
+                    <li>Table Setting</li>
+                    <li>Floral Design</li>
+                    <li>Rental Coordination</li>
+                    <li>Installation and setup</b><li>
                 <ul>
         </div>
-        
-                
+                     
         <div class="image-container">
             <img src="images/catering.jpg" alt="Catering">
-                <br>  
-                <br>
-                <br> 
-                <a href="catering.html">Catering</a>
-
-                    <ul class="list" id="list">
-                    <li><b>Baby showers</li>
-                    <li>Matric dance</li>
-                    <li>Birthday parties</li>
-                    <li>Anniversaries</li>
-                    <li>Year-end functions</li>
-                    <li>Funerals</li>
-                    <li>Weddings</b><li>
+                  <br>  
+                  <br>
+                  <br> 
+            <a href="catering.html">Catering</a>
+                <ul class="list" id="list">
+                    <li><b>Menu</li>
+                    <li>Food Preparation</li>
+                    <li>Food Presentation</li>
+                    <li>Beverages</li>
+                    <li>Platted services</li>
+                    <li>Dessert Stations</b><li>
                 <ul>
         </div>
         
-            <div class="image-container">
-              <img src="images/rentals.jpg" alt="Rentals">
-              <br>
-              <br>
-              <br>
-              <a href="rentals.html">Rentals</a>
-                       
-            <ul class="list" id="list">
-                <li><b>Mobile Fridges</li>
-                <li>Chairs</li>
-                <li>Sound&Lights</li>
-                <li>Tents</li>
-                <li>Table & chair cloths</li>
-                <li>Kitchen equipment</b></li>
-              </ul>
-            </div>
     </div>
-                              
-    </div>
-        
+                                    
+</main>
+
+
 </main>
 <script>
    
@@ -136,11 +115,7 @@ document.getElementById("decorLink").addEventListener("click", function(event){
         event.preventDefault();
         window.location.href = "catering.html";
     });
-    
-    document.getElementById("rentalsLink").addEventListener("click", function(event){
-        event.preventDefault();
-        window.location.href = "rentals.html";
-    });
+       
 </script>
 <br>
 <br>
@@ -161,6 +136,25 @@ document.getElementById("decorLink").addEventListener("click", function(event){
     function goBack() {
       window.history.back();
     }
+ 
+document.getElementById("cateringLink").addEventListener("click", function(event){
+        event.preventDefault();
+        window.location.href = "bar.htm";
+    });
+document.getElementById("decorLink").addEventListener("click", function(event){
+        event.preventDefault();
+        window.location.href = "decor.html";
+    });
+    
+    document.getElementById("cateringLink").addEventListener("click", function(event){
+        event.preventDefault();
+        window.location.href = "catering.html";
+    });
+
+    var menuItems = ["Menu", "Food Preparation", "Food Presentation", "Beverages", "Platted services", "Desert Stations"];
+            for (var i = 0; i < menuItems.length; i++) {
+                document.write("<li><b>" + menuItems[i] + "</b></li>");
+            }
   </script>
 </body>
 

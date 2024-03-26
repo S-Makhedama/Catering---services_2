@@ -5,13 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAR</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      .galary {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      
+      }
+      .galary figure {
+        margin: 10px;
+        text-align: center;
+      }
+      .galary img {
+        width: 80%; /* Adjust as needed */
+        height: auto;
+      }
+    </style>
 </head>
 <body>
+  <!--------------------------------------------------NAV-BAR-------------------------------------------------------------------------------->
+  <div class="nav-bar">    
+    <div class="logo">
+        <img src="Image/logo.png" alt="Logo">
+    </div>
+            <nav>
+                <ul>            
+                <li><a href="index.html" class="tab" onclick="changeColor(this)">Home</a></li>
+                <li><a href="about.html" class="tab" onclick="changeColor(this)">About</a></li>
+                <li><a href="services.html" class="tab" onclick="changeColor(this)">Services</a></li>
+                <li><a href="contact.html" class="tab" onclick="changeColor(this)">Contact</a></li>
+                <li><a href="book.html" class="tab" onclick="changeColor(this)">Book Now</a></li>
+                <li><i class="bi bi-brightness-high-fill" id="toggleDark"></i></li>            
+                </ul>
+            </nav>       
+  </div>
+<!--------------------------------------------BAR------------------------------------------------------------------------------------>
     <div class="drinkable"> 
         <div class="drinks" id="drinksGallery">
            <main class="galary">
-              <center><h2>BAR</h2></center>
-        <br>
+              <center><h2 class="imo">BAR</h2></center>
            <div>
     <center>
      <figure>
@@ -44,6 +76,16 @@
      </div>
      </main>
     </div>
-</div>  
+</div>
+<!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
+<div>
+    
+  <footer class="footer"onclick="goBack()">
+      <p>&copy; 2024 Harmony Catering & Events - All rights reserved.</p>
+      <p>Designed by Young_Tech_Ninjas</p>
+  </footer>
+     
+</div> 
+<script src="script.js"></script> 
 </body>
 </html>
