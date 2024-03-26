@@ -327,6 +327,7 @@ figcaption {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-right: 30px;
 }
 
 .bcv{
@@ -351,6 +352,7 @@ figcaption {
 .imo{
     color: white;
 }
+
 
 /******************************************Rentals***********************************************/
 .image{
