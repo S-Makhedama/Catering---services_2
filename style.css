@@ -451,14 +451,14 @@ figcaption {
     display: block;
 }
 .containee {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
-    gap: 20px; /* Add space between items */
+    display: flex;
+    align-items: center; 
+    gap: 20px;
   }
 
   /* Style for the paragraph */
   .containee p {
-    margin: 0; /* Remove default margin */
+    margin: 0; 
     font-size: 16px;
     line-height: 1.5;
   }
