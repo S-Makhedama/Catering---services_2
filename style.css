@@ -280,9 +280,6 @@ nav {
     justify-content: space-around;
   }
 
-
-
-
  figure {
   display: inline-block;
   text-align: center;
@@ -294,6 +291,8 @@ figcaption {
   display: block;
   margin-top: 5px;
   color: white;
+  font-style: italic;
+  
 }
 
 .african-cuisines {
@@ -320,20 +319,7 @@ figcaption {
   background-position: center center;
   background-size: cover;
 
-}
-.gallery.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    flex-direction: row;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
-.gallery img {
-    max-width: 100%;
-    height: auto;
 }
 
 .african-cuisines, .modern-cuisines{
@@ -381,6 +367,7 @@ figcaption {
     background-attachment: fixed;
     background-blend-mode: multiply;
     padding: 5px;
+    display:flex;
 
 }
 
