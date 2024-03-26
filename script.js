@@ -104,7 +104,7 @@ function zoomIn(event) {
     const africanGallery = document.getElementById('africanGallery');
     const modernGallery = document.getElementById('modernGallery');
 
-    if (galleryId === 'african-cuisiness') {
+    if (galleryId === 'african-cuisines') {
         africanGallery.style.display = 'block';
         modernGallery.style.display = 'none';
     } else if (galleryId === 'modern-cuisines') {
