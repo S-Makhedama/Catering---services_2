@@ -11,10 +11,10 @@ body {
 /* Apply styles to the navigation bar container */
 .nav-bar {
     display: flex;
-    justify-content: space-between; /* Align items to the right and left */
-    align-items: center; /* Center items vertically */
-    padding: 1rem; /* Add padding for better appearance */
-    background-color: rgb(211, 210, 210); /* Set background color */
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem; 
+    background-color: rgb(211, 210, 210); 
 }
 
 /* Apply styles to the logo */
