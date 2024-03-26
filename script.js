@@ -1,3 +1,6 @@
+
+/**********************************Dark or Bright Mode***************************************************/
+
 const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
 
@@ -14,7 +17,15 @@ toggle.addEventListener('click', function(){
     }
 });
 
-/******************************Contact us page validation form****************************************/
+/****************************************************Home page**********************************************************************/
+
+// Add event listener to the button
+   document.getElementById('Contact_btn').addEventListener('click', function() {
+    // Navigate to the next page when the button is clicked
+    window.location.href = 'contact.html';
+  });
+
+/****************************************************Contact us page validation form************************************************/
 
 function validateForm() {
     var name = document.getElementById("name").value;
@@ -57,7 +68,7 @@ function isValidEmail(email) {
     return emailRegex.test(email);
 }
 
-/*----------------------------------Change Tab color------------------------------------------------------------*/
+/*----------------------------------Change Tab color for nav bar------------------------------------------------------------*/
 function changeColor(tab) {
     
     var tabs = document.querySelectorAll('.tab');
