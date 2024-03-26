@@ -877,6 +877,9 @@ button:hover {
     background-position: center center;
     background-size: cover;
 }
+d-image {
+    border-radius: 50%;
+}
 
 
 /* *********************************************************Footer*********************************************************************************/
