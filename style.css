@@ -130,6 +130,16 @@ nav {
   #Contact_btn:hover {
     background-color: white;
   }
+/*****************header For booking page****************************/
+.booking_header{
+   /* background-image: url('Image/phone-concert-1.jpg');
+    background-size: cover; */
+    /*background-size: cover;*/
+    font-size: 2em;
+    padding: 6rem;
+    color: black;
+    text-align: center;
+}
 
 /*------------------------------------ABOUT PAGE-------------------------------------------------------------*/
 
@@ -232,7 +242,7 @@ nav {
   }
   
   input[type="submit"] {
-    background-color: rgb(214, 182, 179);
+    background-color: black;
     color: white;
     cursor: pointer;
   }
