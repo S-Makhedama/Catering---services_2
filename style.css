@@ -18,7 +18,7 @@ body {
     justify-content: space-between; /* Align items to the right and left */
     align-items: center; /* Center items vertically */
     padding: 1rem; /* Add padding for better appearance */
-    background-color: rgb(214, 182, 179); /* Set background color */
+    background-color: rgb(211, 210, 210); /* Set background color */
 }
 
 /* Apply styles to the logo */
@@ -34,15 +34,16 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    
 }
 
 nav li {
-    margin-left: 40px; /* Add spacing between items */
-    padding-left: 20px;
+    margin-left: 5px; /* Add spacing between items */
+    padding-left: 5px;
 }
 
 nav a {
-    text-decoration: none;
+
     color: white; /* Set link color */
     font-weight: bold;
     font-size: large;
@@ -51,12 +52,6 @@ nav a {
 
 /* dark or bright mode */
 
-
-
-/* Push the navigation items to the right */
-nav {
-    margin-left: auto;
-}
 
 /****************************change Tab color ***********************************/
 
@@ -167,7 +162,7 @@ nav {
     height: 500px;
     float: right;
     margin-right: 20px;
-    margin-top: -450px;
+    margin-top: -440px;
     
 }
 
@@ -870,15 +865,17 @@ button:hover {
     text-align: center; /* Center align text */
     padding: 20px; /* Add padding for better appearance */
     background-color: rgb(202, 159, 154); /* Set background color */
-    color: white; /* Set text color */
+    background-color: rgb(211, 210, 210); /* Set background color */
     cursor: pointer;
+
 }
 
 /* Apply styles to the paragraph elements within the footer */
 .footer p {
     margin: 8px 0; /* Add spacing between paragraphs */
     font-size: 14px; /* Set font size */
-    color: white;
+    color: rgb(32, 30, 30);
+    font-weight: bold;
 }
 
 
