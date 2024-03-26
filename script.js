@@ -18,7 +18,7 @@ toggle.addEventListener('click', function(){
 });
 
 /****************************************************Booking page**********************************************************************/
-document.getElementById('bookingForm').addEventListener('submit', function(event) {
+document.getElementById('book').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent default form submission
     
     // Get form values
