@@ -787,17 +787,11 @@ button:hover {
     color: #333;
   }
 /****************************************************Decor********************************************************************************/
-.zero h1 {
-    color: white; 
-    text-align: center;
-}
-
-
 .main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     border-radius: 20px;
 }
@@ -816,7 +810,7 @@ button:hover {
 .Decoration {
     color: white;
     text-align: center;
-    padding: 15em 0;
+    padding: 3em 0;
    /* background-color: #222;*/
     background-image: 
     url(images/FullSizeRender+19.jpg),
@@ -827,37 +821,7 @@ button:hover {
     background-position: center center;
     background-size: cover;
 }
-#shareButtons{
-    align-items: center;
-    justify-content: flex-start;
-}
 
- /* Style for the overlay */
- .overlay {
-    position: relative;
-    display: inline-block;
-  }
-
-  /* Style for the overlay content */
-  .overlay-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 20px; /* Adjust as needed */
-  }
-
-  /* Style for the image */
-  .overlay img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
 
 /* *********************************************************Footer*********************************************************************************/
 #foot{
