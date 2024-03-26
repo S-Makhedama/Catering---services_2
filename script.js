@@ -99,7 +99,6 @@ function zoomIn(event) {
   function showGallery(galleryId) {
     const africanGallery = document.getElementById('africanGallery');
     const modernGallery = document.getElementById('modernGallery');
-    const drinksGallery = document.getElementById('drinksGallery')
 
     if (galleryId === 'african-cusions') {
         africanGallery.style.display = 'block';
@@ -111,6 +110,7 @@ function zoomIn(event) {
         drinksGallery.style.display = 'none';
     } 
 }
+
 
 function goBack() {
 window.history.back();
