@@ -95,6 +95,8 @@ function zoomIn(event) {
 
    onclick="goBack()"
 
+   
+
   /*---------------------------------------------catering---------------------------------------------------*/
   function showGallery(galleryId) {
     const africanGallery = document.getElementById('africanGallery');
