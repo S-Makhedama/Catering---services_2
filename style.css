@@ -163,21 +163,35 @@ nav {
 
 }
 
+.About_btn button {
+    background-color: #cfcdc7; /* Gold orange */
+    border: none;
+    padding: 10px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+  }
 /*-------------------------------------------About button-----------------------------------------------------*/
 
-.Aboutbtn{
-    margin-left: 235px;
+.About_btn{
+    margin-left: 200px;
+    padding-left: 500px;
     margin-top: 80px;
+}
+
+.About_btn a{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #383636;
-    background-color: #cccccc;
+    text-decoration: none;
 }
 
-.Aboutbtn:hover{
-    background-color: #9c874d;
+.About_btn button:hover{
+    background-color: #dfcd8b;
+    color: #f0f0f0;
 }
+
 
 /*--------------------------------------------Main paragraph-------------------------------------------------*/
 .Text p{
