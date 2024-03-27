@@ -859,6 +859,7 @@ button:hover {
     color: #333;
   }
 /****************************************************Decor********************************************************************************/
+
 .main {
     display: flex;
     flex-wrap: wrap;
@@ -867,6 +868,7 @@ button:hover {
     align-items: center;
     border-radius: 20px;
 }
+
 .main img {
     width: 400px;
     height: 300px;
@@ -878,6 +880,7 @@ button:hover {
     border-radius: 20px;
     align-items: baseline;
 }
+
 
 .Decoration {
     color: white;
