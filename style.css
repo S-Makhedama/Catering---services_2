@@ -143,14 +143,19 @@ nav {
     padding-left: 20px;
 }
 
+.Phases img{
+    margin-top: 30px;
+}
+
+
 .Catering img{
-    width: 270px;
+    width: 290px;
     height: 300px;
     font-size: 12;
     text-align: center;
     border-radius: 10px;
     justify-content: space-between;
-    padding: 18px;
+    padding: 10px;
 }
 
 .Catering p{
@@ -161,39 +166,43 @@ nav {
 /*-------------------------------------------About button-----------------------------------------------------*/
 
 .Aboutbtn{
-    margin-left: 250px;
+    margin-left: 235px;
     margin-top: 80px;
     font-size: 18px;
-    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #383636;
     background-color: #cccccc;
 }
 
-.Aboutbtn :hover{
-    background-color: #ff0000;
+.Aboutbtn:hover{
+    background-color: #9c874d;
 }
 
 /*--------------------------------------------Main paragraph-------------------------------------------------*/
 .Text p{
     font-size: 18px;
-    font-style: arial;
-    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #272525;
     margin-left: 500px;
     margin-right: 500px;
-    text-align: center;
+    text-align: justify;
     text-justify: kashida; 
 }
 
 .Catering p{
-    padding: 10px;
-    color: #000000;
+    padding: 20px;
+    margin: 10px;
+    color: #272525;
     font-size: 18px;
-    font-style: arial;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: start;
     margin-top: -25px;
 }
 
 .Phases h4{
-    color: #474545;
+    color: #8a6e08;
+    font-weight: bold;
 }
 
 /*---------------------------------Main image propertise------------------------------------------*/
@@ -235,7 +244,7 @@ nav {
 .phasesheading h2{
     color: #615f5f;
     margin-left: 350px;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 /**************************************************Booking Page***************************************************/
