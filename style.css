@@ -621,10 +621,10 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(161, 87, 87, 0.8);
+    background-color: rgba(211, 210, 210);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(218, 133, 133, 0.596);
+    box-shadow: 0 0 10px rgb(131, 128, 128);
     display: none;
   }
   
@@ -647,7 +647,7 @@ header {
     gap: 20px; /* Add space between items */
     margin-left: 20rem;
     padding: 30px;
-    border: .2rem solid rgba(218, 133, 133, 0.596);
+    border: .2rem solid rgb(131, 128, 128);
     
   }
 
