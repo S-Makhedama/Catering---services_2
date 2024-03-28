@@ -10,26 +10,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
     <style>
-  .zoom-img {
-  width: 200px;
-  transition: transform 0.2s;
-  }
-  body {
-    background: url(images/istockphoto-652226714-612x612.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor:pointer;
-  }
-   
-      .zoom-img {
-        width: 200px;
-        transition: transform 0.2s;
-      }
+      .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
+.slide {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
     </style>
-  
-</head>
-<body onclick="goBack()">
 <!----------------------------------------------------------------Nav Bar------------------------------------------------------------------------>
 <div class="nav-bar">    
     <div class="logo">
@@ -48,7 +52,7 @@
  <br>
 
 <!----------------------------------------------------------------header------------------------------------------------------------------------>
-
+<!----------------
      <header>OurCharting equipment</header>
      
      <main class="container">
@@ -133,8 +137,39 @@
     }
   
         </script>
+        <!------------->
+
         
-      
+      <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="images/FullSizeRender (1).jpeg" style="width:100%">
+    </div>
+    <div class="slide fade">
+      <img src="images/FullSizeRender (2).jpg" style="width:100%">
+    </div>
+    <div class="slide fade">
+      <img src="images/FullSizeRender10 (1).jpeg" style="width:100%">
+    </div>
+  </div>
+  <script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1
+  }    
+  slides[slideIndex - 1].style.display = "block";  
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+  </script>
+
+  <script src="script.js"></script>
 
        
 
