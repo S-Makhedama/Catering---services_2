@@ -563,21 +563,6 @@ header {
     text-align: center;
     font-style: normal;
 }
-.service {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-/*
-@keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }*/
 
 .middle-image {
     align-items: center;
@@ -590,18 +575,19 @@ header {
 
 .container {
     position: relative;
-    width: 100%;
+    width: 90%;
     gap: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
   
 .image-container {
     position: relative;
     display:inline-block;
     text-align: center;
-    padding-top: 50px;
-    padding-left: 35px;
+    margin-bottom: 5px;
+    padding: 20px;
+    margin-right: 20px;
 }
   
 .image-container img {
@@ -612,6 +598,7 @@ header {
     display: block;
     margin-right: 20px;
     transition: filter 0.5s ease;
+    padding: 5px;
 }
  
 .image-container a{
@@ -625,10 +612,10 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(161, 87, 87, 0.8);
+    background-color: rgba(211, 210, 210);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(218, 133, 133, 0.596);
+    box-shadow: 0 0 10px rgb(131, 128, 128);
     display: none;
   }
   
@@ -645,33 +632,32 @@ header {
     display: block;
 }
 .containee {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
+    width: 800px;
+    display: flex;
+    align-items: center; 
     gap: 20px; /* Add space between items */
+    margin-left: 20rem;
+    padding: 30px;
+    border: .2rem solid rgb(131, 128, 128);
+    
   }
 
-  /* Style for the paragraph */
   .containee p {
-    margin: 0; /* Remove default margin */
+    margin: 0; 
     font-size: 16px;
     line-height: 1.5;
   }
 
   /* Style for the link */
   .containee a {
-    color: blue; /* Set link color */
-    text-decoration: none; /* Remove underline */
+    color: black; 
+    text-decoration: none; 
   }
 
   /* Style for the image */
-.containee img {
-    max-width: 100%;
-    width: 400px;
-    height: 390px;
-    border-radius: 30%;
-    display: block;
-    margin-right: 20px;
-    transition: filter 0.5s ease;
+.containee img{
+  border-radius: 30px;
+  height: 400px;
   }
 /* *************************************Slide Show***************************************************/
 .container{ 
