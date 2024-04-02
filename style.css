@@ -643,8 +643,9 @@ header {
 
   .containee p {
     margin: 0; 
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
+    color: #000000;
   }
 
   /* Style for the link */
@@ -961,7 +962,6 @@ button:hover {
 .footer {
     text-align: center; /* Center align text */
     padding: 20px; /* Add padding for better appearance */
-    background-color: rgb(202, 159, 154); /* Set background color */
     background-color: rgb(211, 210, 210); /* Set background color */
     cursor: pointer;
 
