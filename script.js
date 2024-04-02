@@ -166,3 +166,38 @@ images[i].onclick = function() {
 };
 }
 };
+
+/*---------------------------------------------Our services----------------------------------------------------------*/
+function goBack(){
+  window.history.back();
+}
+document.getElementById("barLink").addEventListener("click", function(event){
+      event.preventDefault();
+      window.location.href = "bar.htm";
+  });
+
+document.getElementById("decorLink").addEventListener("click", function(event){
+      event.preventDefault();
+      window.location.href = "decor.html";
+  });
+  
+  document.getElementById("cateringLink").addEventListener("click", function(event){
+      event.preventDefault();
+      window.location.href = "catering.html";
+  });
+
+  var menuItems = ["Menu", "Food Preparation", "Food Presentation", "Beverages", "Platted services", "Desert Stations"];
+  for (var i = 0; i < menuItems.length; i++) {
+      document.write("<li><b>" + menuItems[i] + "</b></li>");
+  }
+
+  var serviceStaffTypes = [
+      'barmen',
+      'waiters',
+      'front of house',
+      'scullery staff'
+  ];
+
+var list = document.getElementById('list');
+
+var listItems = list.getElementsByTagName('li');
