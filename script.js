@@ -201,3 +201,28 @@ document.getElementById("decorLink").addEventListener("click", function(event){
 var list = document.getElementById('list');
 
 var listItems = list.getElementsByTagName('li');
+
+/*------------------------------------------------STAFF--------------------------------------------------------------*/
+ // Function to display modal
+ function showModal(title, body) {
+  var modal = document.getElementById("myModal");
+  var modalTitle = document.getElementById("modal-title");
+  var modalBody = document.getElementById("modal-body");
+  modal.style.display = "block";
+  modalTitle.innerText = title;
+  modalBody.innerText = body;
+}
+
+// Function to close modal
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+
+  // Close modal when clicking outside of it
+  window.addEventListener("click", function(event) {
+    var modal = document.getElementById("myModal");
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
