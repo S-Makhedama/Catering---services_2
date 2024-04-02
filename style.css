@@ -441,7 +441,7 @@ figcaption {
     color: white;
 }
 
-/******************************************Rentals***********************************************/
+/******************************************Rentals***********************************************
 .image{
     position: relative;
     width: 200%;
@@ -691,39 +691,40 @@ header {
 
 
 /*----------------------------------------------------------Contact Page----------------------------------------------------------------------------------*/
+/**
 .header-text{
     /*background-image: url('Image/image-1.jpg'); 
     background-size: cover;
     font-size: 2em;
-    padding: 6rem;*/
+    padding: 6rem;*
     color: black;
     text-align: center;
 }
 
 .header-text h1{
-    color:#000000;
+    color:white;
 }
 
 .header-text p{
-    color: black;
+    color: white;
     font-size: larger;
 }
-/* Style for the form container */
+/* Style for the form container *
 .form-container {
     max-width: 400px;
     margin: auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
-/* Style for labels */
+/* Style for labels *
 label {
     display: block;
     margin-bottom: 8px;
 }
 
-/* Style for input fields and textarea */
+/* Style for input fields and textarea *
 input[type="text"],
 input[type="email"],
 textarea {
@@ -735,7 +736,7 @@ textarea {
     border-radius: 4px;
 }
 
-/* Style for the submit button */
+/* Style for the submit button *
 button {
     background-color: #4caf50;
     color: white;
@@ -745,10 +746,184 @@ button {
     cursor: pointer;
 }
 
-/* Hover effect for the submit button */
+/* Hover effect for the submit button *
 button:hover {
     background-color: #45a049;
 }
+/**********
+        .container {
+          text-align: right;
+        }
+        
+        .container > * {
+          text-align: right;
+          max-width: 600px; /* Adjust as needed *
+          margin-right: 20px;
+          margin-left: auto;
+        }
+      
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f0f0f0;
+        }
+      
+        .header-text {
+          background-color: white;
+          color: black;
+          text-align: right;
+          padding: 20px 0;
+          margin-bottom: 20px;
+        }
+      
+        header h1 {
+          margin: 0;
+        }
+      
+        .form-container {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          margin-bottom: 20px;
+        }
+      
+        form {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+      
+        label {
+          display: block;
+          margin-bottom: 5px;
+        }
+      
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+        }
+      
+        button[type="submit"] {
+          background-color: #333;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      
+        .error {
+          color: red;
+          margin-bottom: 10px;
+        }
+      
+        .Get_in_Touch {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+      
+        .Connect {
+          text-decoration: none;
+          color: white;
+          align-self: right;
+        }
+      
+        .Connect:hover {
+          text-decoration: underline;
+        }
+        /****/
+        .contact-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .contact-info {
+    margin-top: 30px;
+  }
+
+  .contact-info a {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+    .contact-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .contact-info {
+    margin-top: 30px;
+  }
+
+  .contact-info a {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+
 
 /*********************************************image cards***************************************************************/
 
