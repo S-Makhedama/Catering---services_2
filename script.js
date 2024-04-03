@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded',
 
 
 /****************************************************Contact us page validation form************************************************/
-
+/*
 function validateForm() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
@@ -152,17 +152,77 @@ function validateForm() {
 
   return true;
 }
+/*** */
 
-var form = document.getElementById("contactForm");
-form.addEventListener("submit", function(event) {
-  if (!validateForm()) {
-    event.preventDefault();
-  }
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    
+    // Retrieve form inputs
+    var fullName = document.getElementById('fullName').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+    
+    // You can perform further validation if needed
+    
+    // Here, you can send the form data using AJAX or handle it in any way you prefer
+    console.log('Full Name:', fullName);
+    console.log('Email:', email);
+    console.log('Subject:', subject);
+    console.log('Message:', message);
+    
+    // Optionally, you can reset the form after submission
+    document.getElementById('contactForm').reset();
 });
-var fields = ["Full Name", "Email", "Subject", "Message"];
-for (var i = 0; i < fields.length; i++) {
-  document.write('<input type="text" placeholder="' + fields[i] + '" class="contant-in-input">');
-}
+document.addEventListener('DOMContentLoaded', function () {
+  const contactForm = document.getElementById('contactForm');
+
+  contactForm.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+
+      // Validate form inputs
+      const fullName = document.getElementById('fullName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!fullName || !email || !subject || !message) {
+          alert('Please fill in all fields.');
+          return;
+      }
+
+      // Send form data using AJAX
+      const formData = new FormData();
+      formData.append('fullName', fullName);
+      formData.append('email', email);
+      formData.append('subject', subject);
+      formData.append('message', message);
+
+      fetch(window.location.href,  {
+          method: 'POST',
+          body: formData
+      })
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Network response was not ok');
+          }
+          return response.json();
+      })
+      .then(data => {
+          // Handle success response from server
+          alert('Message sent successfully!');
+          // Optionally reset the form
+          contactForm.reset();
+      })
+      .catch(error => {
+          console.error('There was a problem with your fetch operation:', error);
+          alert('An error occurred while sending your message. Please try again later.');
+      });
+  });
+});
+
+
 /*----------------------------------Change Tab color for nav bar------------------------------------------------------------*/
 function changeColor(tab) {
     
