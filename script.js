@@ -53,6 +53,43 @@ document.getElementById('bookingForm').addEventListener('submit', function(event
   });
 
  
+ 
+  
+
+  //script.js
+
+document.addEventListener('DOMContentLoaded',
+
+    function () {
+
+        const tab = document
+
+            .querySelectorAll('.tab');
+
+            tab.forEach(tab=>{
+
+            item.addEventListener('click',
+
+                function () {
+
+                    navItems.forEach(tab=>tab
+
+                        .classList.remove('active'));
+
+                    this.classList.add('active');
+
+                });
+
+        });
+
+    });
+
+
+
+
+
+
+
 
 /****************************************************Contact us page validation form************************************************/
 
