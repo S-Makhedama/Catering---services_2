@@ -52,6 +52,8 @@ document.getElementById('bookingForm').addEventListener('submit', function(event
     window.location.href = 'contact.html';
   });
 
+ 
+
 /****************************************************Contact us page validation form************************************************/
 
 function validateForm() {

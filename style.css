@@ -107,9 +107,26 @@ nav {
     background-size: cover;
     font-size: 2em;
     padding: 6rem;
-    color: black;
+    color: white;
     text-align: center;
 }
+
+.typing-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid; /* For cursor effect */
+    animation: typing 4s steps(40) infinite alternate;
+    text-align: center;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
 
 .header p{
     color: white;
@@ -131,6 +148,50 @@ nav {
     background-color: white;
   }
 
+
+
+
+
+
+/*********************Our Partners**********************************/
+.partners-section {
+    text-align: center;
+  }
+
+  #partnerLogos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px; /* Adjust the gap between images as needed */
+    margin-top: 20px; /* Adjust the top margin as needed */
+  }
+
+  .partner-logo {
+    max-width: 100px; /* Adjust the max-width of images as needed */
+    height: auto;
+  }
+
+/**********************social icons and map*************************************/
+#social-media-location {
+    text-align: center;
+  }
+#social-media-icons {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+ 
+  .social-icon {
+    font-size: 32px; /* Adjust the size as needed */
+    margin: 0 10px; /* Add space between icons */
+  }
+
+/*
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+*/
 /*------------------------------------ABOUT PAGE-------------------------------------------------------------*/
 
 
@@ -270,7 +331,7 @@ nav {
   
   form {
     display: inline-block;
-    text-align: left;
+    text-align: center;
   }
   
   input[type="text"],
@@ -546,7 +607,7 @@ figcaption {
   /* Style for the image */
 .containee img{
   border-radius: 30px;
-  height: 400px;
+  height: 250px;
   }
 
 /* CSS for modal */
