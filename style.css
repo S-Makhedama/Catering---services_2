@@ -180,17 +180,21 @@ nav {
     font-size: 17px;
     text-align: center;
     padding-left: 20px;
-    margin-top: 250px;
 }
 
+.Phases img{
+    margin-top: 30px;
+}
+
+
 .Catering img{
-    width: 270px;
+    width: 290px;
     height: 300px;
     font-size: 12;
     text-align: center;
     border-radius: 10px;
     justify-content: space-between;
-    padding: 18px;
+    padding: 10px;
 }
 
 .Catering p{
@@ -198,27 +202,64 @@ nav {
 
 }
 
+.About_btn button {
+    background-color: #cfcdc7; /* Gold orange */
+    border: none;
+    padding: 10px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+  }
+/*-------------------------------------------About button-----------------------------------------------------*/
+
+.About_btn{
+    margin-left: 200px;
+    padding-left: 500px;
+    margin-top: 80px;
+}
+
+.About_btn a{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #383636;
+    text-decoration: none;
+}
+
+.About_btn button:hover{
+    background-color: #dfcd8b;
+    color: #f0f0f0;
+}
+
+
 /*--------------------------------------------Main paragraph-------------------------------------------------*/
 .Text p{
     font-size: 18px;
-    font-style: arial;
-    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #272525;
     margin-left: 500px;
     margin-right: 500px;
+<<<<<<< HEAD
     text-align: center; 
+=======
+    text-align: justify;
+    text-justify: kashida; 
+>>>>>>> 42d80e3785209fd4ce2d3ed0f4fcec25ad74072e
 }
 
 .Catering p{
-    padding: 10px;
-    color: #000000;
+    padding: 20px;
+    margin: 10px;
+    color: #272525;
     font-size: 18px;
-    font-style: arial;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: start;
     margin-top: -25px;
 }
 
 .Phases h4{
-    color: #474545;
+    color: #8a6e08;
+    font-weight: bold;
 }
 
 /*---------------------------------Main image propertise------------------------------------------*/
@@ -259,8 +300,8 @@ nav {
 
 .phasesheading h2{
     color: #615f5f;
-    margin-left: 290px;
-    margin-top: 250px;
+    margin-left: 350px;
+    padding-top: 100px;
 }
 
 /**************************************************Booking Page***************************************************/
@@ -312,12 +353,12 @@ nav {
 
 /*--------------------------------------african-cusions--------------*/
 
-.african-cusions{
+.african-cuisines{
   padding: 0px;
   display: inline-block;
 }
 
-.african-cusions.h1{
+.african-cuisines.h1{
  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
  font-style: oblique;
  margin: 0%;
@@ -326,7 +367,7 @@ nav {
 
 
 /*--------------------------------------------------mordern cusions------------*/
-.mordern-cusions{
+.mordern-cuisines{
   padding: 0px;
   display: inline-block;
   color:white;
@@ -392,7 +433,7 @@ figcaption {
     height: auto;
 }
 
-.african-cusions, .modern-cusions{
+.african-cuisines, .modern-cuisines{
     display: none;
 }
 
@@ -443,7 +484,7 @@ figcaption {
     color: white;
 }
 
-/******************************************Rentals***********************************************/
+/******************************************Rentals***********************************************
 .image{
     position: relative;
     width: 200%;
@@ -563,23 +604,7 @@ header {
 .heading h1{
     color: black;
     text-align: center;
-    font-style: normal;
 }
-.service {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-/*
-@keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }*/
 
 .middle-image {
     align-items: center;
@@ -592,18 +617,19 @@ header {
 
 .container {
     position: relative;
-    width: 100%;
+    width: 90%;
     gap: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
   
 .image-container {
     position: relative;
     display:inline-block;
     text-align: center;
-    padding-top: 50px;
-    padding-left: 35px;
+    margin-bottom: 5px;
+    padding: 20px;
+    margin-right: 20px;
 }
   
 .image-container img {
@@ -614,6 +640,7 @@ header {
     display: block;
     margin-right: 20px;
     transition: filter 0.5s ease;
+    padding: 5px;
 }
  
 .image-container a{
@@ -627,10 +654,10 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(161, 87, 87, 0.8);
+    background-color: rgba(211, 210, 210);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(218, 133, 133, 0.596);
+    box-shadow: 0 0 10px rgb(131, 128, 128);
     display: none;
   }
   
@@ -647,34 +674,69 @@ header {
     display: block;
 }
 .containee {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
+    width: 800px;
+    display: flex;
+    align-items: center; 
     gap: 20px; /* Add space between items */
+    margin-left: 20rem;
+    padding: 30px;
+    border: .2rem solid rgb(131, 128, 128);
+    
   }
 
-  /* Style for the paragraph */
   .containee p {
-    margin: 0; /* Remove default margin */
-    font-size: 16px;
+    margin: 0; 
+    font-size: 18px;
     line-height: 1.5;
+    color: #000000;
   }
 
   /* Style for the link */
   .containee a {
-    color: blue; /* Set link color */
-    text-decoration: none; /* Remove underline */
+    color: black; 
+    text-decoration: none; 
   }
 
   /* Style for the image */
-.containee img {
-    max-width: 100%;
-    width: 400px;
-    height: 390px;
-    border-radius: 30%;
-    display: block;
-    margin-right: 20px;
-    transition: filter 0.5s ease;
+.containee img{
+  border-radius: 30px;
+  height: 400px;
   }
+
+/* CSS for modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    filter: blur(8px);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
 /* *************************************Slide Show***************************************************/
 .container{ 
     max-width: 100vw;
@@ -707,39 +769,40 @@ header {
 
 
 /*----------------------------------------------------------Contact Page----------------------------------------------------------------------------------*/
+/**
 .header-text{
     /*background-image: url('Image/image-1.jpg'); 
     background-size: cover;
     font-size: 2em;
-    padding: 6rem;*/
+    padding: 6rem;*
     color: black;
     text-align: center;
 }
 
 .header-text h1{
-    color:#000000;
+    color:white;
 }
 
 .header-text p{
-    color: black;
+    color: white;
     font-size: larger;
 }
-/* Style for the form container */
+/* Style for the form container *
 .form-container {
     max-width: 400px;
     margin: auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
-/* Style for labels */
+/* Style for labels *
 label {
     display: block;
     margin-bottom: 8px;
 }
 
-/* Style for input fields and textarea */
+/* Style for input fields and textarea *
 input[type="text"],
 input[type="email"],
 textarea {
@@ -751,7 +814,7 @@ textarea {
     border-radius: 4px;
 }
 
-/* Style for the submit button */
+/* Style for the submit button *
 button {
     background-color: #4caf50;
     color: white;
@@ -761,10 +824,184 @@ button {
     cursor: pointer;
 }
 
-/* Hover effect for the submit button */
+/* Hover effect for the submit button *
 button:hover {
     background-color: #45a049;
 }
+/**********
+        .container {
+          text-align: right;
+        }
+        
+        .container > * {
+          text-align: right;
+          max-width: 600px; /* Adjust as needed *
+          margin-right: 20px;
+          margin-left: auto;
+        }
+      
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f0f0f0;
+        }
+      
+        .header-text {
+          background-color: white;
+          color: black;
+          text-align: right;
+          padding: 20px 0;
+          margin-bottom: 20px;
+        }
+      
+        header h1 {
+          margin: 0;
+        }
+      
+        .form-container {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          margin-bottom: 20px;
+        }
+      
+        form {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+      
+        label {
+          display: block;
+          margin-bottom: 5px;
+        }
+      
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+        }
+      
+        button[type="submit"] {
+          background-color: #333;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      
+        .error {
+          color: red;
+          margin-bottom: 10px;
+        }
+      
+        .Get_in_Touch {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+      
+        .Connect {
+          text-decoration: none;
+          color: white;
+          align-self: right;
+        }
+      
+        .Connect:hover {
+          text-decoration: underline;
+        }
+        /****/
+        .contact-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .contact-info {
+    margin-top: 30px;
+  }
+
+  .contact-info a {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+    .contact-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .contact-info {
+    margin-top: 30px;
+  }
+
+  .contact-info a {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+
 
 /*********************************************image cards***************************************************************/
 
@@ -897,6 +1134,7 @@ button:hover {
     color: #333;
   }
 /****************************************************Decor********************************************************************************/
+
 .main {
     display: flex;
     flex-wrap: wrap;
@@ -905,6 +1143,7 @@ button:hover {
     align-items: center;
     border-radius: 20px;
 }
+
 .main img {
     width: 400px;
     height: 300px;
@@ -916,6 +1155,7 @@ button:hover {
     border-radius: 20px;
     align-items: baseline;
 }
+
 
 .Decoration {
     color: white;
@@ -940,7 +1180,6 @@ button:hover {
 .footer {
     text-align: center; /* Center align text */
     padding: 20px; /* Add padding for better appearance */
-    background-color: rgb(202, 159, 154); /* Set background color */
     background-color: rgb(211, 210, 210); /* Set background color */
     cursor: pointer;
 

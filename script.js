@@ -97,6 +97,32 @@ function isValidEmail(email) {
     return emailRegex.test(email);
 }
 
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+  var error = document.getElementById("error");
+
+  error.innerHTML = "";
+
+  if (name == "" || email == "" || subject == "" || message == "") {
+    error.innerHTML = "All fields are required.";
+    return false;
+  }
+
+  // You can add additional validation logic here if needed
+
+  return true;
+}
+
+var form = document.getElementById("contactForm");
+form.addEventListener("submit", function(event) {
+  if (!validateForm()) {
+    event.preventDefault();
+  }
+});
+
 /*----------------------------------Change Tab color for nav bar------------------------------------------------------------*/
 function changeColor(tab) {
     
@@ -140,14 +166,12 @@ function zoomIn(event) {
     const africanGallery = document.getElementById('africanGallery');
     const modernGallery = document.getElementById('modernGallery');
 
-    if (galleryId === 'african-cusions') {
+    if (galleryId === 'african-cuisines') {
         africanGallery.style.display = 'block';
         modernGallery.style.display = 'none';
-        drinksGallery.style.display = 'none';
-    } else if (galleryId === 'modern-cusions') {
+    } else if (galleryId === 'modern-cuisines') {
         africanGallery.style.display = 'none';
         modernGallery.style.display = 'block';
-        drinksGallery.style.display = 'none';
     } 
 }
 
@@ -170,3 +194,63 @@ images[i].onclick = function() {
 };
 }
 };
+
+/*---------------------------------------------Our services----------------------------------------------------------*/
+function goBack(){
+  window.history.back();
+}
+document.getElementById("barLink").addEventListener("click", function(event){
+      event.preventDefault();
+      window.location.href = "bar.htm";
+  });
+
+document.getElementById("decorLink").addEventListener("click", function(event){
+      event.preventDefault();
+      window.location.href = "decor.html";
+  });
+  
+  document.getElementById("cateringLink").addEventListener("click", function(event){
+      event.preventDefault();
+      window.location.href = "catering.html";
+  });
+
+  var menuItems = ["Menu", "Food Preparation", "Food Presentation", "Beverages", "Platted services", "Desert Stations"];
+  for (var i = 0; i < menuItems.length; i++) {
+      document.write("<li><b>" + menuItems[i] + "</b></li>");
+  }
+
+  var serviceStaffTypes = [
+      'barmen',
+      'waiters',
+      'front of house',
+      'scullery staff'
+  ];
+
+var list = document.getElementById('list');
+
+var listItems = list.getElementsByTagName('li');
+
+/*------------------------------------------------STAFF--------------------------------------------------------------*/
+ // Function to display modal
+ function showModal(title, body) {
+  var modal = document.getElementById("myModal");
+  var modalTitle = document.getElementById("modal-title");
+  var modalBody = document.getElementById("modal-body");
+  modal.style.display = "block";
+  modalTitle.innerText = title;
+  modalBody.innerText = body;
+}
+
+// Function to close modal
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+
+  // Close modal when clicking outside of it
+  window.addEventListener("click", function(event) {
+    var modal = document.getElementById("myModal");
+    if (event.target === modal) {
+      closeModal();
+    }
+  });

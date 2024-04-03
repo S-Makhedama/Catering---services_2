@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chefs</title>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS styling */
+    p{
+        text-align: center;
+        
+    }
+    .container {
+        display: flex;
+
+    }
+    .item {
+        flex: 1;
+        margin-right: 2px;
+        vertical-align: top;
+        padding: 8px;
+        width: 300px
+    }
+    .item img {
+    max-width: 100%;
+    width: 400px;
+    height: 390px;
+    display: block;
+    margin-right: 20px;
+    transition: filter 0.5s ease;
+    padding: 5px;
+    }
+    .item p {
+        font-size: 18px;
+        color: #272525;
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+</style>
+</head>
+<body>
+<!--------------------------------------------------------------------NAV BAR-------------------------------------------------------------------->
+    <div class="nav-bar">    
+        <div class="logo">
+            <img src="Image/logo.png" alt="Logo">
+        </div>
+                <nav>
+                    <ul>            
+                    <li><a href="index.html" class="tab" onclick="changeColor(this)">Home</a></li>
+                    <li><a href="about.html" class="tab" onclick="changeColor(this)">About</a></li>
+                    <li><a href="services.html" class="tab" onclick="changeColor(this)">Services</a></li>
+                    <li><a href="contact.html" class="tab" onclick="changeColor(this)">Contact</a></li>
+                    <li><a href="book.html" class="tab" onclick="changeColor(this)">Book Now</a></li>
+                    <li><i class="bi bi-brightness-high-fill" id="toggleDark"></i></li>            
+                    </ul>
+                </nav>       
+    </div>
+<!-------------------------------------------------content-------------------------------------------------------------------------->
+    <center>
+    <h1>Staffing</h1>
+    </center>
+    <p>
+    They are masters of their craft, skilled in transforming raw ingredients into exquisite dishes that tantalize the senses.<br>Beyond their technical expertise, chefs bring creativity, passion, and innovation to the kitchen, constantly pushing<br> the boundaries of gastronomy. Their role extends beyond cooking, chefs are leaders who inspire and mentor their<br> team members, fostering collaboration and a shared commitment to excellence</p><div class="container">
+    <div class="item">
+        <img src="chefs/chefs-1.jpg" alt="Chef 1" onclick="showModal('Sauté Chef', 'He is the key member of the kitchen team, bringing specialized skills, creativity, and efficiency to the preparation and execution of sautéed dishes')">
+        <p><b>Mr Smith</b></p>
+    </div>
+    <div class="item">
+        <img src="chefs/chefs-2.jpg" alt="Chef 2" onclick="showModal('Pastry Chef', 'She brings a unique blend of culinary expertise, artistic flair, and attention to detail to the kitchen. Her creation add a sweet and memorable touch to any dinning experience, making them an indispensable part of the culinary team.')">
+        <p><b>Mrs Williams</b></p>
+    </div>
+    <div class="item">
+        <img src="chefs/chefs-3.jpg" alt="Chef 3" onclick="showModal('Banquet Chef', 'His leadership, culinary expertise, and attention to detail contribute to the success and reputation of the catering event venue.')">
+        <p><b>Mr Rajesh</b></p>
+    </div>
+    <div class="item">
+        <img src="chefs/Bartender-making-a-drink-1200x852.jpg" alt="Bartender" onclick="showModal('Bartender', 'She prepares a wide range of alcoholic and non-alcoholic beverages, including cocktails, beers, wines, and spirits. She knows how to measure and mix ingredients accurately to create high-quality drinks')">
+        <p><b>Ms Naidoo</b></p> <p>
+</div>
+
+</div>
+<!-------------------------------------------------------------------------- Modal ------------------------------------------------------->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-body"></p>
+    </div>
+  </div>
+<!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
+<div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Harmony Catering & Events - All rights reserved.</p>
+        <p>Designed by Young_Tech_Ninjas</p>
+    </footer>
+       
+</div>
+
+</body>
+</html>
