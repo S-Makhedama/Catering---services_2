@@ -52,6 +52,8 @@ document.getElementById('bookingForm').addEventListener('submit', function(event
     window.location.href = 'contact.html';
   });
 
+ 
+
 /****************************************************Contact us page validation form************************************************/
 
 function validateForm() {
@@ -94,6 +96,32 @@ function isValidEmail(email) {
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
+
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+  var error = document.getElementById("error");
+
+  error.innerHTML = "";
+
+  if (name == "" || email == "" || subject == "" || message == "") {
+    error.innerHTML = "All fields are required.";
+    return false;
+  }
+
+  // You can add additional validation logic here if needed
+
+  return true;
+}
+
+var form = document.getElementById("contactForm");
+form.addEventListener("submit", function(event) {
+  if (!validateForm()) {
+    event.preventDefault();
+  }
+});
 
 /*----------------------------------Change Tab color for nav bar------------------------------------------------------------*/
 function changeColor(tab) {
@@ -201,3 +229,28 @@ document.getElementById("decorLink").addEventListener("click", function(event){
 var list = document.getElementById('list');
 
 var listItems = list.getElementsByTagName('li');
+
+/*------------------------------------------------STAFF--------------------------------------------------------------*/
+ // Function to display modal
+ function showModal(title, body) {
+  var modal = document.getElementById("myModal");
+  var modalTitle = document.getElementById("modal-title");
+  var modalBody = document.getElementById("modal-body");
+  modal.style.display = "block";
+  modalTitle.innerText = title;
+  modalBody.innerText = body;
+}
+
+// Function to close modal
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+
+  // Close modal when clicking outside of it
+  window.addEventListener("click", function(event) {
+    var modal = document.getElementById("myModal");
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
