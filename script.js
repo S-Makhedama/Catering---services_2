@@ -159,7 +159,10 @@ form.addEventListener("submit", function(event) {
     event.preventDefault();
   }
 });
-
+var fields = ["Full Name", "Email", "Subject", "Message"];
+for (var i = 0; i < fields.length; i++) {
+  document.write('<input type="text" placeholder="' + fields[i] + '" class="contant-in-input">');
+}
 /*----------------------------------Change Tab color for nav bar------------------------------------------------------------*/
 function changeColor(tab) {
     
