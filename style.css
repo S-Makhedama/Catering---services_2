@@ -737,12 +737,14 @@ figcaption {
         }
   .contact-in:nth-child(1) {
           flex: 30%;
-          background: url(images/image13.JPG);
-          color: #fff;
+          background: url(images/white-trianglify-b79c7e1f.jpg);
+          color: #948d8d;
+          background-repeat: no-repeat;
         }
   .contact-in:nth-child(2) {
           flex: 45%;
-          background: #c31432;
+          background: #b69fa3;
+          size-adjust: 2px;
         }
   .contact-in:nth-child(3) {
           flex: 25%;
@@ -750,7 +752,7 @@ figcaption {
         }
   .contact-in h1 {
           font-size: 24px;
-          color: #fff;
+          color: rgb(94, 89, 89);
           text-transform: uppercase;
           font-weight: 500;
           margin-bottom: 20px;
@@ -764,9 +766,9 @@ figcaption {
           font-size: 16px;
           width: 40px;
           height: 40px;
-          margin-right: 10px;
-          background: #f5f5f5;
-          color: black;
+          margin-right: 5px;
+          background: #8d8a8a;
+          color: rgb(44, 41, 41);
           border-radius: 50px;
           line-height: 40px;
           text-align: center;
@@ -783,7 +785,7 @@ figcaption {
   .contact-in ul li {
          list-style: none;
          display: inline-block;
-         margin-right: 5px;
+         margin-right: 10px;
          margin-top: 5px;
         }
   .contact-in ul a {
