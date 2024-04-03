@@ -324,13 +324,13 @@ nav {
 
 /**************************************************Booking Page***************************************************/
 .containers{
-    background: url(Drinks/OPI);
+    background: url(images/cocktail.jpeg);
     background-repeat: no-repeat;
     background-blend-mode: multiply;
-    background-position: center;
+    background-position:center center;
     background-size: cover;
 }
-.main{
+.mains{
     max-width: 1200px;
     height: 100vh;
     display: flex;
