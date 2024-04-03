@@ -59,9 +59,29 @@ nav {
     margin-left: auto;
 }
 
-/****************************change Tab color ***********************************/
+/****************************************************change Tab color *******************************************/
 
-.tab {
+.tab{
+    float: right;
+    margin-left: 5px;
+    padding-right: 20px;
+}
+ .tab a{
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
+ .tab.active{
+    background-color: #45a049;
+    
+ }
+
+
+/*.tab {
     color: #333;
     text-decoration: none;
     padding: 10px 20px;
@@ -74,10 +94,10 @@ nav {
   }
   
   .active {
-    background-color: white; /* Change this to your desired color */
+    background-color: white;
     color: #fff;
   }
-  
+*/
 
 /***************************************Home Page***Image Slinder************************************************/
 /*
