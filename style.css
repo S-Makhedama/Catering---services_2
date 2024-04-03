@@ -366,6 +366,11 @@ nav {
 .form-text{
     text-align: center;
 }
+
+.form-text p{
+    color: #f5efef;
+}
+
 .main-form div{
     margin: 10px 20px;
     width: 300px;

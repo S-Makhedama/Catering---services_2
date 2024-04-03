@@ -18,29 +18,27 @@ toggle.addEventListener('click', function(){
 });
 
 /****************************************************Booking page**********************************************************************/
-document.getElementById('bookingForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
-    
-    // Get form values
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var date = document.getElementById('date').value;
-    var time = document.getElementById('time').value;
-    
-    // Display confirmation message
-    var message = document.getElementById('message');
-    message.innerHTML = '<p>Appointment booked for:</p>' +
-                        '<p>Name: ' + name + '</p>' +
-                        '<p>Email: ' + email + '</p>' +
-                        '<p>Date: ' + date + '</p>' +
-                        '<p>Time: ' + time + '</p>';
-    
-    // Clear form fields
-    document.getElementById('name').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('date').value = '';
-    document.getElementById('time').value = '';
-  });
+function submitForm() {
+  var formData = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    people: document.getElementById('people').value,
+    time: document.getElementById('time').value,
+    date: document.getElementById('date').value,
+    number: document.getElementById('number').value
+  };
+
+  // Convert formData to JSON string and store it in localStorage
+  localStorage.setItem('formData', JSON.stringify(formData));
+
+  // Alert the user that the form has been submitted
+  alert('Form submitted successfully!');
+
+  // Clear the form fields
+  document.getElementById('eventForm').reset();
+}
+  
+
   
 
 
