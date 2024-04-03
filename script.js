@@ -52,6 +52,8 @@ document.getElementById('bookingForm').addEventListener('submit', function(event
     window.location.href = 'contact.html';
   });
 
+ 
+
 /****************************************************Contact us page validation form************************************************/
 
 function validateForm() {
@@ -94,6 +96,32 @@ function isValidEmail(email) {
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
+
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+  var error = document.getElementById("error");
+
+  error.innerHTML = "";
+
+  if (name == "" || email == "" || subject == "" || message == "") {
+    error.innerHTML = "All fields are required.";
+    return false;
+  }
+
+  // You can add additional validation logic here if needed
+
+  return true;
+}
+
+var form = document.getElementById("contactForm");
+form.addEventListener("submit", function(event) {
+  if (!validateForm()) {
+    event.preventDefault();
+  }
+});
 
 /*----------------------------------Change Tab color for nav bar------------------------------------------------------------*/
 function changeColor(tab) {
