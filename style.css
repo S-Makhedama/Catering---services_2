@@ -323,14 +323,13 @@ nav {
 }
 
 /**************************************************Booking Page***************************************************/
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-   
-  }
-
+.containers{
+    background: url(Drinks/OPI);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+}
 .main{
     max-width: 1200px;
     height: 100vh;
@@ -342,35 +341,20 @@ nav {
 .form{
     width: 900px;
     height: 700px;
-    background-color: #8b8686;
 }
 
 .form-text{
     text-align: center;
-  }
-  
-  form {
+}
+.main-form div{
+    margin: 10px 20px;
+    width: 300px;
     display: inline-block;
-    text-align: left;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="date"],
-  input[type="time"],
-  input[type="submit"] {
-    width: 100%;
-    border: 1px solid #ccc;
-    font-size: 20px;
-    outline: none;
-    padding: 3px 0 3px 10px;
-    margin-top: 10px;
 }
 
 .main-form div select{
     width: 100%;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     border: 1px solid #ccc;
     padding: 3px 0 3px 10px;
     margin-top: 10px;
@@ -404,8 +388,6 @@ nav {
     width: 200px;
     background-color: #030303;
 }
-
-
 /* ************************************************Catering***************************************************/
 
 .headers{
