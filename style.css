@@ -111,11 +111,35 @@ nav {
     text-align: center;
 }
 
-.header p{
+  .animated-text {
+    font-size: 48px;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  header p {
     color: white;
     font-size: larger;
-}
-
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards 0.5s;
+  }
+  
+  /*
+  button {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards 1s;
+  }
+  */
 #Contact_btn {
     padding: 15px 25px;
     font-size: 20px;
