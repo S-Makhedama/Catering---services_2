@@ -38,7 +38,9 @@ function submitForm() {
   document.getElementById('eventForm').reset();
 }
   
-
+function goBackToIndex() {
+  window.location.href = "index.html";
+}
   
 
 
