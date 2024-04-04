@@ -6,30 +6,9 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #ffffff;
+    }
+    
 
-    @media only screen and (max-width:480px) {
-      .contact-in:nth-child(1) {
-        flex: 50%;
-      }
-      .contact-in:nth-child(2) {
-        flex: 50%;
-      }
-      .contact-in:nth-child(3) {
-        flex: 100%;
-    }
-    }
-    @media only screen and (max-width:360px) {
-      .contact-in:nth-child(1) {
-        flex: 50%;
-      }
-      .contact-in:nth-child(2) {
-        flex: 50%;
-      }
-      .contact-in:nth-child(3) {
-        flex: 100%;
-    }
-}
-}
     
 
 
@@ -1122,5 +1101,36 @@ button:hover {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 1200px) {
+  /* CSS for screens up to 1200px width */
+  /* Add your styles here */
+}
 
+@media only screen and (max-width: 1024px) {
+  /* CSS for screens up to 1024px width */
+  /* Add your styles here */
+}
 
+@media only screen and (max-width: 768px) {
+  /* CSS for screens up to 768px width */
+  /* Add your styles here */
+}
+
+@media only screen and (max-width: 480px) {
+  /* CSS for screens up to 480px width */
+  /* Add your styles here */
+}
+
+@media only screen and (max-width: 360px) {
+    .contact-in:nth-child(1) {
+      flex: 50%;
+    }
+    .contact-in:nth-child(2) {
+      flex: 50%;
+    }
+    .contact-in:nth-child(3) {
+      flex: 100%;
+  }
+}
+
+/* Add more media queries as needed for other screen sizes */
