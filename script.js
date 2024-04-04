@@ -38,10 +38,10 @@ function submitForm() {
   document.getElementById('eventForm').reset();
 }
   
-
+function goBackToIndex() {
+  window.location.href = "index.html";
+}
   
-
-
 /****************************************************Home page**********************************************************************/
 
 // Add event listener to the button
@@ -55,11 +55,8 @@ function submitForm() {
     // Change the URL to the desired page
     window.location.href = "contact.html";
   }
-
-/*************************************resizing images when clicking them***********************************************************************************/
-
-
-
+  
+ 
   
 
   //script.js
@@ -89,13 +86,6 @@ document.addEventListener('DOMContentLoaded',
         });
 
     });
-
-
-
-
-
-
-
 
 /****************************************************Contact us page validation form************************************************/
 /*
@@ -360,3 +350,4 @@ function closeModal() {
       closeModal();
     }
   });
+
