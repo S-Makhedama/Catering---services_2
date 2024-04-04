@@ -38,10 +38,10 @@ function submitForm() {
   document.getElementById('eventForm').reset();
 }
   
-
+function goBackToIndex() {
+  window.location.href = "index.html";
+}
   
-
-
 /****************************************************Home page**********************************************************************/
 
 // Add event listener to the button
@@ -50,7 +50,12 @@ function submitForm() {
     window.location.href = 'contact.html';
   });
 
- 
+/********************************Navigate from home to contact us page*********************************************************/
+  function navigateToPage() {
+    // Change the URL to the desired page
+    window.location.href = "contact.html";
+  }
+  
  
   
 
@@ -81,13 +86,6 @@ document.addEventListener('DOMContentLoaded',
         });
 
     });
-
-
-
-
-
-
-
 
 /****************************************************Contact us page validation form************************************************/
 /*
@@ -235,7 +233,7 @@ function changeColor(tab) {
   
 
 
-  /*---------------------------------------decor-----------------------------------------------------*/
+/*----------------------------------------------------------------decor-------------------------------------------------------------*/
 
     function goBack() {
       window.history.back();
@@ -259,7 +257,7 @@ function zoomIn(event) {
 
    onclick="goBack()"
 
-  /*---------------------------------------------catering---------------------------------------------------*/
+  /*------------------------------------------------------------------catering-------------------------------------------------------*/
   function showGallery(galleryId) {
     const africanGallery = document.getElementById('africanGallery');
     const modernGallery = document.getElementById('modernGallery');
@@ -293,7 +291,7 @@ images[i].onclick = function() {
 }
 };
 
-/*---------------------------------------------Our services----------------------------------------------------------*/
+/*-------------------------------------------------------Our services----------------------------------------------------------*/
 function goBack(){
   window.history.back();
 }
@@ -352,3 +350,4 @@ function closeModal() {
       closeModal();
     }
   });
+
