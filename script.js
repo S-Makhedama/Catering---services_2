@@ -88,67 +88,6 @@ document.addEventListener('DOMContentLoaded',
     });
 
 /****************************************************Contact us page validation form************************************************/
-/*
-function validateForm() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var subject = document.getElementById("subject").value;
-    var message = document.getElementById("message").value;
-    var errorElement = document.getElementById("error");
-
-    errorElement.innerHTML = "";
-
-    if (name.trim() === "") {
-        errorElement.innerHTML = "Name is required";
-        return false;
-    }
-
-    if (email.trim() === "") {
-        errorElement.innerHTML = "Email is required";
-        return false;
-    } else if (!isValidEmail(email)) {
-        errorElement.innerHTML = "Invalid email address";
-        return false;
-    }
-
-    if (subject.trim() === "") {
-        errorElement.innerHTML = "Subject is required";
-        return false;
-    }
-
-    if (message.trim() === "") {
-        errorElement.innerHTML = "Message is required";
-        return false;
-    }
-
-    return true;
-}
-
-function isValidEmail(email) {
-    // Simple email validation regex
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-function validateForm() {
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var subject = document.getElementById("subject").value;
-  var message = document.getElementById("message").value;
-  var error = document.getElementById("error");
-
-  error.innerHTML = "";
-
-  if (name == "" || email == "" || subject == "" || message == "") {
-    error.innerHTML = "All fields are required.";
-    return false;
-  }
-
-  // You can add additional validation logic here if needed
-
-  return true;
-}
-/*** */
 
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
@@ -256,7 +195,7 @@ function zoomIn(event) {
   });
 
    onclick="goBack()"
-
+  
   /*------------------------------------------------------------------catering-------------------------------------------------------*/
   function showGallery(galleryId) {
     const africanGallery = document.getElementById('africanGallery');
@@ -351,3 +290,20 @@ function closeModal() {
     }
   });
 
+/***********************************************about*********************************************/
+const image = document.getElementById('image');
+let positionX = 0; // Initial X position of the image
+let speed = 2; // Speed of movement in pixels per frame
+
+function moveImage() {
+    positionX += speed;
+    image.style.left = positionX + 'px';
+    
+    // Repeat the movement
+    if (positionX < window.innerWidth) {
+        requestAnimationFrame(moveImage);
+    }
+}
+
+// Start the animation
+moveImage();
