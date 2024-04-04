@@ -50,12 +50,16 @@ function submitForm() {
     window.location.href = 'contact.html';
   });
 
+/********************************Navigate from home to contact us page*********************************************************/
   function navigateToPage() {
     // Change the URL to the desired page
     window.location.href = "contact.html";
   }
-  
- 
+
+/*************************************resizing images when clicking them***********************************************************************************/
+
+
+
   
 
   //script.js

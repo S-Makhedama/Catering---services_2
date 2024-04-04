@@ -100,6 +100,9 @@ nav {
 */
 
 /***************************************Home Page***Image Slinder************************************************/
+
+
+
 /*
 .swiper-container {
     width: 100%;
@@ -927,6 +930,20 @@ figcaption {
     color: #666;
 }
 
+/************************************resize the image with mouse pointer*************************/
+
+/* Define initial size */
+.partner-logo{
+  width: 200px;
+  height: auto;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: width 0.3s ease; /* Add transition for smooth resizing */
+}
+
+/* Define new size when active class is applied */
+.partner-logo.active{
+  width: 400px; /* New width */
+}
 
 
 
