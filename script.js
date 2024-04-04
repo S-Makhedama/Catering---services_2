@@ -50,7 +50,11 @@ function submitForm() {
     window.location.href = 'contact.html';
   });
 
- 
+  function navigateToPage() {
+    // Change the URL to the desired page
+    window.location.href = "contact.html";
+  }
+  
  
   
 
