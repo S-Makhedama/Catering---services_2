@@ -1,5 +1,4 @@
 
-
 /**********************************Dark or Bright Mode***************************************************/
 
 const toggle = document.getElementById('toggleDark');
@@ -43,8 +42,6 @@ function goBackToIndex() {
   window.location.href = "index.html";
 }
   
-
-
 /****************************************************Home page**********************************************************************/
 
 // Add event listener to the button
@@ -58,8 +55,7 @@ function goBackToIndex() {
     window.location.href = "contact.html";
   }
   
- 
-  
+
 
   //script.js
 
@@ -88,13 +84,6 @@ document.addEventListener('DOMContentLoaded',
         });
 
     });
-
-
-
-
-
-
-
 
 /****************************************************Contact us page validation form************************************************/
 /*
