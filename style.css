@@ -345,7 +345,7 @@ nav {
 
 /**************************************************Booking Page***************************************************/
 .containers{
-    background: url(images/cocktail.jpeg);
+    background: url(images/cocktail.jpeg), radial-gradient(darkgrey , pink);
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-position:center center;
@@ -366,6 +366,7 @@ nav {
 
 .form-text{
     text-align: center;
+    color: white;
 }
 
 .form-text p{
@@ -389,6 +390,7 @@ nav {
 .main-form div span{
     width: 100%;
     font-size: 30px;
+    color: white;
 }
 
 #submit{
