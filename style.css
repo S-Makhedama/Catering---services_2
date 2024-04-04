@@ -185,7 +185,7 @@ nav {
 }
 
 .About_btn button {
-    background-color: #cfcdc7; /* Gold orange */
+    background-color: #f0f0ee; /* Gold orange */
     border: none;
     padding: 10px 32px;
     text-align: center;
@@ -234,7 +234,7 @@ nav {
 }
 
 .Phases h4{
-    color: #8a6e08;
+    color: black;
     font-weight: bold;
 }
 
