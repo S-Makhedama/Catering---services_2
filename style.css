@@ -6,6 +6,29 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #ffffff;
+
+    @media only screen and (max-width:480px) {
+      .contact-in:nth-child(1) {
+        flex: 50%;
+      }
+      .contact-in:nth-child(2) {
+        flex: 50%;
+      }
+      .contact-in:nth-child(3) {
+        flex: 100%;
+    }
+    }
+    @media only screen and (max-width:360px) {
+      .contact-in:nth-child(1) {
+        flex: 50%;
+      }
+      .contact-in:nth-child(2) {
+        flex: 50%;
+      }
+      .contact-in:nth-child(3) {
+        flex: 100%;
+    }
+}
 }
     
 
