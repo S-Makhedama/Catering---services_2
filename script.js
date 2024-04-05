@@ -265,6 +265,22 @@ var list = document.getElementById('list');
 
 var listItems = list.getElementsByTagName('li');
 
+// Function to change the rating based on the clicked star
+function changeRating(rating) {
+  // Get all star elements
+  var stars = document.querySelectorAll('.fa-star');
+
+  // Loop through each star
+  for (var i = 0; i < stars.length; i++) {
+      // If the star is before or equal to the clicked star, set it to checked
+      if (i < rating) {
+          stars[i].classList.add('checked');
+      } else { // Otherwise, remove the checked class
+          stars[i].classList.remove('checked');
+      }
+  }
+}
+
 /*------------------------------------------------STAFF--------------------------------------------------------------*/
  // Function to display modal
  function showModal(title, body) {

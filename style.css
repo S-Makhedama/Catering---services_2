@@ -586,7 +586,6 @@ figcaption {
     margin-left: 20rem;
     padding: 30px;
     border: .2rem solid rgb(131, 128, 128);
-    
   }
 
   .containee p {
@@ -606,8 +605,8 @@ figcaption {
 .containee img{
   border-radius: 30px;
   height: 250px;
+  justify-content: space-evenly;
   }
-
 /* CSS for modal */
 .modal {
     display: none;
@@ -640,7 +639,10 @@ figcaption {
     text-decoration: none;
     cursor: pointer;
   }
-
+  .checked {
+    color: orange;
+    cursor: pointer; /* Add cursor pointer to indicate interactivity */
+  }
 /* *************************************Slide Show***************************************************/
 .container{ 
     max-width: 100vw;
