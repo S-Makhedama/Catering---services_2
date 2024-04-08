@@ -231,9 +231,7 @@ images[i].onclick = function() {
 };
 
 /*-------------------------------------------------------Our services----------------------------------------------------------*/
-function goBack(){
-  window.history.back();
-}
+
 document.getElementById("barLink").addEventListener("click", function(event){
       event.preventDefault();
       window.location.href = "bar.htm";
@@ -280,7 +278,10 @@ function changeRating(rating) {
       }
   }
 }
-
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 /*------------------------------------------------STAFF--------------------------------------------------------------*/
  // Function to display modal
  function showModal(title, body) {
