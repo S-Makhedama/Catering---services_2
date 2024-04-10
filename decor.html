@@ -9,31 +9,70 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 </head>
 <style>
-    .main {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    img {
-      width: 400px;
-      height: 300px;
-      transition: transform 0.3s ease;
-    }
-    img:hover {
-      transform: scale(1.1); /* Zoom effect on hover */
-    }
-  </style>
+* {box-sizing: border-box;}
+body {font-family: Arial, Helvetica, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
-<body>
-    <style>
-        body {
-          cursor: pointer;
-        }
-      
-      </style>
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
 
-    
+/* Number text  */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
 </head>
 <!----------------------------------------------------------------Nav Bar------------------------------------------------------------------------>
 
@@ -52,33 +91,64 @@
                 </ul>
             </nav>       
 </div>
-    <!----------------------------------------------------------------Main------------------------------------------------------------------------>
-    <div class="Decoration">
-        <div class="zero"  >
-            <header>
-                <center>
-                     <h1>Decoration Services</h1>
-                 </center>    
-            </header>
-        </div>  
-        <div class="main">
-            <main>
-             <img src="images/FullSizeRender (1).jpeg" alt="" width="400"  height="300">
-             <img src="Images/Ballroom-Wedding-2.jpg" alt="ThreePole tent" width="400"  height="300">
-             <img src="Images/f3322997b65c9efbbba0c66f7938390a.jpg" alt="" width="400" height="300">
-             <img src="Images/th.jfif" alt="" width="400"  height="300">
-             <img src="Image/maxresdefault.jpg" alt="" width="400"  height="300">
-             <img src="Images/ebc9dee43ea92d449cda820e8a0f1bf7.jpg" alt="" width="400"  height="300">
-             <img src="images/FullSizeRender (1).jpg" alt="" width="400"  height="300">
-             <img src="images/FullSizeRender10 (1).jpeg" alt="" width="400"  height="300">
-             <img src="images/FullSizeRender.jpg" alt="" width="400"  height="300">
-             <img src="images/FullSizeRender+19.jpg" alt="" width="400"  height="300">
-             <img src="images/FullSizeRender.jpeg" alt="" width="400"  height="300">
-             <img src="images/IMG_8741.jpg" alt="" width="400"  height="300">
-             
-         </main>
+<!----------------------------------------------------------------Main------------------------------------------------------------------------>
+    <body>
+        <div class="heading">
+            <center>
+        <h2>Decoration services</h2>
+            </center>
         </div>
-    </div>  
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="images/FullSizeRender (1).jpeg" style="width:100%">
+          <div class="text">Baby shower</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="Images/Ballroom-Wedding-2.jpg" style="width:100%">
+          <div class="text">Table setting</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="Images/venue decoration.jpg" style="width:100%">
+          <div class="text">Venue decoration</div>
+        </div>
+                       
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <img src="images/floral desgin.jpg" style="width:100%">
+          <div class="text">Floral design</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <img src="images/stage.jpg" style="width:100%">
+          <div class="text">Stage setup</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 6</div>
+          <img src="images/FullSizeRender+19.jpg" style="width:100%">
+          <div class="text">Birthday </div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        
 
      
 <!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
@@ -89,7 +159,21 @@
         <p>Designed by Young_Tech_Ninjas</p>
     </footer>
 </div>
-<script src="script.js"></script>
+<script>
+let slideIndex = 0;
+showSlides();
 
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+   </script> 
 </body>
 </html>

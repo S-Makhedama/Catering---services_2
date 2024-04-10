@@ -173,28 +173,21 @@ function changeColor(tab) {
 
 
 /*----------------------------------------------------------------decor-------------------------------------------------------------*/
+let slideIndex = 0;
+showSlides();
 
-    function goBack() {
-      window.history.back();
-    }
-
-    // Function to zoom in on an image
-function zoomIn(event) {
-    event.target.style.transform = "scale(1.5)"; // Zoom factor 1.5
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-  
-  // Function to zoom out on an image
-  function zoomOut(event) {
-    event.target.style.transform = "scale(1)"; // Reset to original size
-  }
-  
-  // Add event listeners to all images for zoom functionality
-  document.querySelectorAll('.main img').forEach(function(img) {
-    img.addEventListener('mouseenter', zoomIn);
-    img.addEventListener('mouseleave', zoomOut);
-  });
-
-   onclick="goBack()"
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    
   
   /*------------------------------------------------------------------catering-------------------------------------------------------*/
   function showGallery(galleryId) {

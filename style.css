@@ -505,7 +505,7 @@ figcaption {
 .imo{
     color: white;
 }
-/* *************************************Our Services***************************************************/
+/******************************************************************Our Services*****************************************************************/
 .heading h1{
     color: black;
     text-align: center;
@@ -664,32 +664,7 @@ figcaption {
     color: orange;
     cursor: pointer; /* Add cursor pointer to indicate interactivity */
   }
-/* *************************************Slide Show***************************************************/
-.container{ 
-    max-width: 100vw;
-    overflow: hidden;
-}
 
-.slide-wrapper{
-    position: relative;
-    max-width: 48rem;
-    margin: 0 auto;
-}
-.slider{
-    display: flex;
-    aspect-ratio: 16/9;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth; /*creates a smooth animation */
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0%,0%,0%.25);
-    border-radius: 0.5rem;
-}
-
-.slider img{
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-}
 /*----------------------------------------------------------Contact Page----------------------------------------------------------------------------------*/
   .contact-wrap {
           width: 50%;
