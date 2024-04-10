@@ -798,6 +798,7 @@ figcaption {
           height: 120%;
         }
         @media only screen and (max-width:480px) {
+          
           .contact-in:nth-child(1) {
             flex: 50%;
           }
