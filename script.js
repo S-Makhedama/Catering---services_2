@@ -88,67 +88,6 @@ document.addEventListener('DOMContentLoaded',
     });
 
 /****************************************************Contact us page validation form************************************************/
-/*
-function validateForm() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var subject = document.getElementById("subject").value;
-    var message = document.getElementById("message").value;
-    var errorElement = document.getElementById("error");
-
-    errorElement.innerHTML = "";
-
-    if (name.trim() === "") {
-        errorElement.innerHTML = "Name is required";
-        return false;
-    }
-
-    if (email.trim() === "") {
-        errorElement.innerHTML = "Email is required";
-        return false;
-    } else if (!isValidEmail(email)) {
-        errorElement.innerHTML = "Invalid email address";
-        return false;
-    }
-
-    if (subject.trim() === "") {
-        errorElement.innerHTML = "Subject is required";
-        return false;
-    }
-
-    if (message.trim() === "") {
-        errorElement.innerHTML = "Message is required";
-        return false;
-    }
-
-    return true;
-}
-
-function isValidEmail(email) {
-    // Simple email validation regex
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-function validateForm() {
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var subject = document.getElementById("subject").value;
-  var message = document.getElementById("message").value;
-  var error = document.getElementById("error");
-
-  error.innerHTML = "";
-
-  if (name == "" || email == "" || subject == "" || message == "") {
-    error.innerHTML = "All fields are required.";
-    return false;
-  }
-
-  // You can add additional validation logic here if needed
-
-  return true;
-}
-/*** */
 
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
@@ -256,7 +195,7 @@ function zoomIn(event) {
   });
 
    onclick="goBack()"
-
+  
   /*------------------------------------------------------------------catering-------------------------------------------------------*/
   function showGallery(galleryId) {
     const africanGallery = document.getElementById('africanGallery');
@@ -292,9 +231,7 @@ images[i].onclick = function() {
 };
 
 /*-------------------------------------------------------Our services----------------------------------------------------------*/
-function goBack(){
-  window.history.back();
-}
+
 document.getElementById("barLink").addEventListener("click", function(event){
       event.preventDefault();
       window.location.href = "bar.htm";
@@ -326,6 +263,25 @@ var list = document.getElementById('list');
 
 var listItems = list.getElementsByTagName('li');
 
+// Function to change the rating based on the clicked star
+function changeRating(rating) {
+  // Get all star elements
+  var stars = document.querySelectorAll('.fa-star');
+
+  // Loop through each star
+  for (var i = 0; i < stars.length; i++) {
+      // If the star is before or equal to the clicked star, set it to checked
+      if (i < rating) {
+          stars[i].classList.add('checked');
+      } else { // Otherwise, remove the checked class
+          stars[i].classList.remove('checked');
+      }
+  }
+}
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 /*------------------------------------------------STAFF--------------------------------------------------------------*/
  // Function to display modal
  function showModal(title, body) {
@@ -351,3 +307,20 @@ function closeModal() {
     }
   });
 
+/***********************************************about*********************************************/
+const image = document.getElementById('image');
+let positionX = 0; // Initial X position of the image
+let speed = 2; // Speed of movement in pixels per frame
+
+function moveImage() {
+    positionX += speed;
+    image.style.left = positionX + 'px';
+    
+    // Repeat the movement
+    if (positionX < window.innerWidth) {
+        requestAnimationFrame(moveImage);
+    }
+}
+
+// Start the animation
+moveImage();
