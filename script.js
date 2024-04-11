@@ -224,11 +224,6 @@ images[i].onclick = function() {
 
 /*-------------------------------------------------------Our services----------------------------------------------------------*/
 
-document.getElementById("barLink").addEventListener("click", function(event){
-      event.preventDefault();
-      window.location.href = "bar.htm";
-  });
-
 document.getElementById("decorLink").addEventListener("click", function(event){
       event.preventDefault();
       window.location.href = "decor.html";
