@@ -187,7 +187,6 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
-    
   
   /*------------------------------------------------------------------catering-------------------------------------------------------*/
   function showGallery(galleryId) {
@@ -275,30 +274,6 @@ function changeRating(rating) {
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-/*------------------------------------------------STAFF--------------------------------------------------------------*/
- // Function to display modal
- function showModal(title, body) {
-  var modal = document.getElementById("myModal");
-  var modalTitle = document.getElementById("modal-title");
-  var modalBody = document.getElementById("modal-body");
-  modal.style.display = "block";
-  modalTitle.innerText = title;
-  modalBody.innerText = body;
-}
-
-// Function to close modal
-function closeModal() {
-  var modal = document.getElementById("myModal");
-  modal.style.display = "none";
-}
-
-  // Close modal when clicking outside of it
-  window.addEventListener("click", function(event) {
-    var modal = document.getElementById("myModal");
-    if (event.target === modal) {
-      closeModal();
-    }
-  });
 
 /***********************************************about*********************************************/
 const image = document.getElementById('image');
