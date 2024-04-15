@@ -27,8 +27,8 @@
             </nav>       
 </div>
 <!--------------------------------------------------------Booking form--------------------------------------------------------------->
-
-<div class="form-container">
+<center>
+<div class="booking-form">
     <h2 style="text-align: center;">Booking Form</h2>
     <p>Please fill out the form below to book your event.</p>
     <form id="bookingForm" onsubmit="return validateForm()">
@@ -53,9 +53,10 @@
       <label for="phone">Phone Number:</label>
       <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
       
-      <button type="submit">Book Now</button>
+      <button class="submit-btn" type="submit">Book Now</button>
     </form>
-  </div>
+</div>
+</center>
 
 <!----------------------------------------------------------------JavaScrip for validatiuons---------------------------------------------------------------------->
 <script>

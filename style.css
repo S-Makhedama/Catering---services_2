@@ -302,14 +302,15 @@ nav {
     padding-top: 100px;
 }
 
-/**************************************************Booking Page***************************************************/
-.form-container {
-  width: 400px;
-  background-color: #fff;
+/**************************************************Booking Page form***************************************************/
+.booking-form {
+  width: 500px;
+  background-color: #b69fa3;
   padding: 20px;
+  margin: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-
+  text-align: center;
 }
 
 label {
@@ -325,10 +326,10 @@ input {
   border: 1px solid #ccc;
 }
 
-button {
+.submit-btn {
   width: 100%;
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: lightgray;
   color: white;
   border: none;
   border-radius: 5px;
