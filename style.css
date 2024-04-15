@@ -303,79 +303,45 @@ nav {
 }
 
 /**************************************************Booking Page***************************************************/
-.containers{
-    /*background: url(images/cocktail.jpeg), radial-gradient(darkgrey , pink);*/
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    background-position:center center;
-    background-size: cover;
-}
-.mains{
-    max-width: 1200px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.form-container {
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
 }
 
-.form{
-    width: 900px;
-    height: 700px;
+label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-.form-text{
-    text-align: center;
-    color: white;
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-.form-text p{
-    color: black;
+button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.main-form div{
-    margin: 10px 20px;
-    width: 300px;
-    display: inline-block;
+button:hover {
+  background-color: #45a049;
 }
 
-.main-form div select{
-    width: 100%;
-    font-size: 20px;
-    border: 1px solid #ccc;
-    padding: 3px 0 3px 10px;
-    margin-top: 10px;
+.error {
+  color: red;
 }
-
-.main-form div span{
-    width: 100%;
-    font-size: 30px;
-    color: black;
-}
-
-#submit{
-    width: 100%;
-    margin: 20px auto;
-    text-align: center;
-}
-
-#submit input{
-    width: 200px;
-    background-color: #cfcdc7;
-    transition: all .3s;
-}
-
-#submit input :hover{
-    width: 200px;
-    background-color: #0c0c0b;
-}
-
-
-#submit input :active{
-    font-size: 19px;
-    width: 200px;
-    background-color: #030303;
-}
-
 /* ************************************************Catering***************************************************/
 
 .headers{
