@@ -599,143 +599,6 @@ figcaption {
 background-color: #cfa658;
 }
 /*End of decor**/
-
-.middle-image {
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    border: .2rem solid rgb(46, 3, 3);
-    border-radius: 50%; 
-    animation: spin 3s linear infinite;
-}
-
-.container {
-    position: relative;
-    width: 90%;
-    gap: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-  
-.image-container {
-    position: relative;
-    display:inline-block;
-    text-align: center;
-    margin-bottom: 5px;
-    padding: 20px;
-    margin-right: 20px;
-}
-  
-.image-container img {
-    max-width: 100%;
-    width: 550px;
-    height: 390px;
-    display: block;
-    margin-right: 20px;
-    transition: filter 0.5s ease;
-    padding: 5px;
-}
- 
-.image-container a{
-    color: #0c0109;
-    font-weight: bold;
-    font-size: 20px;
-}
-/* list style starts here */
-.list {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(211, 210, 210);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(131, 128, 128);
-    display: none;
-  }
-  
-.list li {
-    list-style: none;
-    padding: 5px 0;
-}
-  /* Image hovering style starts here*/
-.image-container:hover img {
-    filter: blur(8px);
-}
-  
-.image-container:hover .list {
-    display: block;
-}
-.containee {
-    width: 800px;
-    display: flex;
-    align-items: center; 
-    gap: 20px; /* Add space between items */
-    margin-left: 20rem;
-    padding: 30px;
-    border: .2rem solid rgb(131, 128, 128);
-  }
-
-  .containee p {
-    margin: 0; 
-    font-size: 18px;
-    line-height: 1.5;
-    color: #000000;
-  }
-
-  /* Style for the link */
-  .containee a {
-    color: black; 
-    text-decoration: none; 
-  }
-
-  /* Style for the image */
-.containee img{
-  border-radius: 30px;
-  height: 250px;
-  justify-content: space-evenly;
-  }
-/* CSS for modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
-  }
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  /* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 60%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
 .close {
     color: black;
     float: right;
@@ -754,182 +617,38 @@ background-color: #cfa658;
   }
 
 /*----------------------------------------------------------Contact Page----------------------------------------------------------------------------------*/
-  .contact-wrap {
-          width: 50%;
-          height: auto;
-          margin: auto;
-          display: flex;
-          flex-wrap: wrap;
-        }
-  .contact-us{
-    flex: 30%;
-    background: url(images/white-trianglify-b79c7e1f.jpg);
-    color: #948d8d;
-    background-repeat: no-repeat;
-    height: 400px;
+.contact-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px;
+}
+.contact-info,
+.iframe {
+  flex-basis: calc(50% - 50px); /* Adjust width as needed */
+  margin-bottom: 20px;
+}
+
+.contact-in,
+.getintouch {
+  background-color: #b69fa3;
+  padding: 10px;
+  max-width: 40%;
+  border-radius: 5px;
+}
+
+.iframe {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact-info,
+  .iframe {
+      flex-basis: 100%;
   }
-  .getintouch{
-    flex: 45%;
-    background: #b69fa3;
-    size-adjust: 2px;
-  }
-
-  .contact-in {
-          padding: 40px 0px;
-        }
-  .contact-in:nth-child(1) {
-          flex: 30%;
-          background: url(images/white-trianglify-b79c7e1f.jpg);
-          color: #948d8d;
-          background-repeat: no-repeat;
-          height: 400px;
-          padding: 20px 60px;
-        }
-  .contact-in:nth-child(2) {
-          flex: 45%;
-          background: #b69fa3;
-          size-adjust: 2px;
-          padding: 20px 60px;
-
-        }
-  .contact-in:nth-child(3) {
-          flex: 25%;
-          padding: 0;   
-        }
-  .contact-in h1 {
-          font-size: 24px;
-          color: rgb(94, 89, 89);
-          text-transform: uppercase;
-          font-weight: 500;
-          margin-bottom: 20px;
-        }
-  .contact-in h2 {
-          font-size: 20px;
-          font-weight: 400;
-          margin-bottom: 15px;
-        }
-  .contact-in h2 i {
-          font-size: 16px;
-          width: 40px;
-          height: 40px;
-          margin-right: 5px;
-          background: #8d8a8a;
-          color: rgb(44, 41, 41);
-          border-radius: 50px;
-          line-height: 40px;
-          text-align: center;
-        }
-  .contact-in p {
-          font-size: 14px;
-          font-weight: 300;
-          margin-bottom: 20px;
-        }
-  .contact-in ul {
-          padding: 0;
-          margin: 0; 
-        }
-  .contact-in ul li {
-         list-style: none;
-         display: inline-block;
-         margin-right: 10px;
-         margin-top: 5px;
-        }
-  .contact-in ul a {
-          display: block;
-          width: 30px;
-          height: 30px;
-          text-align: center;
-          background: #fff;
-          border-radius: 50px;
-         }
-         .contact-in ul a i {
-          font-size: 14px;
-          line-height: 30px;
-          color: #000;
-        }
-        .contact-in form {
-          width: 100%;
-          height: auto;
-        }
-        .contact-in-input {
-          width: 100%;
-          height: 40px;
-          margin-bottom: 20px;
-          border: 1px solid #fff;
-          outline: none;
-          padding-left: 5px;
-          background: transparent;
-          color: #fff;
-          font-size: 12px;
-          font-weight: 300;
-          font-family: 'Poppins', sans-serif;
-        }
-        .contact-in-input::placeholder {
-          color: #fff; 
-        }
-        .contact-in-textarea {
-          width: 100%;
-          height: 40px;
-          margin-bottom: 20px;
-          border: 1px solid #fff;
-          outline: none;
-          padding-top: 5px;
-          padding-left: 5px;
-          background: transparent;
-          color: #fff;
-          font-size: 12px;
-          font-weight: 300;
-          font-family: 'Poppins', sans-serif;
-        }
-        .contact-in-textarea::placeholder {
-          color: #fff; 
-        }
-        .contact-in-btn {
-          width: 100%;
-          height: 40px;
-          margin-bottom: 20px;
-          border: 1px solid #fff;
-          outline: none;
-          background: transparent;
-          color: #fff;
-          font-size: 12px;
-          font-weight: 300;
-          font-family: 'Poppins', sans-serif;
-          cursor: pointer;
-        }
-        .contact-in iframe {
-          width: 247%;
-          height: 120%;
-        }
-        @media only screen and (max-width:480px) {
-          
-          .contact-in:nth-child(1) {
-            flex: 50%;
-          }
-          .contact-in:nth-child(2) {
-            flex: 50%;
-          }
-          .contact-in:nth-child(3) {
-            flex: 100%;
-        }
-        }
-        @media only screen and (max-width:360px) {
-          .contact-in:nth-child(1) {
-            flex: 50%;
-          }
-          .contact-in:nth-child(2) {
-            flex: 50%;
-          }
-          .contact-in:nth-child(3) {
-            flex: 100%;
-        }
-        }
-
-
+}
+              
 /*********************************************image cards for home page***************************************************************/
-
-
-
 
 .card-container {
     display: flex;
@@ -980,8 +699,6 @@ background-color: #cfa658;
 .partner-logo.active{
   width: 400px; /* New width */
 }
-
-
 
 /**************************************Form Container***************************************************************/
 .form-container {
