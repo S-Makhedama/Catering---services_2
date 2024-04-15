@@ -373,139 +373,12 @@ nav {
     width: 200px;
     background-color: #030303;
 }
-
-/* ************************************************Catering***************************************************/
-
-.headers{
-    color: rgb(14, 12, 13);
-    text-align: center;
-    font-size: larger;
-    font-weight: 600;
-    margin: 0%;
-    font-style: oblique;
-}
-/*--------------------------------------african-cusions--------------*/
-
-.african-cuisines{
-  padding: 0px;
-  display: inline-block;
-}
-
-.african-cuisines.h1{
- font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
- font-style: oblique;
- margin: 0%;
- font-weight: 900;
-}
-/*--------------------------------------------------mordern cusions------------*/
-.mordern-cuisines{
-  padding: 0px;
-  display: inline-block;
-  color:white;
-  text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
- figure {
-  display: inline-block;
-  text-align: center;
-  margin: 10px;
-}
-
-
-figcaption {
-  display: block;
-  margin-top: 5px;
-  color: white;
-}
-
-.african-cuisines {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.images-food {
-  width: 80%;
-  height: auto;
-  object-fit: cover;
-  cursor: pointer;
-  border-radius: 10px;
-  flex-direction: row;
-}
-.catering{
- 
-
-}
-.gallery.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    flex-direction: row;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.gallery img {
-    max-width: 100%;
-    height: auto;
-}
-
-.african-cuisines, .modern-cuisines{
-    display: none;
-}
-
-.btn{
-    color: rgb(19, 22, 21);
-    margin-top: 10px;
-        padding: 10px 20px;
-        border: none;
-        background-color:#e2d6d4;
-        text-align: center;
-        text-decoration: none;
-        display: flex;
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 10px;
-}
-.btn:hover {
-    background-color:hsl(0, 39%, 95%);
-}
-
-.button-contain{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.bcv{
-        width: 450px;
-        height: auto; 
-        margin: 10px;
-        border-radius: 20px;
-}
-
-.drinkable{
-    background-image: url(Drinks/dark-stormy-rum-cocktail-lime-ginger-shutterstock_385915783.jpg),
-    radial-gradient(#313030 , #8b8686);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-blend-mode: multiply;
-    padding: 5px;
-
-}
-
-.imo{
-    color: white;
-}
 /******************************************************************Our Services*****************************************************************/
 .heading h1{
     color: black;
     text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .row1{
   display: inline-flex;
@@ -513,17 +386,22 @@ figcaption {
 .row2{
   display: inline;
 }
-.services-img{
+.services img{
   border-radius: 50px;
+  padding: 40px 40px;
+  
 }
 .description p{
   font-size: 20px;
 }
+.description ul{
+  text-align: left;
+  font-size: 20px;
+}
 .description{
   text-align: left;
-  text-align: center;
   font-size: 25px;
-  padding: 50px 100px;
+  padding: 30px 120px 40px 120px;
 }
 .btn-branding-outline {
   color: var(--branding-color);
@@ -533,11 +411,15 @@ figcaption {
   line-height: 27px;
   padding: 15px 30px;
 }
+.anchor{
+  align-content: center;
+}
 .btn2{
   margin-top: 10px;
   padding: 20px 40px;
-  background-color:#e2d6d4;
+  background-color:#ffb3a2;
   text-align: center;
+  justify-content: center;
   text-decoration: none;
   cursor: pointer;
   border-radius: 10px;
@@ -546,11 +428,19 @@ figcaption {
   display: inline-block;
   justify-content: space-between;
 }
-.decor{
-  display: inline-block;
-  justify-content: center;
+.decor-container img{
+  border-radius: 30px;
 }
-/***Decor**/
+.decor-container h1{
+  text-align: center;
+  font-size: 50px;
+}
+.decor{
+  justify-content: center; /* Center horizontally */
+  display: inline-block;
+  padding: 0 20px 0 60px;
+}
+/**Gallery**/
 .background-img{
   background-image: url(decor/);
   background-size: 100% 100%;
@@ -562,20 +452,16 @@ figcaption {
 }
 .gallery-container {
   position: relative;
-}
- 
- 
+} 
 .scroll-container {
   display: flex;
   overflow-x: scroll;
   width: 100%;
   height: 400px; /* Adjust the height as needed */
 }
- 
 .image-item {
   margin-right: 10px ; /* Adjust the spacing between images as needed */
 }
- 
 .double {
   font-size: 50px;
   position: absolute;
@@ -585,20 +471,22 @@ figcaption {
   cursor: pointer;
   color: #364655;
 }
- 
 .left-arrow {
   left: 10px;
 }
- 
 .right-arrow {
   right: 10px;
 }
- 
 .right-arrow:hover,.left-arrow:hover {
 background-color: #cfa658;
 }
-/*End of decor**/
-
+#myBtn10{
+  background-color: #cfa658;
+  display: flex;
+  float: right;
+}
+ 
+/******************************************************************End of Our Services*****************************************************************/
 .middle-image {
     align-items: center;
     width: 300px;
