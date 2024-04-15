@@ -144,7 +144,7 @@ nav {
   #Contact_btn:hover {
     background-color: white;
   }
-/*********************Our Partners**********************************/
+/*********************Our Partners Home page**********************************/
 .partners-section {
     text-align: center;
   }
@@ -163,7 +163,7 @@ nav {
     height: auto;
   }
 
-/**********************social icons and map*************************************/
+/**********************social icons and map home page *************************************/
 #social-media-location {
     text-align: center;
   }
@@ -304,7 +304,7 @@ nav {
 
 /**************************************************Booking Page***************************************************/
 .containers{
-    background: url(images/cocktail.jpeg), radial-gradient(darkgrey , pink);
+    /*background: url(images/cocktail.jpeg), radial-gradient(darkgrey , pink);*/
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-position:center center;
@@ -329,7 +329,7 @@ nav {
 }
 
 .form-text p{
-    color: #f5efef;
+    color: black;
 }
 
 .main-form div{
@@ -349,7 +349,7 @@ nav {
 .main-form div span{
     width: 100%;
     font-size: 30px;
-    color: white;
+    color: black;
 }
 
 #submit{
