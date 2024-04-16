@@ -1,0 +1,174 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+li{
+  list-style: none;
+}
+
+/* *************************************Navigation Bar***************************************************/
+
+/* Apply styles to the navigation bar container */
+.nav-bar {
+    display: flex;
+    justify-content: space-between; /* Align items to the right and left */
+    align-items: center; /* Center items vertically */
+    padding: 1rem; /* Add padding for better appearance */
+    background-color: rgb(211, 210, 210); /* Set background color */
+}
+
+/* Apply styles to the logo */
+.logo img {
+    height: 90px; /* Set maximum height for the logo image */
+    width: 130px;
+    padding-left: 20px;
+}
+
+/* Apply styles to the navigation links */
+nav ul {
+    list-style: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+nav li {
+    margin-left: 5px; /* Add spacing between items */
+    padding-left: 5px;
+}
+
+nav a {
+  color: white; /* Set link color */
+  font-weight: bold;
+  font-size: large;
+  padding-right: 20px;
+}
+/* Push the navigation items to the right */
+nav {
+    margin-left: auto;
+}
+
+/*--------------------------------------headings for ABOUT US---------------------------------------------------*/
+.container {
+    display: flex;
+}
+
+.left-column,
+.right-column {
+    width: 50%;
+}
+
+.Main_heading {
+    text-align: center;
+}
+
+.Main_heading h1 {
+    padding-top: 5px;
+    font-size: 22px;
+    color: dimgray;
+}
+
+.Main_heading h2 {
+    padding-top: 5px;
+    font-size: 20px;
+    color: dimgray;
+}
+
+.Textpart {
+    text-align: left;
+    padding: 20px;
+}
+
+.Image_container {
+    padding: 20px;
+}
+
+.luxury_food {
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+
+
+  
+  .Phases{
+      display: flex;
+      width: 100px;
+      height: 50px;
+      font-size: 17px;
+      text-align: center;
+      padding-left: 20px;
+  }
+  
+  .Phases img{
+      margin-top: 30px;
+  }
+  
+  
+  .Catering img{
+      width: 290px;
+      height: 300px;
+      font-size: 12;
+      text-align: center;
+      border-radius: 10px;
+      justify-content: space-between;
+      padding: 10px;
+  }
+  
+  .Catering p{
+      align-items: start;
+  
+  }
+  
+  .About_btn button {
+      background-color: #f0f0ee; /* Gold orange */
+      border: none;
+      padding: 10px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 14px;
+    }
+  /*-------------------------------------------About button-----------------------------------------------------*/
+  
+  .About_btn{
+      margin-left: 200px;
+      padding-left: 500px;
+      margin-top: 80px;
+  }
+  
+  .About_btn a{
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      color: #383636;
+      text-decoration: none;
+  }
+  
+  .About_btn button:hover{
+      background-color: #ccc;
+      color: #f0f0f0;
+  }
+  
+  #more {
+    display: none;
+  }
+  
+  #myBtn {
+    align-items: center;
+    position: relative;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  
+  }
+  
+  #myBtn:hover {
+    background-color: #45a049;
+  }
