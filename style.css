@@ -367,7 +367,6 @@ input {
 .services img{
   border-radius: 50px;
   padding: 40px 40px;
-  
 }
 .description p{
   font-size: 20px;
@@ -419,6 +418,10 @@ input {
   padding: 0 20px 0 60px;
 }
 /**Gallery**/
+#Gallery h1{
+  text-align: center;
+  font-size: 35px;
+}
 .background-img{
   background-image: url(decor/);
   background-size: 100% 100%;
@@ -463,180 +466,59 @@ background-color: #cfa658;
   display: flex;
   float: right;
 }
- 
-/******************************************************************End of Our Services*****************************************************************/
-.middle-image {
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    border: .2rem solid rgb(46, 3, 3);
-    border-radius: 50%; 
-    animation: spin 3s linear infinite;
-}
-
-.container {
-    position: relative;
-    width: 90%;
-    gap: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-  
-.image-container {
-    position: relative;
-    display:inline-block;
-    text-align: center;
-    margin-bottom: 5px;
-    padding: 20px;
-    margin-right: 20px;
-}
-  
-.image-container img {
-    max-width: 100%;
-    width: 550px;
-    height: 390px;
-    display: block;
-    margin-right: 20px;
-    transition: filter 0.5s ease;
-    padding: 5px;
-}
- 
-.image-container a{
-    color: #0c0109;
-    font-weight: bold;
-    font-size: 20px;
-}
-/* list style starts here */
-.list {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(211, 210, 210);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(131, 128, 128);
-    display: none;
-  }
-  
-.list li {
-    list-style: none;
-    padding: 5px 0;
-}
-  /* Image hovering style starts here*/
-.image-container:hover img {
-    filter: blur(8px);
-}
-  
-.image-container:hover .list {
-    display: block;
-}
-.containee {
-    width: 800px;
-    display: flex;
-    align-items: center; 
-    gap: 20px; /* Add space between items */
-    margin-left: 20rem;
-    padding: 30px;
-    border: .2rem solid rgb(131, 128, 128);
-  }
-
-  .containee p {
-    margin: 0; 
-    font-size: 18px;
-    line-height: 1.5;
-    color: #000000;
-  }
-
-  /* Style for the link */
-  .containee a {
-    color: black; 
-    text-decoration: none; 
-  }
-
-  /* Style for the image */
-.containee img{
-  border-radius: 30px;
-  height: 250px;
-  justify-content: space-evenly;
-  }
-/* CSS for modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
-  }
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  /* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 60%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
 .close {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 .close:hover,
 .close:focus {
-    filter: blur(8px);
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .checked {
-    color: orange;
-    cursor: pointer; /* Add cursor pointer to indicate interactivity */
-  }
+  filter: blur(8px);
+  text-decoration: none;
+  cursor: pointer;
+}
+.checked {
+  color: orange;
+  cursor: pointer; /* Add cursor pointer to indicate interactivity */
+}
+ 
+/******************************************************************End of Our Services*****************************************************************/
 
 /*----------------------------------------------------------Contact Page----------------------------------------------------------------------------------*/
-.contact-wrap {
+.contact- {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 60px;
+}
+.row3{
+  display: inline-flex;
+  padding: 30px;
+}
+.row4{
+  display: inline-flex;
+}
+.quote p{
+  font-size: 30px;
 }
 .contact-info,
 .iframe {
   flex-basis: calc(50% - 50px); /* Adjust width as needed */
   margin-bottom: 20px;
 }
-
 .contact-in,
 .getintouch {
   background-color: #b69fa3;
   padding: 10px;
   max-width: 40%;
+  max-height: 500px;
   border-radius: 5px;
+  font-size: 18px;
+}
+.error {
+  color: red;
+  font-size: 12px;
 }
 
 .iframe {
