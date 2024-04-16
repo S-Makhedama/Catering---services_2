@@ -49,9 +49,6 @@ nav a {
 nav {
     margin-left: auto;
 }
-/************************************************************* Services page *******************************************************/
-
-/* Dropdown Content (Hidden by Default) */
 .dropdown .dropdown-content {
   display: none;
   position: absolute;
@@ -76,7 +73,7 @@ nav {
   display: block;
 }
 
-/****************************************************change Tab color *******************************************/
+/************************************************************* Home page *******************************************************/
 
 .tab{
     float: right;
@@ -96,7 +93,6 @@ nav {
     background-color: white;
     color: black;
  }
-/* *************************************Header for home Page***************************************************/
 .header{
     background-image: url('Image/image-1.jpg'); 
     background-size: cover;
@@ -114,7 +110,7 @@ nav {
     text-align: center;
   }
   
-  @keyframes typing {
+  @keyframes typing { /**Moving text**/
     from {
       width: 0;
     }
@@ -142,7 +138,7 @@ nav {
   #Contact_btn:hover {
     background-color: white;
   }
-/*********************Our Partners Home page**********************************/
+
 .partners-section {
     text-align: center;
   }
@@ -161,7 +157,7 @@ nav {
     height: auto;
   }
 
-/**********************social icons and map home page *************************************/
+
 footer {
   background-color:#F0F8FF;
   padding: 20px 0;
@@ -178,9 +174,47 @@ footer {
 
 .social-icons .icon:hover {
   color: #007bff; /* Change color on hover */
-}
-/*------------------------------------ABOUT PAGE-------------------------------------------------------------*/
 
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 10px; 
+  cursor: pointer;
+}
+
+.card {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card-content p {
+  color: #666;
+}
+
+/**********************End of home page *************************************/
+
+
+/*------------------------------------ABOUT PAGE-------------------------------------------------------------*/
 
 .Phases{
     display: flex;
@@ -305,49 +339,7 @@ footer {
     padding-top: 100px;
 }
 
-/**************************************************Booking Page form***************************************************/
-.booking-form {
-  width: 500px;
-  height: 700px;
-  background-color: #b69fa3;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
 
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.submit-btn {
-  width: 50%;
-  padding: 10px 20px;
-  background-color: lightgray;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.submit-btn:hover {
-  background-color: white;
-  color: black;
-}
-
-.error {
-  color: red;
-}
 /******************************************************************Our Services*****************************************************************/
 .heading h1{
     color: black;
@@ -357,9 +349,8 @@ input {
     font-family: Arial, Helvetica, sans-serif;
 }
 .row1{
-  display: inline;
-  
-}
+  display: flex;
+} 
 .row2{
   display: inline;
 }
@@ -379,6 +370,7 @@ input {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   padding: 30px 120px 40px 120px;
+  display: inline-block;
 }
 .btn-branding-outline {
   color: var(--branding-color);
@@ -470,6 +462,7 @@ background-color: #6b6b6a;
   .heading h1 {
     font-size: 54px;
   }
+
   h2 {
     font-size: 44px;
   }
@@ -487,161 +480,6 @@ background-color: #6b6b6a;
     font-size: 14px;
   }
 }
- 
-/******************************************************************End of Our Services*****************************************************************/
-.middle-image {
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    border: .2rem solid rgb(46, 3, 3);
-    border-radius: 50%; 
-    animation: spin 3s linear infinite;
-}
-
-.container {
-    position: relative;
-    width: 90%;
-    gap: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-  
-.image-container {
-    position: relative;
-    display:inline-block;
-    text-align: center;
-    margin-bottom: 5px;
-    padding: 20px;
-    margin-right: 20px;
-}
-  
-.image-container img {
-    max-width: 100%;
-    width: 550px;
-    height: 390px;
-    display: block;
-    margin-right: 20px;
-    transition: filter 0.5s ease;
-    padding: 5px;
-}
- 
-.image-container a{
-    color: #0c0109;
-    font-weight: bold;
-    font-size: 20px;
-}
-/* list style starts here */
-.list {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(211, 210, 210);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(131, 128, 128);
-    display: none;
-  }
-  
-.list li {
-    list-style: none;
-    padding: 5px 0;
-}
-  /* Image hovering style starts here*/
-.image-container:hover img {
-    filter: blur(8px);
-}
-  
-.image-container:hover .list {
-    display: block;
-}
-.containee {
-    width: 800px;
-    display: flex;
-    align-items: center; 
-    gap: 20px; /* Add space between items */
-    margin-left: 20rem;
-    padding: 30px;
-    border: .2rem solid rgb(131, 128, 128);
-  }
-
-  .containee p {
-    margin: 0; 
-    font-size: 18px;
-    line-height: 1.5;
-    color: #000000;
-  }
-
-  /* Style for the link */
-  .containee a {
-    color: black; 
-    text-decoration: none; 
-  }
-
-  /* Style for the image */
-.containee img{
-  border-radius: 30px;
-  height: 250px;
-  justify-content: space-evenly;
-  }
-/* CSS for modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
-  }
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  /* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 60%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.close {
-  color: black;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.close:hover,
-.close:focus {
-  filter: blur(8px);
-  text-decoration: none;
-  cursor: pointer;
-}
-.checked {
-  color: orange;
-  cursor: pointer; /* Add cursor pointer to indicate interactivity */
-}
- 
 /******************************************************************End of Our Services*****************************************************************/
 
 /*----------------------------------------------------------Contact Page----------------------------------------------------------------------------------*/
@@ -690,181 +528,87 @@ background-color: #6b6b6a;
       flex-basis: 100%;
   }
 }
-              
-/*********************************************image cards for home page***************************************************************/
-
-.card-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    padding: 10px; 
-    cursor: pointer;
-}
-
-.card {
-    width: 400px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-}
-
-.card-content {
-    padding: 20px;
-}
-
-.card-content h3 {
-    margin-top: 0;
-    color: #333;
-}
-
-.card-content p {
-    color: #666;
-}
-
-/************************************resize the image with mouse pointer*************************/
-
-/* Define initial size */
-.partner-logo{
-  width: 200px;
-  height: auto;
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: width 0.3s ease; /* Add transition for smooth resizing */
-}
-
-/* Define new size when active class is applied */
-.partner-logo.active{
-  width: 400px; /* New width */
-}
-
-/**************************************Form Container***************************************************************/
 .form-container {
-    width: 400px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
+  display: block;
+  margin-bottom: 8px;
 }
 
 input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
 }
 
 button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 .error {
-    color: #ff0000;
-    margin-bottom: 10px;
+  color: #ff0000;
+  margin-bottom: 10px;
 }
 
-/****************************************************Decor*******************************************************************************/
+/**************************************End of Contact us***************************************************************/
 
-.main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-    align-items: center;
-    border-radius: 20px;
+/**************************************************Booking Page form***************************************************/
+.booking-form {
+  width: 500px;
+  height: 700px;
+  background-color: #b69fa3;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.main img {
-    width: 400px;
-    height: 300px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    padding-right: 20px;
-    margin-left: 50px;
-    padding-top: 20px;
-    border-radius: 20px;
-    align-items: baseline;
+label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-
-.Decoration {
-    color: white;
-    text-align: center;
-    padding: 3em 0;
-   /* background-color: #222;*/
-    background-image: 
-    url(images/FullSizeRender+19.jpg),
-    radial-gradient(#5f5c5c,#3b3a3a);
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-
-
-/* *********************************************************Footer*********************************************************************************/
-#foot{
-    cursor: pointer;
-}
-.footer {
-    text-align: center; /* Center align text */
-    padding: 20px; /* Add padding for better appearance */
-    background-color: rgb(211, 210, 210); /* Set background color */
-    cursor: pointer;
-
+.submit-btn {
+  width: 50%;
+  padding: 10px 20px;
+  background-color: lightgray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-/* Apply styles to the paragraph elements within the footer */
-.footer p {
-    margin: 8px 0; /* Add spacing between paragraphs */
-    font-size: 14px; /* Set font size */
-    color: rgb(32, 30, 30);
-    font-weight: bold;
+.submit-btn:hover {
+  background-color: white;
+  color: black;
 }
 
-@media only screen and (max-width: 1200px) {
-  /* CSS for screens up to 1200px width */
-  /* Add your styles here */
+.error {
+  color: red;
 }
-
-@media only screen and (max-width: 1024px) {
-  /* CSS for screens up to 1024px width */
-  /* Add your styles here */
-}
-
-@media only screen and (max-width: 768px) {
-  /* CSS for screens up to 768px width */
-  /* Add your styles here */
-}
-
-@media only screen and (max-width: 480px) {
-  /* CSS for screens up to 480px width */
-  /* Add your styles here */
-}
-
-@media only screen and (max-width: 360px) {
-   
-}
-
-/* Add more media queries as needed for other screen sizes */
+/**************************************End of Booking***************************************************************/
