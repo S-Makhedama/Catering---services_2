@@ -1,9 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #ffff;
+    width: auto;
 }
 li{
   list-style: none;
@@ -360,7 +357,8 @@ input {
     font-family: Arial, Helvetica, sans-serif;
 }
 .row1{
-  display: inline-flex;
+  display: inline;
+  
 }
 .row2{
   display: inline;
@@ -469,8 +467,8 @@ background-color: #6b6b6a;
   float: right;
 }
 @media (max-width: 900px) {
-  h1 {
-    font-size: 44px;
+  .heading h1 {
+    font-size: 54px;
   }
   h2 {
     font-size: 44px;
