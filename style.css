@@ -485,11 +485,21 @@ background-color: #cfa658;
 /******************************************************************End of Our Services*****************************************************************/
 
 /*----------------------------------------------------------Contact Page----------------------------------------------------------------------------------*/
-.contact-wrap {
+.contact- {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 60px;
+}
+.row3{
+  display: inline-flex;
+  padding: 30px;
+}
+.row4{
+  display: inline-flex;
+}
+.quote p{
+  font-size: 30px;
 }
 .contact-info,
 .iframe {
@@ -503,6 +513,7 @@ background-color: #cfa658;
   max-width: 40%;
   max-height: 500px;
   border-radius: 5px;
+  font-size: 18px;
 }
 .error {
   color: red;
