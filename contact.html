@@ -17,17 +17,16 @@
 
 <!----------------------------------------------------------------Nav Bar------------------------------------------------------------------------>
 <div class="nav-bar">    
-    <div class="logo">
-        <img src="Image/logo.png" alt="Logo">
-    </div>
+  <div class="logo">
+    <img src="decor/logo copy.png" alt="Logo">
+  </div>
             <nav>
                 <ul>            
                 <li><a href="index.html" class="tab" onclick="changeColor(this)">Home</a></li>
                 <li><a href="about.html" class="tab" onclick="changeColor(this)">About</a></li>
                 <li><a href="services.html" class="tab" onclick="changeColor(this)">Services</a></li>
                 <li><a href="contact.html" class="tab" onclick="changeColor(this)">Contact</a></li>
-                <li><a href="book.html" class="tab" onclick="changeColor(this)">Book Now</a></li>
-                <li><i class="bi bi-brightness-high-fill" id="toggleDark"></i></li>            
+                <li><a href="book.html" class="tab" onclick="changeColor(this)">Book Now</a></li>            
                 </ul>
             </nav>       
 </div>
@@ -41,86 +40,52 @@
 
 <!----------------------------------------------------------------Header------------------------------------------------------------------------>
 <div class="contact-wrap">
-  <div class="row1">
+   <div class="row3">
+    <div class="quote">
+      <p> Ready to elevate your event?<br>
+         Contact us for exquisite catering and stunning decor that dazzles!
+      </p>
+      </div>
     <div class="contact-in">
       <h1>Contact Us</h1>
       <h2><i class='bx bxs-phone-call'></i>Phone</h2>
       <p>(+27) 214-567-833</p>
       <h2><i class='bx bxs-envelope'></i>Email</h2>
       <p>harmonycatering@gmail.com</p>
+      <h2><i class='bx bxs-envelope'></i>Facebook</h2>
+      <p>harmonycatering</p>
+      <h2><i class='bx bxs-envelope'></i>Twitter</h2>
+      <p>harmonycatering</p>
       <h2><i class='bx bxs-edit-location' ></i>Address</h2>
       <p>97 Durham Str,Salt River,Cape town,7100</p>
-      
-      <ul>
-        <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
-        <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-        <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
-        <li><a href="#"><i class='bx bxl-whatsapp'></i></a></li>
-      </ul>
     </div> 
-
-    <div class="contact-in">
-      <h1>Get In Touch</h1>
-      <form>
-        <input type="text" placeholder="Full Name" class="contant-in-input">
-        <input type="text" placeholder="Email" class="contant-in-input">
-        <input type="text" placeholder="Subject" class="contant-in-input">
-        <textarea placeholder="Message" class="contant-in-textarea"></textarea>
-        <input type="submit" value="SUBMIT" class="contant-in-btn">
-      </form>
-    </div>
+  
   </div>
-    <br>
-    <br>
-    <br>
-    <div class="row1">
+    <div class="row4">
       <div class="iframe">
         <h1>Find Our Store</h1>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.298194471367!2d18.460423999999996!3d-33.9334578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d0852fd8f61%3A0x87a52bb504df3b94!2sPals%20Building!5e0!3m2!1sen!2sza!4v1712138125788!5m2!1sen!2sza" 
-        width="600" height="400" 
+        width="600" height="448" 
         style="border:0;" allowfullscreen="" 
         loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
       </div>
+
+      <div class="getintouch">
+        <h1>Get In Touch</h1>
+        <form>
+          <input type="text" placeholder="Full Name" class="contact-in-input">
+          <input type="email" id="email" placeholder="Email" class="contact-in-input" required>
+          <span id="emailError" class="error"></span>
+          <input type="text" placeholder="Subject" class="contact-in-input">
+          <textarea placeholder="Message" class="contact-in-textarea"></textarea>
+          <input type="submit" value="SUBMIT" class="contact-in-btn">
+        </form>
+      </div>
     </div>
 </div>
 
-  <style>
-      
-    * {
-          padding: 0;
-          margin: 0;
-          box-sizing: border-box;
-        }
-        body {
-          height: 100vh;
-          display: grid;
-          align-items: center;
-          font-family: 'Poppins', sans-serif;
-        }
-    </style>
-    <script>
-      ocument.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
-        
-        // Retrieve form inputs
-        var fullName = document.getElementById('fullName').value;
-        var email = document.getElementById('email').value;
-        var subject = document.getElementById('subject').value;
-        var message = document.getElementById('message').value;
-        
-        // You can perform further validation if needed
-        
-        // Here, you can send the form data using AJAX or handle it in any way you prefer
-        console.log('Full Name:', fullName);
-        console.log('Email:', email);
-        console.log('Subject:', subject);
-        console.log('Message:', message);
-        
-        // Optionally, you can reset the form after submission
-        document.getElementById('contactForm').reset();
-    });
-    </script>
+
 
 <!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
     
@@ -136,7 +101,40 @@
        
 </div>
 </div>
+<script>
+ document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    
+    // Retrieve form inputs
+    var fullName = document.getElementById('fullName').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+    
+    // Validate email using regular expression
+    var emailRegex = /\S+@\S+\.\S+/;
+    if (!emailRegex.test(email)) {
+        document.getElementById('emailError').textContent = "Please enter a valid email address.";
+        return;
+    } else {
+        document.getElementById('emailError').textContent = ""; // Clear error message if email is valid
+    }
+    
+    // You can perform further validation if needed
+    
+    // Here, you can send the form data using AJAX or handle it in any way you prefer
+    console.log('Full Name:', fullName);
+    console.log('Email:', email);
+    console.log('Subject:', subject);
+    console.log('Message:', message);
+    
+    // Optionally, you can reset the form after submission
+    document.getElementById('contactForm').reset();
+});
 
+  
+  </script>
+  
 
 </body>
 </html>

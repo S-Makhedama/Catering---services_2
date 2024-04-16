@@ -1,171 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Catering</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-    <style>
-        body {
-          cursor: pointer;
-        }
-        </style>
-    
-</head>
-<body >
-<div class="catering">
-<!--------------------Nav bar---------------------------------------------->
-<div class="nav-bar">    
-  <div class="logo">
-      <img src="Image/logo.png" alt="Logo">
-  </div>
-          <nav>
-              <ul>            
-              <li><a href="index.html" class="tab" onclick="changeColor(this)">Home</a></li>
-              <li><a href="about.html" class="tab" onclick="changeColor(this)">About</a></li>
-              <li><a href="services.html" class="tab" onclick="changeColor(this)">Services</a></li>
-              <li><a href="contact.html" class="tab" onclick="changeColor(this)">Contact</a></li>
-              <li><a href="book.html" class="tab" onclick="changeColor(this)">Book Now</a></li>
-              <li><i class="bi bi-brightness-high-fill" id="toggleDark"></i></li>            
-              </ul>
-          </nav>       
-</div>
-<!---------------------header---------------------------------------------->
-<div class="headers">
-    <header>
-       <center> <h1>CATERING</h1></center>
-    </header>
-    <div class="row1">
-      <div class="services-img">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body >
+    <div class="catering">
+      <!--------------------Nav bar---------------------------------------------->
+      <div class="nav-bar">    
+        <div class="logo">
+          <img src="decor/logo copy.png" alt="Logo">
+        </div>
+        <nav>
+          <ul>            
+            <li><a href="index.html" class="tab" onclick="changeColor(this)">Home</a></li>
+            <li><a href="about.html" class="tab" onclick="changeColor(this)">About</a></li>
+            <li><a href="services.html" class="tab" onclick="changeColor(this)">Services</a></li>
+            <li><a href="contact.html" class="tab" onclick="changeColor(this)">Contact</a></li>
+            <li><a href="book.html" class="tab" onclick="changeColor(this)">Book Now</a></li>           
+          </ul>
+        </nav>       
+      </div>
+      <!---------------------header---------------------------------------------->
+      <div class="heading">
+        <h1>CATERING</h1>
+      </div>
+      <div class="row1">
+        <div class="services">
           <img src="catering/table catering 2.jpg" alt="" width="600" height="400">
-      </div>
-      <div class="description">  
-        <h2>Event Design</h2>
-        <h3>WE DESIGN AND IMPLEMENT YOUR EVENTS.
-          BRINGING YOUR VISION TO LIFE.
-          </h3> 
+        </div>
+        <div class="description">  
+         <h2>Our Catering Story</h2>
+         <h3>
+          Creating Memorable Moments.
+         </h3> 
          <p>In order to make every event memorable and unique; we work closely with you to create stunning themes and décor, 
-          visual displays. Completely transforming spaces to add your personality and brand to all of your events.</p>
-      </div>
+          visual displays. Completely transforming spaces to add your personality and brand to all of your events.
+         </p>
+         <ul>
+          <li>
+            Catering for 50 people -R1500
+          </li>
+          <li>
+            Catering for 100 people -R3000
+          </li>
+          <li>
+            Catering for 200 people -R6000 
+          </li>
+          <li>
+            Catering for 300 people -R12 000 
+          </li>
+        </ul>
+        </div>
       </div>
       
       <section id="Gallery">
-        <h1>Weddings</h1>
+        <h1>From Our Kitchen to Your Event</h1>
     
-      <div class="gallery-container">
-        <div class="scroll-container" id="scrollContainer">
-          <img src="catering/food3.jpg" alt="2oceans" class="image-item" width="400px">
-          <img src="catering/catering setup.jpg" alt="2oceans" class="image-item" width="400px">
-          <img src="catering/food and drinks.jpg" alt="2oceans" class="image-item" width="400px">
-          <img src="catering/food table setup.jpg" alt="2oceans" class="image-item" width="400px">
-          <img src="catering/food2.jpg" alt="2oceans" class="image-item" width="400px">
-          <img src="decor/beautiful.jpg" alt="2oceans" class="image-item" width="400px">
-          <img src="catering/table setup 2.jpg" alt="2oceans" class="image-item" width="400px">
-          <img src="catering/table4.jpg" alt="2oceans" class="image-item" width="400px">
-          <img src="decor/private setup.jpg" alt="2oceans" class="image-item" width="400px">
-          <img src="decor/stunning.jpg" alt="2oceans" class="image-item" width="400px">
-          <img src="decor/" alt="2oceans" class="image-item" width="400px">
+        <div class="gallery-container">
+          <div class="scroll-container" id="scrollContainer">
+            <img src="catering/food3.jpg" alt="catering" class="image-item" width="400px">
+            <img src="catering/catering setup.jpg" alt="catering" class="image-item" width="400px">
+            <img src="catering/food and drinks.jpg" alt="catering" class="image-item" width="400px">
+            <img src="catering/food table setup.jpg" alt="catering" class="image-item" width="400px">
+            <img src="catering/food2.jpg" alt="catering" class="image-item" width="400px">
+            <img src="decor/beautiful.jpg" aalt="catering" class="image-item" width="400px">
+            <img src="catering/table setup 2.jpg" alt="catering" class="image-item" width="400px">
+            <img src="catering/table4.jpg" alt="catering" class="image-item" width="400px">
+            <img src="decor/private setup.jpg" alt="catering" class="image-item" width="400px">
+            <img src="decor/stunning.jpg" alt="catering" class="image-item" width="400px">
+            <img src="decor/" alt="catering" class="image-item" width="400px">
+          </div>
+
+          <button class="arrow double left-arrow" onclick="scrollGallery(-1)">&#171;</button>
+          <button class="arrow double right-arrow" onclick="scrollGallery(1)">&#187;</button>
+    
         </div>
-    
-        <button class="arrow double left-arrow" onclick="scrollGallery(-1)">&#171;</button>
-        <button class="arrow double right-arrow" onclick="scrollGallery(1)">&#187;</button>
-    
+      </section>
+      <button onclick="topFunction()" id="myBtn10" title="Go to top">Top</button>
+      <!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
+      <div>
+        <footer class="footer"onclick="goBack()">
+         <p>&copy; 2024 Harmony Catering & Events - All rights reserved.</p>
+         <p>Designed by Young_Tech_Ninjas</p>
+        </footer>
       </div>
-    </section>
-
-   
-
-
-
-    <!--
-    <div class="button-contain">
-      <div><img src="images/image9.JPG" class="bcv">
-        <button class="btn" onclick="showGallery('african-cuisines')">African-cuisines</button></div>
-        
-      <div><img src="images/Screenshot (9).png" class="bcv">
-        <button class="btn" onclick="showGallery('modern-cuisines')">Modern-cuisines</button></div>
-
     </div>
-
-<div class="african-cuisines" id="africanGallery">
-<main  class="galary">
-  <center><h2 class="imo">Traditional-Cuisines</h2></center>
-    <br>
-       <center>
-        <figure >
-            <img class="images-food" src="images/image10.JPG">
-            <figcaption>steam bread and meat</figcaption>
-            </figure>
-            <figure >
-            <img class="images-food" src="images/image12.JPG">
-            <figcaption>beef and rice</figcaption>
-            </figure>
-            <figure>
-            <img class="images-food" src="images/image15.JPG">
-            <figcaption>meat and vegies with beetroot</figcaption>
-            </figure>
-            <figure>
-            <img class="images-food" src="images/image16.JPG">
-            <figcaption>chicken and mixed pasta sause</figcaption>
-            </figure>
-            <figure>
-            <img class="images-food" src="images/image5.JPG">
-            <figcaption>rice and chicken </figcaption>
-            </figure>
-            <figure>
-            <img class="images-food" src="images/image6.JPG">
-            <figcaption>creamy samp and beef stew</figcaption>
-            </figure>
-       </center>
-</main>
-</div>
-
-<div> 
-    <div class="modern-cuisines" id="modernGallery">
-        <main class="galary">
-           <center><h2 class="imo">Modern-Cuisines</h2></center>
-        <br>
-           <div>
-              <center>
-                <figure>
-                    <img class="images-food" src="food/steak and peas.png">
-                    <figcaption>steak and peas</figcaption>
-                      </figure>
-                      <figure>
-                    <img class="images-food" src="food/lasagnia.png">
-                    <Figcaption>hot lasagnia</Figcaption>
-                  </figure>
-                  <figure>
-                    <img class="images-food" src="food/vegie cake.png">
-                    <figcaption>starters</figcaption>
-                  </figure>
-                  <figure>
-                  <img class="images-food" src="food/food displayed on table.JPG">
-                  <figcaption>food displayed on table for event</figcaption>
-                  </figure>
-                  <figure>
-                     <img class="images-food" src="food/baffei content.JPG">
-                  <figcaption>baffei</figcaption>
-                  </figure>
-                  <figure>
-                      <img class="images-food" src="food/different kinds of food to choose from on self-service catering.JPG">
-                      <figcaption>self-service catering food</figcaption>
-                  </figure>
-              </center>
-            </div>
-            </div>
-            </div>
-            </main> -->
-</div>
     <script src="script.js"></script>
-<!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
-<div>
-    
-  <footer class="footer"onclick="goBack()">
-      <p>&copy; 2024 Harmony Catering & Events - All rights reserved.</p>
-      <p>Designed by Young_Tech_Ninjas</p>
-  </footer>
-     
-</div>
-</div>
-</body>
+  </body>
 </html>
