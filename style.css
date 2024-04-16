@@ -164,18 +164,23 @@ nav {
   }
 
 /**********************social icons and map home page *************************************/
-#social-media-location {
-    text-align: center;
-  }
-#social-media-icons {
-    margin-bottom: 20px;
-    text-align: center;
-  }
- 
-  .social-icon {
-    font-size: 32px; /* Adjust the size as needed */
-    margin: 0 10px; /* Add space between icons */
-  }
+footer {
+  background-color:#F0F8FF;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-icons .icon {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 30px;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-icons .icon:hover {
+  color: #007bff; /* Change color on hover */
+}
 /*------------------------------------ABOUT PAGE-------------------------------------------------------------*/
 
 
@@ -412,6 +417,10 @@ input {
   padding: 0 20px 0 60px;
 }
 /**Gallery**/
+#Gallery h1{
+  text-align: center;
+  font-size: 35px;
+}
 .background-img{
   background-image: url(decor/);
   background-size: 100% 100%;
