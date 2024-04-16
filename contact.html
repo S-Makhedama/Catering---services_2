@@ -53,14 +53,13 @@
 
     <p> Ready to elevate your event?<br>
        Contact us for exquisite catering and stunning decor that dazzles!</p>
-
     <br>
     <br>
     <br>
       <div class="iframe">
         <h1>Find Our Store</h1>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.298194471367!2d18.460423999999996!3d-33.9334578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d0852fd8f61%3A0x87a52bb504df3b94!2sPals%20Building!5e0!3m2!1sen!2sza!4v1712138125788!5m2!1sen!2sza" 
-        width="600" height="400" 
+        width="800" height="448" 
         style="border:0;" allowfullscreen="" 
         loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
@@ -70,7 +69,8 @@
         <h1>Get In Touch</h1>
         <form>
           <input type="text" placeholder="Full Name" class="contact-in-input">
-          <input type="text" placeholder="Email" class="contact-in-input">
+          <input type="email" id="email" placeholder="Email" class="contact-in-input" required>
+          <span id="emailError" class="error"></span>
           <input type="text" placeholder="Subject" class="contact-in-input">
           <textarea placeholder="Message" class="contact-in-textarea"></textarea>
           <input type="submit" value="SUBMIT" class="contact-in-btn">
@@ -78,28 +78,7 @@
       </div>
 </div>
 
-<script>
-      ocument.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
-        
-        // Retrieve form inputs
-        var fullName = document.getElementById('fullName').value;
-        var email = document.getElementById('email').value;
-        var subject = document.getElementById('subject').value;
-        var message = document.getElementById('message').value;
-        
-        // You can perform further validation if needed
-        
-        // Here, you can send the form data using AJAX or handle it in any way you prefer
-        console.log('Full Name:', fullName);
-        console.log('Email:', email);
-        console.log('Subject:', subject);
-        console.log('Message:', message);
-        
-        // Optionally, you can reset the form after submission
-        document.getElementById('contactForm').reset();
-    });
-    </script>
+
 
 <!----------------------------------------------------------------Footer----------------------------------------------------------------------------->
     
@@ -115,7 +94,40 @@
        
 </div>
 </div>
+<script>
+ document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    
+    // Retrieve form inputs
+    var fullName = document.getElementById('fullName').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+    
+    // Validate email using regular expression
+    var emailRegex = /\S+@\S+\.\S+/;
+    if (!emailRegex.test(email)) {
+        document.getElementById('emailError').textContent = "Please enter a valid email address.";
+        return;
+    } else {
+        document.getElementById('emailError').textContent = ""; // Clear error message if email is valid
+    }
+    
+    // You can perform further validation if needed
+    
+    // Here, you can send the form data using AJAX or handle it in any way you prefer
+    console.log('Full Name:', fullName);
+    console.log('Email:', email);
+    console.log('Subject:', subject);
+    console.log('Message:', message);
+    
+    // Optionally, you can reset the form after submission
+    document.getElementById('contactForm').reset();
+});
 
+  
+  </script>
+  
 
 </body>
 </html>
