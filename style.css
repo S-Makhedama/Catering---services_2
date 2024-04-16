@@ -480,6 +480,23 @@ background-color: #6b6b6a;
     font-size: 14px;
   }
 }
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  filter: blur(8px);
+  text-decoration: none;
+  cursor: pointer;
+}
+.checked {
+  color: orange;
+  cursor: pointer; /* Add cursor pointer to indicate interactivity */
+}
+ 
 /******************************************************************End of Our Services*****************************************************************/
 
 /*----------------------------------------------------------Contact Page----------------------------------------------------------------------------------*/
@@ -491,25 +508,31 @@ background-color: #6b6b6a;
 }
 .row3{
   display: inline-flex;
-  padding: 30px;
+  padding: 110px;
 }
 .row4{
   display: inline-flex;
 }
 .quote p{
-  font-size: 30px;
+  font-size: 25px;
+  padding: 100px 30px 30px 30px;
 }
 .contact-info,
 .iframe {
   flex-basis: calc(50% - 50px); /* Adjust width as needed */
-  margin-bottom: 20px;
 }
-.contact-in,
+.contact-in {
+  background-image: url(images/white-trianglify-b79c7e1f.jpg);
+  height: 70vh;
+  padding: 15px ;
+  margin-left: 130px;
+  text-align: center;
+  
+}
 .getintouch {
   background-color: #b69fa3;
-  padding: 10px;
-  max-width: 40%;
-  max-height: 500px;
+  padding: 10px 20px 10px 10px;
+  height: 100%;
   border-radius: 5px;
   font-size: 18px;
 }
@@ -517,9 +540,10 @@ background-color: #6b6b6a;
   color: red;
   font-size: 12px;
 }
-
 .iframe {
   width: 100%;
+  padding: 10px 100px 100px 100px;
+  margin-top: 0;
 }
 
 @media (max-width: 768px) {
