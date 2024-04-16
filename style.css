@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #ffffff;
+    background-color: #ffff;
 }
 li{
   list-style: none;
@@ -22,9 +22,10 @@ li{
 
 /* Apply styles to the logo */
 .logo img {
-    height: 90px; /* Set maximum height for the logo image */
-    width: 130px;
-    padding-left: 20px;
+  height: 90px; /* Set maximum height for the logo image */
+  width: 130px;
+  padding-left: 20px;
+  font-size: 40px;
 }
 
 /* Apply styles to the navigation links */
