@@ -339,7 +339,240 @@ footer {
     padding-top: 100px;
 }
 
+/**************************************************Booking Page form***************************************************/
+.main_bg{
+  /*background-image: url(background.jpg);*/
+  background-color: #b69fa3;
+  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+  padding-left: 5px;
+}
+.form{
+  width: 650px;
+}
 
+.form-text{
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+.form-text h1 span img{
+  margin: 0 10px;
+
+}
+.form-text h1{
+  color: #fff;
+ 
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.form-text p{
+  color: #fff;
+ 
+  font-size: large;
+}
+
+.main-form div{
+  margin: 10px 10px;
+  width: 300px;
+  display: inline-block;
+}
+.main-form div input {
+  width: 100%;
+  
+  background: none;
+  border: 1px solid white;;
+  font-size: 20px;
+  color: #fff;
+  outline: none;
+  padding: 1px 0 13px 10px;
+  margin-top: 10px;
+}
+.main-form div select{
+  width: 104%;
+  
+  background: none;
+  border: 1px solid white;;
+  font-size: 20px;
+  color: #fff;
+  outline: none;
+  padding: 3px 0 3px 10px;
+  margin-top: 10px;
+}
+.main-form div span{
+  width: 100%;
+  
+  color: #fff;
+  font-size: 25px;
+}
+
+#submit{
+  width: 100%;
+  text-align: center;
+}
+#submit input{
+ 
+  width: 200px;
+  background-color: white !important;
+  color: black !important;
+  transition: all .3s;
+}
+#submit input:hover{
+  
+  width: 200px;
+  background-color: black !important;
+  color: #fff !important;
+}
+#submit input:active{
+  font-size: 19px;
+  background-color: rgb(46, 20, 5) !important;
+  color: #fff !important;
+}
+
+
+@media screen and (max-width:710px) {
+  .main-form{
+      text-align: center;
+  }
+}
+
+
+
+<<<<<<< HEAD
+
+/* ************************************************Catering***************************************************/
+
+.headers{
+    color: rgb(14, 12, 13);
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    margin: 0%;
+    font-style: oblique;
+}
+/*--------------------------------------african-cusions--------------*/
+
+.african-cuisines{
+  padding: 0px;
+  display: inline-block;
+}
+
+.african-cuisines.h1{
+ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+ font-style: oblique;
+ margin: 0%;
+ font-weight: 900;
+}
+/*--------------------------------------------------mordern cusions------------*/
+.mordern-cuisines{
+  padding: 0px;
+  display: inline-block;
+  color:white;
+  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+ figure {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+
+figcaption {
+  display: block;
+  margin-top: 5px;
+  color: white;
+}
+
+.african-cuisines {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images-food {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+  flex-direction: row;
+}
+.catering{
+ 
+}
+.gallery.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+.african-cuisines, .modern-cuisines{
+    display: none;
+}
+
+.btn{
+    color: rgb(19, 22, 21);
+    margin-top: 10px;
+        padding: 10px 20px;
+        border: none;
+        background-color:#e2d6d4;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+}
+.btn:hover {
+    background-color:hsl(0, 39%, 95%);
+}
+
+.button-contain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bcv{
+        width: 450px;
+        height: auto; 
+        margin: 10px;
+        border-radius: 20px;
+}
+
+.drinkable{
+    background-image: url(Drinks/dark-stormy-rum-cocktail-lime-ginger-shutterstock_385915783.jpg),
+    radial-gradient(#313030 , #8b8686);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    padding: 5px;
+
+}
+
+.imo{
+    color: white;
+=======
+.error {
+  color: red;
+>>>>>>> 409a01cb9db8b55b5d6e1ab92b7db0ccee85ebd7
+}
 /******************************************************************Our Services*****************************************************************/
 .heading h1{
     color: black;
