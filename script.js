@@ -76,23 +76,7 @@ function validate() {
 /*----------------------------------Change Tab color for nav bar------------------------------------------------------------*/
 
   
-/*----------------------------------------------------------------decor-------------------------------------------------------------*/
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-  
-  /*------------------------------------------------------------------catering/ Decor-------------------------------------------------------*/
+  /*------------------------------------------------------------------Services-------------------------------------------------------*/
   // Our services slide show. Get the button
  document.addEventListener("DOMContentLoaded", function () {
   const scrollContainer = document.getElementById("scrollContainer");
@@ -155,11 +139,6 @@ function changeRating(rating) {
       }
   }
 }
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
 /***********************************************about*********************************************/
 const image = document.getElementById('image');
 let positionX = 0; // Initial X position of the image
