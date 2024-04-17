@@ -15,9 +15,6 @@ toggle.addEventListener('click', function(){
         body.style.transition = '2s';
     }
 });
-
-/****************************************************Booking page**********************************************************************/
-
 /****************************************************Home page**********************************************************************/
 
 // Add event listener to the button
@@ -101,23 +98,7 @@ function changeColor(tab) {
     tab.classList.add('active');
   }
   
-/*----------------------------------------------------------------decor-------------------------------------------------------------*/
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-  
-  /*------------------------------------------------------------------catering-------------------------------------------------------*/
+  /*------------------------------------------------------------------Services-------------------------------------------------------*/
   // Our services slide show. Get the button
  document.addEventListener("DOMContentLoaded", function () {
   const scrollContainer = document.getElementById("scrollContainer");
@@ -163,32 +144,6 @@ function showSlides() {
  
 /*-------------------------------------------------------Our services----------------------------------------------------------*/
 
-document.getElementById("decorLink").addEventListener("click", function(event){
-      event.preventDefault();
-      window.location.href = "decor.html";
-  });
-  
-  document.getElementById("cateringLink").addEventListener("click", function(event){
-      event.preventDefault();
-      window.location.href = "catering.html";
-  });
-
-  var menuItems = ["Menu", "Food Preparation", "Food Presentation", "Beverages", "Platted services", "Desert Stations"];
-  for (var i = 0; i < menuItems.length; i++) {
-      document.write("<li><b>" + menuItems[i] + "</b></li>");
-  }
-
-  var serviceStaffTypes = [
-      'barmen',
-      'waiters',
-      'front of house',
-      'scullery staff'
-  ];
-
-var list = document.getElementById('list');
-
-var listItems = list.getElementsByTagName('li');
-
 // Function to change the rating based on the clicked star
 function changeRating(rating) {
   // Get all star elements
@@ -204,11 +159,6 @@ function changeRating(rating) {
       }
   }
 }
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
 /***********************************************about*********************************************/
 const image = document.getElementById('image');
 let positionX = 0; // Initial X position of the image
