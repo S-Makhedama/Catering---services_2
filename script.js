@@ -1,24 +1,8 @@
-/**********************************Dark or Bright Mode***************************************************/
 
-const toggle = document.getElementById('toggleDark');
-const body = document.querySelector('body');
-
-toggle.addEventListener('click', function(){
-    this.classList.toggle('bi-moon');
-    if(this.classList.toggle('bi-brightness-high-fill')){
-        body.style.background = 'white';
-        body.style.color = 'black';
-        body.style.transition = '2s';
-    }else{
-        body.style.background = 'black';
-        body.style.color = 'white';
-        body.style.transition = '2s';
-    }
-});
 
 /****************************************************Booking page**********************************************************************/
 
-/****************************************************Home page**********************************************************************/
+/****************************************************Home page/ contact  button**********************************************************************/
 
 // Add event listener to the button
    document.getElementById('Contact_btn').addEventListener('click', function() {
@@ -90,16 +74,7 @@ function validate() {
       return true;}}
 
 /*----------------------------------Change Tab color for nav bar------------------------------------------------------------*/
-function changeColor(tab) {
-    
-    var tabs = document.querySelectorAll('.tab');
-    tabs.forEach(function(item) {
-      item.classList.remove('active');
-    });
-  
-    
-    tab.classList.add('active');
-  }
+
   
 /*----------------------------------------------------------------decor-------------------------------------------------------------*/
 let slideIndex = 0;
@@ -117,7 +92,7 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
   
-  /*------------------------------------------------------------------catering-------------------------------------------------------*/
+  /*------------------------------------------------------------------catering/ Decor-------------------------------------------------------*/
   // Our services slide show. Get the button
  document.addEventListener("DOMContentLoaded", function () {
   const scrollContainer = document.getElementById("scrollContainer");
@@ -163,31 +138,7 @@ function showSlides() {
  
 /*-------------------------------------------------------Our services----------------------------------------------------------*/
 
-document.getElementById("decorLink").addEventListener("click", function(event){
-      event.preventDefault();
-      window.location.href = "decor.html";
-  });
-  
-  document.getElementById("cateringLink").addEventListener("click", function(event){
-      event.preventDefault();
-      window.location.href = "catering.html";
-  });
 
-  var menuItems = ["Menu", "Food Preparation", "Food Presentation", "Beverages", "Platted services", "Desert Stations"];
-  for (var i = 0; i < menuItems.length; i++) {
-      document.write("<li><b>" + menuItems[i] + "</b></li>");
-  }
-
-  var serviceStaffTypes = [
-      'barmen',
-      'waiters',
-      'front of house',
-      'scullery staff'
-  ];
-
-var list = document.getElementById('list');
-
-var listItems = list.getElementsByTagName('li');
 
 // Function to change the rating based on the clicked star
 function changeRating(rating) {
