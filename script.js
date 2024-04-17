@@ -1,24 +1,8 @@
-/**********************************Dark or Bright Mode***************************************************/
 
-const toggle = document.getElementById('toggleDark');
-const body = document.querySelector('body');
-
-toggle.addEventListener('click', function(){
-    this.classList.toggle('bi-moon');
-    if(this.classList.toggle('bi-brightness-high-fill')){
-        body.style.background = 'white';
-        body.style.color = 'black';
-        body.style.transition = '2s';
-    }else{
-        body.style.background = 'black';
-        body.style.color = 'white';
-        body.style.transition = '2s';
-    }
-});
 
 /****************************************************Booking page**********************************************************************/
 
-/****************************************************Home page**********************************************************************/
+/****************************************************Home page/ contact  button**********************************************************************/
 
 // Add event listener to the button
    document.getElementById('Contact_btn').addEventListener('click', function() {
@@ -49,37 +33,50 @@ document.addEventListener('DOMContentLoaded',
 
 /****************************************************Contact us page validation form************************************************/
 
+function validate() { 
+  let name = 
+      document.getElementById("name").value; 
+  let subject = 
+      document.getElementById("subject").value; 
+  let phone = 
+      document.getElementById("phone").value; 
+  let email = 
+      document.getElementById("email").value; 
+  let message = 
+      document.getElementById("message").value; 
+  let error_message = 
+      document.getElementById("error_message"); 
 
+  error_message.style.padding = "10px"; 
 
-/*----------------------------------Change Tab color for nav bar------------------------------------------------------------*/
-function changeColor(tab) {
-    
-    var tabs = document.querySelectorAll('.tab');
-    tabs.forEach(function(item) {
-      item.classList.remove('active');
-    });
-  
-    
-    tab.classList.add('active');
-  }
-  
-/*----------------------------------------------------------------decor-------------------------------------------------------------*/
-let slideIndex = 0;
-showSlides();
+  let errors = []; 
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+  if (name.length < 5) { 
+      errors.push("Please Enter a valid Name");} 
+  if (subject.length < 10) { 
+      errors.push("Please Enter a Correct Subject");} 
+  if (isNaN(phone) || phone.length != 10) { 
+      errors.push("Please Enter a valid Phone Number");} 
+  if (email.indexOf("@") == -1 || email.length < 6) { 
+      errors.push( 
+          "Please Enter a valid Email");} 
+  if (message.length <= 40) { 
+      errors.push( 
+          "Please Enter More Than 40 Characters");} 
+
+  if (errors.length > 0) { 
+      error_message.innerHTML = 
+          errors.join("<br>"); 
+      return false;} 
+  else { 
+      alert( 
+          "Form Submitted Successfully!"); 
+      return true;}}
+
+/*----------------------------------Change Tab color for N0av Bar------------------------------------------------------------*/
+
   
-  /*------------------------------------------------------------------catering-------------------------------------------------------*/
+/*------------------------------------------------------------------ Our Services-------------------------------------------------------*/
   // Our services slide show. Get the button
  document.addEventListener("DOMContentLoaded", function () {
   const scrollContainer = document.getElementById("scrollContainer");
@@ -122,35 +119,6 @@ function showSlides() {
   });
 });
   
- 
-/*-------------------------------------------------------Our services----------------------------------------------------------*/
-
-document.getElementById("decorLink").addEventListener("click", function(event){
-      event.preventDefault();
-      window.location.href = "decor.html";
-  });
-  
-  document.getElementById("cateringLink").addEventListener("click", function(event){
-      event.preventDefault();
-      window.location.href = "catering.html";
-  });
-
-  var menuItems = ["Menu", "Food Preparation", "Food Presentation", "Beverages", "Platted services", "Desert Stations"];
-  for (var i = 0; i < menuItems.length; i++) {
-      document.write("<li><b>" + menuItems[i] + "</b></li>");
-  }
-
-  var serviceStaffTypes = [
-      'barmen',
-      'waiters',
-      'front of house',
-      'scullery staff'
-  ];
-
-var list = document.getElementById('list');
-
-var listItems = list.getElementsByTagName('li');
-
 // Function to change the rating based on the clicked star
 function changeRating(rating) {
   // Get all star elements
@@ -166,10 +134,7 @@ function changeRating(rating) {
       }
   }
 }
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+/*-------------------------------------------------------End of Our services----------------------------------------------------------*/
 
 /***********************************************about*********************************************/
 const image = document.getElementById('image');
