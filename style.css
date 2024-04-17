@@ -386,13 +386,16 @@ footer {
 }
 .btn2{
   margin-top: 10px;
+  color: white;
   padding: 20px 40px;
   background-color:#6b6b6a;
   text-align: center;
-  justify-content: center;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 10px;
+  float: right;
+}
+.description2{
+  margin: 10px 10px 10px 10px;
 }
 .services{
   display: inline-block;
@@ -454,11 +457,14 @@ footer {
 .right-arrow:hover,.left-arrow:hover {
 background-color: #6b6b6a;
 }
-#myBtn10{
+#Btn3{
   background-color: #6b6b6a;
   display: flex;
   float: right;
+  border-radius: 4px;
+  padding: 10px 15px;
 }
+
 @media (max-width: 900px) {
   .heading h1 {
     font-size: 54px;
