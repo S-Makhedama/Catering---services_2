@@ -515,20 +515,21 @@ background-color: #6b6b6a;
   display: inline-flex;
 }
 .quote p{
-  font-size: 30px;
+  font-size: 25px;
   padding: 100px 30px 30px 30px;
 }
 .contact-info,
 .iframe {
   flex-basis: calc(50% - 50px);
-  padding: 100%;
+  padding: 90%;
 }
 .contact-in {
   background-image: url(images/white-trianglify-b79c7e1f.jpg);
-  height: 70vh;
+  height: 60vh;
   padding: 15px ;
-  margin-left: 40px;
+  margin-left: 5px;
   text-align: center;
+  width: 20rem;
   
 }
 /******************************************************Contact page get in touch****************************************************************************************/
@@ -539,13 +540,13 @@ background-color: #6b6b6a;
     left: 50%; 
     transform: translate(-50%, -50%); 
     max-width: 350px; 
-    width: 100%; 
+    width: 70%; 
     background:#b69fa3; 
     padding: 25px; 
-    margin-left: 20%;
-    margin-top: 800px;
+    margin-left: 15%;
+    margin-top: 780px;
     border-radius: 5px; 
-    box-shadow: 4px 4px 2px
+    box-shadow: 10px 4px 8px
         #b69fa3; 
 } 
   
@@ -554,7 +555,7 @@ background-color: #6b6b6a;
     margin-bottom: 20px; 
     text-transform: uppercase; 
     letter-spacing: 3px; 
-    color: #332902; 
+    color: black; 
 } 
   
 .wrapper .input_field { 
@@ -566,7 +567,7 @@ background-color: #6b6b6a;
     input[type="text"], 
 .wrapper textarea { 
     border: 1px solid #e0e0e0; 
-    width: 100%; 
+    width: 95%; 
     padding: 10px; 
 } 
   
