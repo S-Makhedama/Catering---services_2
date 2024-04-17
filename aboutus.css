@@ -84,15 +84,22 @@ nav {
 }
 
 .Image_container {
-    padding: 20px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .luxury_food {
-    border-radius: 8px;
-    max-width: 100%;
+    border-radius: 15px;
+    max-width: 75%; /* Make the image fill the container */
+    position: relative; /* Set the position to relative */
+    animation: mymove 5s; /* Apply the animation */
+    padding: 30px;
 }
 
-
+@keyframes mymove {
+    from { left: -100%; } /* Start from left of the container */
+    to { left: 0; } /* Move to the right of the container */
+}
 
   
   .Phases{
