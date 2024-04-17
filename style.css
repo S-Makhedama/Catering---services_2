@@ -1,12 +1,13 @@
 body {
     font-family: 'Arial', sans-serif;
     width: auto;
+    height: auto;
 }
 li{
   list-style: none;
 }
 
-/* *************************************Navigation Bar***************************************************/
+/* ****************************************************Navigation Bar***************************************************/
 
 /* Apply styles to the navigation bar container */
 .nav-bar {
@@ -211,10 +212,10 @@ footer {
   color: #666;
 }
 
-/**********************End of home page *************************************/
+/*******************************************************End of home page***************************************/
 
 
-/*------------------------------------ABOUT PAGE-------------------------------------------------------------*/
+/*********************************************************ABOUT PAGE********************************************/
 
 .Phases{
     display: flex;
@@ -273,7 +274,7 @@ footer {
     background-color: #ccc;
     color: #f0f0f0;
 }
-/*--------------------------------------------Main paragraph-------------------------------------------------*/
+/*****************************************************Main paragraph***********************************************/
 .Text p{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
@@ -299,7 +300,7 @@ footer {
     font-weight: bold;
 }
 
-/*---------------------------------Main image propertise------------------------------------------*/
+/***************************************************Main image propertise***************************************/
 
 .luxury_food{
     width: 450px;
@@ -317,7 +318,7 @@ footer {
     margin-left: 20px;
     margin-top: -100px;
 }
-/*--------------------------------------headings for ABOUT US---------------------------------------------------*/
+/******************************************headings for ABOUT US*******************************************/
 .Main_heading h1{
     padding-top: 5px;
     font-size: 22px;
@@ -339,111 +340,8 @@ footer {
     padding-top: 100px;
 }
 
-/**************************************************Booking Page form***************************************************/
-.main_bg{
-  /*background-image: url(background.jpg);*/
-  background-color: #b69fa3;
-  max-width: 1280px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 200px;
-  padding-left: 5px;
-}
-.form{
-  width: 650px;
-}
 
-.form-text{
-  text-align: center;
-  margin: 0 0 40px 0;
-}
-.form-text h1 span img{
-  margin: 0 10px;
-
-}
-.form-text h1{
-  color: #fff;
- 
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-.form-text p{
-  color: #fff;
- 
-  font-size: large;
-}
-
-.main-form div{
-  margin: 10px 10px;
-  width: 300px;
-  display: inline-block;
-}
-.main-form div input {
-  width: 100%;
-  
-  background: none;
-  border: 1px solid white;;
-  font-size: 20px;
-  color: #fff;
-  outline: none;
-  padding: 1px 0 13px 10px;
-  margin-top: 10px;
-}
-.main-form div select{
-  width: 104%;
-  
-  background: none;
-  border: 1px solid white;;
-  font-size: 20px;
-  color: #fff;
-  outline: none;
-  padding: 3px 0 3px 10px;
-  margin-top: 10px;
-}
-.main-form div span{
-  width: 100%;
-  
-  color: #fff;
-  font-size: 25px;
-}
-
-#submit{
-  width: 100%;
-  text-align: center;
-}
-#submit input{
- 
-  width: 200px;
-  background-color: white !important;
-  color: black !important;
-  transition: all .3s;
-}
-#submit input:hover{
-  
-  width: 200px;
-  background-color: black !important;
-  color: #fff !important;
-}
-#submit input:active{
-  font-size: 19px;
-  background-color: rgb(46, 20, 5) !important;
-  color: #fff !important;
-}
-
-
-@media screen and (max-width:710px) {
-  .main-form{
-      text-align: center;
-  }
-}
-
-
-
-.error {
-  color: red;
-  }
-/******************************************************************Our Services*****************************************************************/
+/**************************************************************Our Services******************************************************/
 .heading h1{
     color: black;
     text-align: center;
@@ -455,7 +353,7 @@ footer {
   display: flex;
 } 
 .row2{
-  display: inline;
+  
 }
 .services img{
   border-radius: 50px;
@@ -473,7 +371,7 @@ footer {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   padding: 30px 120px 40px 120px;
-  display: inline-block;
+  display: inline;
 }
 .btn-branding-outline {
   color: var(--branding-color);
@@ -600,7 +498,7 @@ background-color: #6b6b6a;
   cursor: pointer; 
 }
  
-/******************************************************************End of Our Services*****************************************************************/
+/******************************************************************End of Our Services*****************************************************/
 
 /*----------------------------------------------------------Contact Page----------------------------------------------------------------------------------*/
 .contact {
@@ -717,46 +615,107 @@ background-color: #6b6b6a;
 /**************************************End of Contact us***************************************************************/
 
 /**************************************************Booking Page form***************************************************/
-.booking-form {
-  width: 500px;
-  height: 700px;
+.main_bg{
+  /*background-image: url(background.jpg);*/
   background-color: #b69fa3;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+  padding-left: 5px;
+}
+.form{
+  width: 650px;
+}
+
+.form-text{
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+.form-text h1 span img{
+  margin: 0 10px;
+
+}
+.form-text h1{
+  color: #fff;
+ 
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.form-text p{
+  color: #fff;
+ 
+  font-size: large;
+}
+
+.main-form div{
+  margin: 10px 10px;
+  width: 300px;
+  display: inline-block;
+}
+.main-form div input {
+  width: 100%;
+  
+  background: none;
+  border: 1px solid white;;
+  font-size: 20px;
+  color: #fff;
+  outline: none;
+  padding: 1px 0 13px 10px;
+  margin-top: 10px;
+}
+.main-form div select{
+  width: 104%;
+  
+  background: none;
+  border: 1px solid white;;
+  font-size: 20px;
+  color: #fff;
+  outline: none;
+  padding: 3px 0 3px 10px;
+  margin-top: 10px;
+}
+.main-form div span{
+  width: 100%;
+  
+  color: #fff;
+  font-size: 25px;
+}
+
+#submit{
+  width: 100%;
   text-align: center;
 }
-
-label {
-  display: block;
-  margin-bottom: 5px;
+#submit input{
+ 
+  width: 200px;
+  background-color: white !important;
+  color: black !important;
+  transition: all .3s;
+}
+#submit input:hover{
+  
+  width: 200px;
+  background-color: black !important;
+  color: #fff !important;
+}
+#submit input:active{
+  font-size: 19px;
+  background-color: rgb(46, 20, 5) !important;
+  color: #fff !important;
 }
 
-input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+
+@media screen and (max-width:710px) {
+  .main-form{
+      text-align: center;
+  }
 }
 
-.submit-btn {
-  width: 50%;
-  padding: 10px 20px;
-  background-color: lightgray;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
-.submit-btn:hover {
-  background-color: white;
-  color: black;
-}
 
 .error {
   color: red;
-}
+  }
 /**************************************End of Booking***************************************************************/
