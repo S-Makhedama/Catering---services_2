@@ -1,6 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     width: auto;
+    height: auto;
 }
 li{
   list-style: none;
@@ -352,7 +353,7 @@ footer {
   display: flex;
 } 
 .row2{
-  display: inline;
+  
 }
 .services img{
   border-radius: 50px;
@@ -370,7 +371,7 @@ footer {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   padding: 30px 120px 40px 120px;
-  display: inline-block;
+  display: inline;
 }
 .btn-branding-outline {
   color: var(--branding-color);
