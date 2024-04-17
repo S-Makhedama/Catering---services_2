@@ -73,10 +73,10 @@ function validate() {
           "Form Submitted Successfully!"); 
       return true;}}
 
-/*----------------------------------Change Tab color for nav bar------------------------------------------------------------*/
+/*----------------------------------Change Tab color for N0av Bar------------------------------------------------------------*/
 
   
-  /*------------------------------------------------------------------Services-------------------------------------------------------*/
+/*------------------------------------------------------------------ Our Services-------------------------------------------------------*/
   // Our services slide show. Get the button
  document.addEventListener("DOMContentLoaded", function () {
   const scrollContainer = document.getElementById("scrollContainer");
@@ -119,11 +119,6 @@ function validate() {
   });
 });
   
- 
-/*-------------------------------------------------------Our services----------------------------------------------------------*/
-
-
-
 // Function to change the rating based on the clicked star
 function changeRating(rating) {
   // Get all star elements
@@ -139,6 +134,8 @@ function changeRating(rating) {
       }
   }
 }
+/*-------------------------------------------------------End of Our services----------------------------------------------------------*/
+
 /***********************************************about*********************************************/
 const image = document.getElementById('image');
 let positionX = 0; // Initial X position of the image
