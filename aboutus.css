@@ -69,18 +69,21 @@ nav {
 .Main_heading h1 {
     padding-top: 5px;
     font-size: 22px;
-    color: dimgray;
+    color: black;
 }
 
 .Main_heading h2 {
     padding-top: 5px;
-    font-size: 20px;
-    color: dimgray;
+    font-size: 22px;
+    color: black;
 }
 
 .Textpart {
     text-align: left;
     padding: 20px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+
 }
 
 .Image_container {
@@ -99,9 +102,7 @@ nav {
 @keyframes mymove {
     from { left: -100%; } /* Start from left of the container */
     to { left: 0; } /* Move to the right of the container */
-}
-
-  
+} 
   .Phases{
       display: flex;
       width: 100px;
@@ -109,14 +110,9 @@ nav {
       font-size: 17px;
       text-align: center;
       padding-left: 20px;
-  }
+  } 
   
-  .Phases img{
-      margin-top: 30px;
-  }
-  
-  
-  .Catering img{
+.Catering img{
       width: 290px;
       height: 300px;
       font-size: 12;
@@ -126,8 +122,10 @@ nav {
       padding: 10px;
   }
   
-  .Catering p{
-      align-items: start;
+.Catering p{
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      text-align: center;
   
   }
   
@@ -178,4 +176,22 @@ nav {
   
   #myBtn:hover {
     background-color: #45a049;
+  }
+.footer {
+    background-color:#F0F8FF;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+  }
+.social-icons .icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 30px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+.social-icons .icon:hover {
+    color: #007bff; /* Change color on hover */
+  
   }
