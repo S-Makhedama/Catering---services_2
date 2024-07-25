@@ -11,11 +11,16 @@ li{
 
 /* Apply styles to the navigation bar container */
 .nav-bar {
-    display: flex;
-    justify-content: space-between; /* Align items to the right and left */
-    align-items: center; /* Center items vertically */
-    padding: 1rem; /* Add padding for better appearance */
-    background-color: rgb(211, 210, 210); /* Set background color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(211, 210, 210);
+}
+
+.hamburger-menu {
+  display: none; /* Hide by default */
+
 }
 
 /* Apply styles to the logo */
@@ -27,24 +32,30 @@ li{
 }
 
 /* Apply styles to the navigation links */
-nav ul {
-    list-style: none; /* Remove default list styles */
-    margin: 0;
-    padding: 0;
-    display: flex;    
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-nav li {
-    margin-left: 5px; /* Add spacing between items */
-    padding-left: 5px;
+.nav-links li {
+  margin-left: 10px;
 }
 
-nav a {
-  color: white; /* Set link color */
+.nav-links a {
+  color: white;
   font-weight: bold;
   font-size: 18px;
-  padding-right: 20px;
   text-decoration: none;
+  padding: 10px 15px;
+}
+
+/* Hamburger menu icon */
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 /* Push the navigation items to the right */
 nav {
@@ -73,6 +84,37 @@ nav {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+      display: block; /* Show hamburger menu */
+      cursor: pointer;
+      font-size: 14px;
+      
+  }
+
+  .nav-links {
+      display: none; /* Hide navigation links */
+      flex-direction: column;
+      position: absolute;
+      top: 80px; /* Adjust as needed */
+      left: 0;
+      width: 100%;
+      background-color: rgb(211, 210, 210);
+      z-index: 1000;
+  }
+
+  .nav-links.active {
+      display: flex; /* Show navigation links */
+  }
+
+  .nav-links li {
+      text-align: center;
+      margin: 10px 0;
+  }
+}
+
+
 
 /************************************************************* Home page *******************************************************/
 
@@ -212,300 +254,348 @@ footer {
   color: #666;
 }
 
-/*******************************************************End of home page***************************************/
+/*******************************************************End of home page********************************************************/
+
+
 
 /**************************************************************Our Services******************************************************/
-.heading h1{
-    color: black;
-    text-align: center;
-    font-family: "Playfair Display", serif;;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+.heading {
+  text-align: center;
+  padding: 20px 0;
 }
-.row1{
-  display: flex;
-} 
+.heading h1 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  color: black;
+}
+h1{
+  text-align: center;
+}
 
-.services img{
-  border-radius: 50px;
-  padding: 40px 40px;
+/* Main content container */
+main {
+  padding: 20px;
 }
-.description p{
-  font-size: 20px;
+
+/* Services section */
+.row1 {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
 }
-.description ul{
-  text-align: left;
-  font-size: 20px;
+
+.services,
+.description {
+  width: 100%; /* Take full width on smaller screens */
+  text-align: center; /* Center text */
+  padding: 20px; /* Add padding */
 }
-.description{
-  text-align: left;
-  font-family: "Poppins", sans-serif;
-  font-size: 25px;
-  padding: 30px 120px 40px 120px;
-  display: inline;
+
+.services img {
+  width: 100%; /* Make images responsive */
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
 }
-.btn-branding-outline {
-  color: var(--branding-color);
-  border-radius: 4px;
-  border: 1px solid var(--branding-color);
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
+
+.description p {
+  font-size: 16px; /* Adjust font size */
+  line-height: 1.6; /* Increase line height for readability */
+  text-align: left; /* Align text left */
 }
-.anchor{
-  align-content: center;
+
+.description ul {
+  font-size: 16px; /* Adjust font size */
+  padding-left: 20px; /* Add left padding to lists */
 }
-.btn2{
-  margin-top: 10px;
-  color: white;
-  padding: 20px 40px;
-  background-color:#6b6b6a;
+
+.btn2 {
+  display: block; /* Ensure buttons are block-level for full width */
+  margin: 20px auto; /* Center buttons */
+  padding: 15px 30px; /* Increase padding */
+  font-size: 18px; /* Adjust font size */
+}
+
+/* Decor container */
+.decor-container {
   text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  float: right;
+  padding: 20px;
 }
-.description2{
-  margin: 10px 10px 10px 10px;
-}
-.services{
+
+.decor {
   display: inline-block;
-  justify-content: space-between;
+  width: 100%; /* Take full width on smaller screens */
+  padding: 10px; /* Add padding */
+  text-align: center; /* Center text */
 }
-.decor-container img{
-  border-radius: 30px;
+
+.decor img {
+  width: 100%; /* Make images responsive */
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
 }
-.decor-container h1{
+
+/* Catering section */
+.catering-container {
   text-align: center;
-  font-size: 50px;
+  padding: 20px;
 }
-.decor{
-  justify-content: center; /* Center horizontally */
-  display: inline-block;
-  padding: 0 20px 0 60px;
+
+.catering {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center items horizontally */
 }
-/**Gallery**/
-#Gallery h1{
+
+.catering img {
+  width: 100%; /* Make images responsive */
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .heading h1 {
+      font-size: 54px; /* Larger font size for larger screens */
+  }
+
+  .row1 {
+      flex-direction: row; /* Ensure items are in a row on larger screens */
+  }
+
+  .services,
+  .description {
+      width: 50%; /* Half width on larger screens */
+      padding: 20px;
+  }
+
+  .decor {
+      width: 33.33%; /* One-third width on larger screens */
+  }
+
+  .catering {
+      width: 100%; /* Full width for catering section on larger screens */
+  }
+
+  .catering .services {
+      width: 50%; /* Half width for catering images on larger screens */
+      padding: 20px;
+  }
+}
+
+/* Gallery section */
+#Gallery {
   text-align: center;
-  font-size: 35px;
+  padding: 50px 0;
 }
-.background-img{
-  background-image: url(decor/);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  padding: 300px 10px 300px 10px;
-  border-radius: 5px;
-  height: 300px;
+
+#Gallery h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
 }
+
 .gallery-container {
   position: relative;
-} 
+  overflow: hidden;
+  margin: 0 auto;
+}
+
 .scroll-container {
   display: flex;
-  overflow-x: scroll;
-  width: 100%;
-  height: 400px; /* Adjust the height as needed */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
 }
+
 .image-item {
-  margin-right: 10px ; /* Adjust the spacing between images as needed */
+  flex: 0 0 auto;
+  margin-right: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.double {
-  font-size: 50px;
+
+.arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: transparent;
-  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
   color: #364655;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1;
 }
+
 .left-arrow {
   left: 10px;
 }
+
 .right-arrow {
   right: 10px;
 }
-.right-arrow:hover,.left-arrow:hover {
-background-color: #6b6b6a;
-}
-#Btn3{
+
+.arrow:hover {
   background-color: #6b6b6a;
-  display: flex;
-  float: right;
-  border-radius: 4px;
-  padding: 10px 15px;
+  color: white;
 }
 
-@media (max-width: 900px) {
-  .heading h1 {
-    font-size: 54px;
-  }
-
-  h2 {
-    font-size: 44px;
-  }
-  .hero {
-    padding: 80px 20px;
-  }
-  .content {
-    text-align: center;
-  }
-  .project-description {
-    padding: 0;
-    text-align: center;
-  }
-  nav a {
-    font-size: 14px;
-  }
-}
-.close {
-  color: black;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.close:hover,
-.close:focus {
-  filter: blur(8px);
-  text-decoration: none;
-  cursor: pointer;
-}
-.checked {
-  color: orange;
-  cursor: pointer; 
-}
  
-/******************************************************************End of Our Services*****************************************************/
+/******************************************************************End of Our Services*************************************************/
 
-/*----------------------------------------------------------Contact Page----------------------------------------------------------------------------------*/
-.contact {
+
+
+/*----------------------------------------------------------Contact Page---------------------------------------------------------------*/
+.contact-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0;
+  padding: 20px;
 }
-.row3{
-  display: inline-flex;
-  padding: 110px;
+
+.quote {
+  flex-basis: 50%;
+  padding: 20px;
 }
-.row4{
-  display: inline-flex;
-}
-.quote p{
-  font-size: 25px;
-  padding: 100px 30px 30px 30px;
-}
-.contact-info,
-.iframe {
-  flex-basis: calc(50% - 50px);
-  padding: 90%;
-}
-.contact-in {
-  background-image: url(images/white-trianglify-b79c7e1f.jpg);
-  height: 60vh;
-  padding: 15px ;
-  margin-left: 5px;
+
+.contact-info {
+  flex-basis: 50%;
+  background-color: #f7f7f7; /* Example background color */
+  padding: 20px;
   text-align: center;
-  width: 20rem;
-  
 }
-/******************************************************Contact page get in touch****************************************************************************************/
-  
-.wrapper { 
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    max-width: 350px; 
-    width: 70%; 
-    background:#b69fa3; 
-    padding: 25px; 
-    margin-left: 15%;
-    margin-top: 780px;
-    border-radius: 5px; 
-    box-shadow: 10px 4px 8px
-        #b69fa3; 
-} 
-  
-.wrapper h2 { 
-    text-align: center; 
-    margin-bottom: 20px; 
-    text-transform: uppercase; 
-    letter-spacing: 3px; 
-    color: black; 
-} 
-  
-.wrapper .input_field { 
-    margin-bottom: 10px; 
-} 
 
-.wrapper 
-    .input_field 
-    input[type="text"], 
-.wrapper textarea { 
-    border: 1px solid #e0e0e0; 
-    width: 95%; 
-    padding: 10px; 
-} 
-  
-.wrapper textarea { 
-    resize: none; 
-    height: 80px; 
-} 
-  
-.wrapper .btn input[type="submit"] { 
-    border: 0px; 
-    margin-top: 15px; 
-    padding: 10px; 
-    text-align: center; 
-    width: 100%; 
-    background: white; 
-    color: black; 
-    text-transform: uppercase; 
-    letter-spacing: 5px; 
-    font-weight: bold; 
-    border-radius: 25px; 
-    cursor: pointer; 
-} 
-  
-#error_message { 
-    margin-bottom: 20px; 
-    background: white; 
-    padding: 0px; 
-    text-align: center; 
-    font-size: 14px; 
-    transition: all 0.5s ease; 
+.row4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start; /* Ensure items align at the top */
+  margin-top: 20px;
+}
+
+.wrapper {
+  flex-basis: calc(50% - 20px); /* Adjust as needed */
+  background: #b69fa3;
+  padding: 45px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add space between .wrapper and .iframe */
+}
+
+.wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #000;
+}
+
+.wrapper .input_field {
+  margin-bottom: 15px; /* Adjust spacing between input fields */
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.wrapper textarea {
+  resize: vertical; /* Allow vertical resizing for textarea */
+  min-height: 100px; /* Set a minimum height for textarea */
+}
+
+.wrapper .btn input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .iframe {
-  width: 100%;
-  padding: 10px 100px 100px 100px;
-  margin-top: 2px;
+  flex-basis: calc(50% - 20px); /* Adjust width and margin as needed */
+  padding: 20px;
+  background-color: #f7f7f7; /* Example background color */
 }
 
 @media (max-width: 768px) {
-  .contact-info,
+  .quote,
+  .contact-info {
+    flex-basis: 100%;
+  }
+
+  .row4 {
+    flex-direction: column;
+  }
+
+  .wrapper,
   .iframe {
-      flex-basis: 100%;
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  
+  }
+
+  .wrapper {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .iframe {
+    background-color: transparent; /* Set iframe background to transparent */
   }
 }
 
+
+
+
+
 /**************************************End of Contact us***************************************************************/
 
+
+
 /**************************************************Booking Page form***************************************************/
-.main_bg{
-  /*background-image: url(background.jpg);*/
+/* Default styles */
+.main_bg {
   background-color: #b69fa3;
-  max-width: 1280px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 200px;
-  padding-left: 5px;
+  padding: 20px; /* Adjust as needed */
 }
-.form{
-  width: 650px;
+.form {
+  max-width: 650px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Example background for form */
+  padding: 20px; /* Adjust padding as needed */
 }
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+  .form {
+      max-width: 90%; /* Adjust based on your design needs */
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .main-form div {
+      width: 100%; /* Make each form input full width on smaller screens */
+  }
+}
+
 
 .form-text{
   text-align: center;
@@ -516,13 +606,13 @@ background-color: #6b6b6a;
 
 }
 .form-text h1{
-  color: #fff;
+  color: #000000;
  
   font-size: 40px;
   margin-bottom: 20px;
 }
 .form-text p{
-  color: #fff;
+  color: #000000;
  
   font-size: large;
 }
@@ -538,7 +628,7 @@ background-color: #6b6b6a;
   background: none;
   border: 1px solid white;;
   font-size: 20px;
-  color: #fff;
+  color: #000000;
   outline: none;
   padding: 1px 0 13px 10px;
   margin-top: 10px;
@@ -549,7 +639,7 @@ background-color: #6b6b6a;
   background: none;
   border: 1px solid white;;
   font-size: 20px;
-  color: #fff;
+  color: #070707;
   outline: none;
   padding: 3px 0 3px 10px;
   margin-top: 10px;
@@ -557,7 +647,7 @@ background-color: #6b6b6a;
 .main-form div span{
   width: 100%;
   
-  color: #fff;
+  color: #080808;
   font-size: 25px;
 }
 
@@ -590,9 +680,6 @@ background-color: #6b6b6a;
       text-align: center;
   }
 }
-
-
-
 .error {
   color: red;
   }

@@ -16,83 +16,87 @@
     
 
 <!----------------------------------------------------------------Nav Bar------------------------------------------------------------------------>
-<div class="nav-bar">    
-  <div class="logo">
-    <a href="index.html">
-    <img src="decor/logo copy.png" alt="Logo">
-    </a>
-  </div>
+<div class="nav-bar">  
+    <div class="logo">
+        <a href="index.html">
+        <img src="decor/logo copy.png" alt="Logo">
+        </a>
+    </div>
+    <!-- Navigation links -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html" class="tab" onclick="changeColor(this)">Home</a></li>
+            <li><a href="about.html" class="tab" onclick="changeColor(this)">About</a></li>
+            <li><a href="services.html" class="tab" onclick="changeColor(this)">Services</a></li>
+            <li><a href="contact.html" class="tab" onclick="changeColor(this)">Contact</a></li>
+            <li><a href="book.html" class="tab" onclick="changeColor(this)">Book Now</a></li>           
+        </ul>
+    </nav>   
     
-              <nav>
-                <ul>            
-                <li><a href="index.html" class="tab" onclick="changeColor(this)">Home</a></li>
-                <li><a href="about.html" class="tab" onclick="changeColor(this)">About</a></li>
-                <li><a href="services.html" class="tab" onclick="changeColor(this)">Services</a></li>
-                <li><a href="contact.html" class="tab" onclick="changeColor(this)">Contact</a></li>
-                <li><a href="book.html" class="tab" onclick="changeColor(this)">Book Now</a></li>            
-                </ul>
-            </nav>       
-</div>
+    <div class="hamburger-menu">
+        <button class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</div>  
 <!----------------------------------------------------------------Header------------------------------------------------------------------------>
 <div class="contact-wrap">
-   <div class="row3">
-    <div class="quote">
-      <p> Ready to elevate your event?<br><br>
-         Contact us for exquisite catering  
-         and stunning decor that <br>dazzles!
-         <i class="bi bi-emoji-smile"></i>
-         <i class="bi bi-heart"></i>
+  <div class="quote">
+      <p>Ready to elevate your event?<br><br>
+          Contact us for exquisite catering and stunning decor that dazzles!
+          <i class="bi bi-emoji-smile"></i>
+          <i class="bi bi-heart"></i>
       </p>
-      </div>
-    <div class="contact-in">
+  </div>
+  <div class="contact-info">
       <h1>Contact Us</h1>
       <h2><i class="bi bi-telephone-fill"></i> Phone</h2>
       <p>(+27) 214-567-833</p>
       <h2><i class='bx bxs-envelope'></i> Email</h2>
       <p>harmonycatering@gmail.com</p>
-      <h2><i class="bi bi-facebook"> </i> Facebook</h2>
+      <h2><i class="bi bi-facebook"></i> Facebook</h2>
       <p>harmonycatering</p>
       <h2><i class="bi bi-geo-alt-fill"></i> Address</h2>
       <p>97 Durham Avenue,<br>Salt River,<br>Cape Town,<br>7100</p>
-    </div> 
-  
   </div>
-    <div class="row4">
-      <div class="iframe">
-        <h1>Find Our Store</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.298194471367!2d18.460423999999996!3d-33.9334578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d0852fd8f61%3A0x87a52bb504df3b94!2sPals%20Building!5e0!3m2!1sen!2sza!4v1712138125788!5m2!1sen!2sza" 
-        width="600" height="448" 
-        style="border:0;" allowfullscreen="" 
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+
+  <div class="row4">
+      <div class="wrapper">
+          <h2>Get in Touch</h2>
+          <div id="error_message"></div>
+          <form action="" id="myform" onsubmit="return validate();">
+              <div class="input_field">
+                  <input type="text" placeholder="Name" id="name">
+              </div>
+              <div class="input_field">
+                  <input type="text" placeholder="Subject" id="subject">
+              </div>
+              <div class="input_field">
+                  <input type="text" placeholder="Phone" id="phone">
+              </div>
+              <div class="input_field">
+                  <input type="text" placeholder="Email" id="email">
+              </div>
+              <div class="input_field">
+                  <textarea placeholder="Message" id="message"></textarea>
+              </div>
+              <div class="btn">
+                  <input type="submit" value="Submit">
+              </div>
+          </form>
       </div>
 
-      <div class="wrapper"> 
-        <h2>Get in Touch</h2> 
-        <div id="error_message"></div> 
-
-        <form action="" id="myform" onsubmit="return validate();"> 
-            <div class="input_field"> 
-              <input type="text" placeholder="Name" id="name"> 
-            </div> 
-            <div class="input_field"> 
-              <input type="text" placeholder="Subject" id="subject"> 
-            </div> 
-            <div class="input_field"> 
-              <input type="text" placeholder="Phone" id="phone"> 
-            </div> 
-            <div class="input_field"> 
-              <input type="text" placeholder="Email" id="email"> 
-            </div> 
-            <div class="input_field"> 
-              <textarea placeholder="Message" id="message"></textarea> 
-            </div> 
-            <div class="btn"> <input type="submit"> 
-            </div> 
-        </form> 
-    </div> 
-    </div>
+      <div class="iframe">
+          <h1>Find Our Store</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.298194471367!2d18.460423999999996!3d-33.9334578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d0852fd8f61%3A0x87a52bb504df3b94!2sPals%20Building!5e0!3m2!1sen!2sza!4v1712138125788!5m2!1sen!2sza"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+      </div>
+  </div>
 </div>
+
+
+
 
 
 
