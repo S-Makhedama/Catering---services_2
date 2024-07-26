@@ -21,29 +21,35 @@
   </head>
   <body>
   <!----------------------------------------------------------------Nav Bar------------------------------------------------------------------------>
-    <div class="nav-bar">    
-      <div class="logo">
-        <a href="index.html">
+  <div class="nav-bar">    
+    <div class="logo">
+      <a href="index.html">
         <img src="decor/logo copy.png" alt="Logo">
       </a>
-      </div>
-      <nav>
-        <ul>            
-          <li><a href="index.html" class="tab" onclick="changeColor(this)">Home</a></li>
-          <li><a href="about.html" class="tab" onclick="changeColor(this)">About</a></li>
-          <li class="dropdown">
-            <a href="#" class="tab">Services</a>
-            <br><br>
-            <div class="dropdown-content">
-                <a href="decor.html">Decor</a>
-                <a href="catering.html">Catering</a>
-            </div>
-          </li>
-          <li><a href="contact.html" class="tab" onclick="changeColor(this)">Contact</a></li>
-          <li><a href="book.html" class="tab" onclick="changeColor(this)">Book Now</a></li>            
-        </ul>
-      </nav>              
     </div>
+    <nav >
+      <ul class="nav-links">            
+        <li><a href="index.html" class="tab" onclick="changeColor(this)">Home</a></li>
+        <li><a href="about.html" class="tab" onclick="changeColor(this)">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="tab">Services</a>
+          <div class="dropdown-content">
+            <a href="decor.html">Decor</a>
+            <a href="catering.html">Catering</a>
+          </div>
+        </li>
+        <li><a href="contact.html" class="tab" onclick="changeColor(this)">Contact</a></li>
+        <li><a href="book.html" class="tab" onclick="changeColor(this)">Book Now</a></li>            
+      </ul>
+    </nav>    
+    <div class="hamburger-menu">
+      <button class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+      </button>
+  </div>
+              
+  </div>
+  
 
     <!-----------------------------------Our Services------------------------------------------------------------------->
     <div class="heading">
