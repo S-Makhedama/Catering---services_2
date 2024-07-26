@@ -10,34 +10,33 @@ li {
     list-style: none;
 }
 
-/*--------------------------------------headings for ABOUT US---------------------------------------------------*/
+/* Container layout */
 .container {
     display: flex;
     flex-wrap: wrap; /* Allows columns to stack on small screens */
+    justify-content: space-between; /* Space between columns */
 }
 
 .left-column,
 .right-column {
     width: 50%;
-    padding: 10px; /* Added padding for spacing */
+    padding: 20px; /* Added padding for spacing */
+    box-sizing: border-box;
 }
 
+/* Main heading */
 .Main_heading {
     text-align: center;
 }
 
-.Main_heading h1 {
-    padding-top: 5px;
-    font-size: 22px;
-    color: black;
-}
-
+.Main_heading h1,
 .Main_heading h2 {
     padding-top: 5px;
     font-size: 22px;
     color: black;
 }
 
+/* Text part */
 .Textpart {
     text-align: left;
     padding: 20px;
@@ -45,6 +44,7 @@ li {
     font-family: "Poppins", sans-serif;
 }
 
+/* Image container */
 .Image_container {
     width: 100%;
     overflow: hidden;
@@ -64,23 +64,10 @@ li {
     to { left: 0; }
 }
 
-.Phases {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap */
-    justify-content: space-around; /* Center items in the available space */
+/* About button */
+.About_btn {
+    margin: 20px auto; /* Centered button */
     padding: 10px;
-}
-
-.Catering img {
-    width: 100%; /* Adjusted to fit the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.Catering p {
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
     text-align: center;
 }
 
@@ -91,11 +78,6 @@ li {
     text-align: center;
     display: inline-block;
     font-size: 14px;
-}
-
-.About_btn {
-    margin: 20px auto; /* Centered button */
-    padding: 10px;
 }
 
 .About_btn a {
@@ -111,25 +93,52 @@ li {
     color: #f0f0f0;
 }
 
-#more {
-    display: none;
+/* Phases heading */
+.phasesheading {
+    text-align: center;
+    padding: 20px 0;
 }
 
-#myBtn {
-    align-items: center;
-    position: relative;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+.phasesheading h2 {
+    font-size: 22px;
+    color: black;
 }
 
-#myBtn:hover {
-    background-color: #45a049;
+/* Phases section */
+
+.Phases{
+      display: flex;
+      width: 100px;
+      height: 50px;
+      font-size: 17px;
+      text-align: center;
+      padding-left: 20px;
+  }
+ 
+.Catering img{
+      width: 290px;
+      height: 300px;
+      font-size: 12;
+      text-align: center;
+      border-radius: 10px;
+      justify-content: space-between;
+      padding: 10px;
+  }
+ 
+.Catering p{
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      text-align: center;
+  }
+ 
+/* Phases text */
+.Catering h4 {
+    font-size: 16px;
+    margin: 10px 0;
 }
 
+
+/* Footer styles */
 .footer {
     background-color: #F0F8FF;
     padding: 20px 0;
@@ -149,21 +158,28 @@ li {
     color: #007bff;
 }
 
-/*---------------------------------- Media Queries ----------------------------------*/
+/* Media Queries */
 
-@media (max-width: 1200px) {
+/* Tablets and small laptops */
+@media (max-width: 1199px) {
     .left-column,
     .right-column {
         width: 100%; /* Full width for each column */
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px;
     }
 
     .About_btn {
         margin: 20px; /* Adjust margin for better alignment */
         padding: 0; /* Remove extra padding */
     }
+
+    .Phases .Catering {
+        flex: 1 1 100%; /* Full width for each item */
+        margin: 10px 0; /* Vertical margin for stacking items */
+    }
 }
 
+/* Mobile devices */
 @media (max-width: 768px) {
     .Main_heading h1,
     .Main_heading h2 {
@@ -184,12 +200,21 @@ li {
         align-items: center; /* Center items */
     }
 
+    .Catering {
+        flex: 1 1 80%; /* Adjust width for smaller screens */
+    }
+
     .Catering img {
-        width: 80%; /* Adjust width for smaller screens */
+        width: 150px; /* Adjust image width for smaller screens */
+        height: 150px; /* Adjust image height for smaller screens */
+    }
+
+    .Catering h4 {
+        font-size: 14px; /* Adjust font size */
     }
 
     .Catering p {
-        font-size: 16px; /* Adjust font size */
+        font-size: 12px; /* Adjust font size */
     }
 
     .About_btn button {
@@ -217,7 +242,12 @@ li {
         font-size: 10px; /* Further adjust font size */
     }
 
+    .Catering {
+        flex: 1 1 100%; /* Full width for each item on very small screens */
+    }
+
     .Catering img {
-        width: 100%; /* Full width for images */
+        width: 100px; /* Further adjust image width */
+        height: 100px; /* Further adjust image height */
     }
 }
